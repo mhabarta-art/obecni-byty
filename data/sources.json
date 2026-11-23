@@ -1,15 +1,15 @@
 {
  "kralovopole": {
   "board": "https://edeska.brno.cz/eDeska03/",
-  "count": 1,
+  "count": 0,
   "diagnostics": {
    "category_filter": "none",
    "pages": 1,
    "rows_seen": 28
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-23T12:15:52+00:00",
-  "last_run": "2026-11-23T12:15:52+00:00",
+  "last_ok": "2026-11-23T12:25:13+00:00",
+  "last_run": "2026-11-23T12:25:13+00:00",
   "message": "",
   "name": "Brno-Královo Pole",
   "status": "ok"
@@ -23,8 +23,8 @@
    "rows_seen": 12
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-23T12:15:52+00:00",
-  "last_run": "2026-11-23T12:15:52+00:00",
+  "last_ok": "2026-11-23T12:25:13+00:00",
+  "last_run": "2026-11-23T12:25:13+00:00",
   "message": "",
   "name": "Brno-sever",
   "status": "ok"
@@ -37,19 +37,25 @@
    "rows_seen": 9
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-23T12:15:52+00:00",
-  "last_run": "2026-11-23T12:15:52+00:00",
+  "last_ok": "2026-11-23T12:25:13+00:00",
+  "last_run": "2026-11-23T12:25:13+00:00",
   "message": "",
   "name": "Brno-střed",
   "status": "ok"
  },
  "zabovresky": {
   "board": "https://www.zabovresky.cz/uredni-deska/1",
-  "diagnostics": {},
-  "fail_streak": 3,
-  "last_run": "2026-11-23T12:15:52+00:00",
-  "message": "ConnectTimeout: HTTPSConnectionPool(host='www.zabovresky.cz', port=443): Max retries exceeded with url: /uredni-deska/1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.zabovresky.cz', port=443) at 0x79bb4a79b830>, 'Connection to www.zabovresky.cz timed out. (connect timeout=30)'))",
+  "count": 0,
+  "diagnostics": {
+   "rows_seen": 50,
+   "rss_age_days": 0,
+   "rss_items": 50
+  },
+  "fail_streak": 0,
+  "last_ok": "2026-11-23T12:25:13+00:00",
+  "last_run": "2026-11-23T12:25:13+00:00",
+  "message": "",
   "name": "Brno-Žabovřesky",
-  "status": "error"
+  "status": "ok"
  }
 }

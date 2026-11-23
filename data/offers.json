@@ -1,33 +1,6 @@
 [
  {
   "active": true,
-  "attachments": [
-   {
-    "name": "VŘ - vedoucí bytového odboru - Brno - Černnovice",
-    "url": "https://edeska.brno.cz/eDeska03/eDeskaDetail.jsp?detailId=19385"
-   },
-   {
-    "name": "Vyberove_rizeni_-_vedouci_BO_2027.pdf",
-    "url": "https://edeska.brno.cz/eDeska03/download.jsp?idPriloha=19386"
-   }
-  ],
-  "category": "Výběrová řízení, volná pracovní místa",
-  "cj": "BKPO/039356/2026/2200/LUDV",
-  "district": "Brno-Královo Pole",
-  "first_seen": "2026-11-23T12:15:52+00:00",
-  "id": "158394e26479",
-  "last_seen": "2026-11-23T12:15:52+00:00",
-  "pdf_checked": true,
-  "photos": [],
-  "published_from": "2026-11-18",
-  "published_to": "2026-12-04",
-  "snippet": "Statutární město Brno, Úřad městské části Brno-Černovice, Bolzanova 1, 618 00 Brno Tajemník Úřadu městské části Brno-Černovice oznamuje vyhlášení výběrového řízení na pozici v e d o u c í B y t o v é h o o d b o r u s místem výkonu práce: ÚMČ Brno-Černovice, Bolzanova 1, Brno (zástup po dobu výkonu veřejné funkce) Výběrové řízení vyhlašuje vedoucí úřadu v souladu s ust. § 7 zákona č. 312/2002 Sb., o úřednících územních samosprávných celků a o změně některých zákonů, ve znění pozdějších předpisů (dále jen zákon č. 312/2002 Sb.). Hledáte novou profesní výzvu a láká vás příležitost vést nově vzni",
-  "source": "kralovopole",
-  "title": "VŘ - vedoucí bytového odboru - Brno - Černnovice",
-  "url": "https://edeska.brno.cz/eDeska03/eDeskaDetail.jsp?detailId=19385"
- },
- {
-  "active": true,
   "address": "Přadlácká 11",
   "attachments": [
    {
@@ -45,7 +18,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "2c18f3319e2f",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 144.07,
   "pdf_checked": true,
   "photos": [],
@@ -78,7 +51,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "d27c87e2e9ea",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 168.48,
   "pdf_checked": true,
   "photos": [],
@@ -111,7 +84,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "184f4b4ebdd0",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 144.07,
   "pdf_checked": true,
   "photos": [],
@@ -144,7 +117,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "b9aec34a6e7e",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 168.48,
   "pdf_checked": true,
   "photos": [],
@@ -177,7 +150,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "747edf973c7c",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 144.07,
   "pdf_checked": true,
   "photos": [],
@@ -210,7 +183,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "5599b56b17c7",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 185.9,
   "pdf_checked": true,
   "photos": [],
@@ -243,7 +216,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "abdf9170fbc8",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 185.9,
   "pdf_checked": true,
   "photos": [],
@@ -276,7 +249,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "8af0975a1a9b",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 185.9,
   "pdf_checked": true,
   "photos": [],
@@ -309,7 +282,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "924cbca9e3ac",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 185.9,
   "pdf_checked": true,
   "photos": [],
@@ -342,7 +315,7 @@
   "district": "Brno-sever",
   "first_seen": "2026-11-23T12:10:44+00:00",
   "id": "58b499b90770",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 185.9,
   "pdf_checked": true,
   "photos": [],
@@ -370,7 +343,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6bf8d9967a7e",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -459,7 +432,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "18c9edcbdcec",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -540,7 +513,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "25ac1cefc63d",
   "kategorie": "III",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -645,7 +618,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "2ebdd9fe17b8",
   "kategorie": "I",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -718,7 +691,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "0b3213a4a102",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -807,7 +780,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "047ddd56c978",
   "kategorie": "III",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -889,7 +862,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6e41ab8b1061",
   "kategorie": "I",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -990,7 +963,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "76f0e04d61ef",
   "kategorie": "III",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -1091,7 +1064,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "30db781ac5f0",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:15:52+00:00",
+  "last_seen": "2026-11-23T12:25:13+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -1209,5 +1182,33 @@
   "uzaverka": "2026-11-30",
   "virtual_tour": "https://kuula.co/share/collection/7dcjt?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
+ },
+ {
+  "active": false,
+  "attachments": [
+   {
+    "name": "VŘ - vedoucí bytového odboru - Brno - Černnovice",
+    "url": "https://edeska.brno.cz/eDeska03/eDeskaDetail.jsp?detailId=19385"
+   },
+   {
+    "name": "Vyberove_rizeni_-_vedouci_BO_2027.pdf",
+    "url": "https://edeska.brno.cz/eDeska03/download.jsp?idPriloha=19386"
+   }
+  ],
+  "category": "Výběrová řízení, volná pracovní místa",
+  "cj": "BKPO/039356/2026/2200/LUDV",
+  "district": "Brno-Královo Pole",
+  "first_seen": "2026-11-23T12:15:52+00:00",
+  "gone_since": "2026-11-23T12:25:13+00:00",
+  "id": "158394e26479",
+  "last_seen": "2026-11-23T12:15:52+00:00",
+  "pdf_checked": true,
+  "photos": [],
+  "published_from": "2026-11-18",
+  "published_to": "2026-12-04",
+  "snippet": "Statutární město Brno, Úřad městské části Brno-Černovice, Bolzanova 1, 618 00 Brno Tajemník Úřadu městské části Brno-Černovice oznamuje vyhlášení výběrového řízení na pozici v e d o u c í B y t o v é h o o d b o r u s místem výkonu práce: ÚMČ Brno-Černovice, Bolzanova 1, Brno (zástup po dobu výkonu veřejné funkce) Výběrové řízení vyhlašuje vedoucí úřadu v souladu s ust. § 7 zákona č. 312/2002 Sb., o úřednících územních samosprávných celků a o změně některých zákonů, ve znění pozdějších předpisů (dále jen zákon č. 312/2002 Sb.). Hledáte novou profesní výzvu a láká vás příležitost vést nově vzni",
+  "source": "kralovopole",
+  "title": "VŘ - vedoucí bytového odboru - Brno - Černnovice",
+  "url": "https://edeska.brno.cz/eDeska03/eDeskaDetail.jsp?detailId=19385"
  }
 ]
