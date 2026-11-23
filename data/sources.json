@@ -1,21 +1,33 @@
 {
  "kralovopole": {
   "board": "https://edeska.brno.cz/eDeska03/",
-  "diagnostics": {},
-  "fail_streak": 1,
-  "last_run": "2026-11-23T12:04:43+00:00",
-  "message": "SSLError: HTTPSConnectionPool(host='edeska.brno.cz', port=443): Max retries exceeded with url: /eDeska03/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))",
+  "count": 0,
+  "diagnostics": {
+   "category_filter": "none",
+   "pages": 1,
+   "rows_seen": 0
+  },
+  "fail_streak": 0,
+  "last_ok": "2026-11-23T12:10:44+00:00",
+  "last_run": "2026-11-23T12:10:44+00:00",
+  "message": "Na stránce nebyla nalezena žádná položka – možná se změnila struktura webu.",
   "name": "Brno-Královo Pole",
-  "status": "error"
+  "status": "warning"
  },
  "sever": {
   "board": "https://edeska.brno.cz/eDeska04/eDeskaAktualni.jsp",
-  "diagnostics": {},
-  "fail_streak": 1,
-  "last_run": "2026-11-23T12:04:43+00:00",
-  "message": "SSLError: HTTPSConnectionPool(host='edeska.brno.cz', port=443): Max retries exceeded with url: /eDeska04/eDeskaAktualni.jsp (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))",
+  "count": 10,
+  "diagnostics": {
+   "category_filter": "form",
+   "pages": 1,
+   "rows_seen": 12
+  },
+  "fail_streak": 0,
+  "last_ok": "2026-11-23T12:10:44+00:00",
+  "last_run": "2026-11-23T12:10:44+00:00",
+  "message": "",
   "name": "Brno-sever",
-  "status": "error"
+  "status": "ok"
  },
  "stred": {
   "board": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty",
@@ -25,8 +37,8 @@
    "rows_seen": 9
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-23T12:04:43+00:00",
-  "last_run": "2026-11-23T12:04:43+00:00",
+  "last_ok": "2026-11-23T12:10:44+00:00",
+  "last_run": "2026-11-23T12:10:44+00:00",
   "message": "",
   "name": "Brno-střed",
   "status": "ok"
@@ -34,9 +46,9 @@
  "zabovresky": {
   "board": "https://www.zabovresky.cz/uredni-deska/1",
   "diagnostics": {},
-  "fail_streak": 1,
-  "last_run": "2026-11-23T12:04:43+00:00",
-  "message": "ConnectTimeout: HTTPSConnectionPool(host='www.zabovresky.cz', port=443): Max retries exceeded with url: /uredni-deska/1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.zabovresky.cz', port=443) at 0x746f0a566d20>, 'Connection to www.zabovresky.cz timed out. (connect timeout=30)'))",
+  "fail_streak": 2,
+  "last_run": "2026-11-23T12:10:44+00:00",
+  "message": "ConnectTimeout: HTTPSConnectionPool(host='www.zabovresky.cz', port=443): Max retries exceeded with url: /uredni-deska/1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.zabovresky.cz', port=443) at 0x75d04f4e2f60>, 'Connection to www.zabovresky.cz timed out. (connect timeout=30)'))",
   "name": "Brno-Žabovřesky",
   "status": "error"
  }

@@ -1,0 +1,7530 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    
+
+    <link rel="stylesheet" type="text/css" media="all" href="js/calendar-system.css" title="calendar-system"/>
+    
+        <link rel="stylesheet" type="text/css" href="./css/eDeska.css"/>
+    
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS eDeska" href="rss.jsp"/>
+
+    <title>Úřední deska - Aktuální
+        
+    </title>
+
+    <script type="text/javascript" src="js/eDeska.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/lang/calendar-en.js"></script>
+    <script type="text/javascript" src="js/lang/calendar-cs-utf8.js"></script>
+    <script type="text/javascript" src="js/calendar-setup.js"></script>
+</head>
+<body>
+
+    <h1 class="common">
+        
+        Úřední deska - Stav k 
+        23.11.2026
+    </h1>
+
+    
+
+
+
+
+
+
+<table class="navigation">
+    <tr>
+    	
+    	
+    	
+
+        
+            <td class="navigation">
+                
+                    
+                        <a class="navigation" href="/eDeska04/eDeskaAktualni.jsp;jsessionid=459BF181CB2812DC2862A83061A3A088">
+                            
+                                
+                                
+                                    Aktuální
+                                
+                            
+                        </a>
+                    
+                    
+                    
+                
+            </td>
+        
+            <td class="navigation">
+                
+                    
+                    
+                        <a class="navigation" href="/eDeska04/eDeskaKDatumu.jsp;jsessionid=459BF181CB2812DC2862A83061A3A088">
+                            
+                                
+                                
+                                    Ke dni
+                                
+                            
+                        </a>
+                    
+                    
+                
+            </td>
+        
+            <td class="navigation">
+                
+                    
+                    
+                    
+                        <a class="navigation" href="/eDeska04/eDeskaHledej.jsp;jsessionid=459BF181CB2812DC2862A83061A3A088">
+                            
+                                
+                                
+                                    Hledat
+                                
+                            
+                        </a>
+                    
+                
+            </td>
+        
+    </tr>
+</table>
+<br/>
+
+    <form id="hledejFilter" action="eDeskaAktualni.jsp" method="post">
+        
+
+
+
+
+<div>
+    
+    
+    
+    
+    <br/>
+</div>
+
+        <input id="order" name="order" type="hidden" value="vyveseno"/>
+        <input id="desc" name="desc" type="hidden" value="true"/>
+        <input id="first" name="first" type="hidden" value="0"/>
+
+        
+
+
+
+
+
+
+<table id="edeska-search-form" class="search" style="min-width: 50%; max-width: 100%">
+    <tr>
+        
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                    <td class="search search-label">
+                        <label for="kategorie">
+                            Kategorie:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <select id="kategorie" name="kategorie" style="width: 100%">
+                            <option value="">Vše</option>
+                            <option value="Dražebn&iacute; vyhl&aacute;&scaron;ky">Dražebn&iacute; vyhl&aacute;&scaron;ky</option><option value="MMB - doprava">MMB - doprava</option><option value="MMB - jin&eacute;">MMB - jin&eacute;</option><option value="Nab&iacute;dky bytů k pron&aacute;jmu">Nab&iacute;dky bytů k pron&aacute;jmu</option><option value="Ostatn&iacute;">Ostatn&iacute;</option><option value="Pr&aacute;vn&iacute; předpisy statut&aacute;rn&iacute;ho města Brna">Pr&aacute;vn&iacute; předpisy statut&aacute;rn&iacute;ho města Brna</option><option value="Rozpočet">Rozpočet</option><option value="Svol&aacute;n&iacute; zased&aacute;n&iacute; zastupitelstva">Svol&aacute;n&iacute; zased&aacute;n&iacute; zastupitelstva</option><option value="Veřejn&eacute; vyhl&aacute;&scaron;ky">Veřejn&eacute; vyhl&aacute;&scaron;ky</option><option value="Volby/referenda">Volby/referenda</option><option value="V&yacute;běrov&aacute; ř&iacute;zen&iacute; (voln&aacute; pracovn&iacute; m&iacute;sta)">V&yacute;běrov&aacute; ř&iacute;zen&iacute; (voln&aacute; pracovn&iacute; m&iacute;sta)</option><option value="Z&aacute;měry MČ Brno-sever">Z&aacute;měry MČ Brno-sever</option><option value="Z&aacute;měry MMB">Z&aacute;měry MMB</option>
+                        </select>
+                    </td>
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+    </tr>
+    <tr>
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                    <td class="search search-label">
+                        <label for="nazev">
+                            Název:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <input id="nazev" name="nazev" class="search_text_field" style="width: 100%" type="text" value=""/>
+                    </td>
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+                    <td class="search search-label">
+                        <label for="text">
+                            Hledat v obsahu:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <input id="text" name="text" class="search_text_field" style="width: 100%" type="text" value="" maxlength="50"/>
+                    </td>
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+    </tr>
+
+    
+
+    <tr>
+        <td class="search" colspan="2">
+            <br/>
+            <input type="submit" name="search" value="Vyhledat" class="search_button"/>
+            <input type="submit" name="reset" value="Vymazat formulář"
+                   class="search_button"/>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    
+    
+
+    // uprava sirky elementu v tabulce, pokud je nakonfigurovano 4 nebo 5 poli
+    var maxLength = 0;
+    var table = document.getElementById('edeska-search-form');
+    var rows = document.getElementById('edeska-search-form').rows;
+    for (i = 0; i < rows.length; i++) {
+        if (rows[i].cells.length > maxLength) {
+            maxLength = rows[i].cells.length;
+        }
+    }
+    if (maxLength == 10) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "4%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "16%";
+        }
+        table.style.width = '100%';
+    }
+    if (maxLength == 8) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "6%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "19%";
+        }
+        table.style.width = '100%';
+    }
+    if (maxLength == 6) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "9%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "24%";
+        }
+        table.style.width = '66%';
+    }
+    if (maxLength <= 4) {
+        table.style.width = '50%';
+    }
+</script>
+
+
+        
+
+
+
+
+
+
+
+<table width="100%" class="edeska-strankovani">
+    <tr>
+        <td>
+
+
+<span>
+	
+        <span><span><em><img class="arrow-first" src="images/first.png" alt="První"></em></span></span>
+        <span><span><em><img class="arrow-prev" src="images/prev.png" alt="Předchozí"></em></span></span>
+    
+	
+	
+
+	&nbsp;<span>1 - 25 z 62</span>&nbsp;
+
+	
+	
+	
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='25';document.forms[0].submit();"><img src="images/next.png" alt="Další"></a></span>
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='50';document.forms[0].submit();"><img src="images/last.png" alt="Poslední"></a></span>
+    
+</span>
+</td>
+        <td align="right">
+            záznamů na stránku
+            <select id="count" name="count" onchange="setCookie(&#39;eDeskaPocet&#39;,this.value);document.forms[0].first.value=&#39;0&#39;;document.forms[0].submit();">
+                <option value="25" selected="selected">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<table class="content edeska-vypis-vyveseni">
+    <thead>
+    <!-- Prvy riadok - nadpisy -->
+    <tr>
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+        <th colspan="2" class="content edeska-sloupec-kategorie"
+             >
+            <a class="content" href="javascript:void(0);"
+               onclick="document.forms[0].order.value='kategorie';document.forms[0].desc.value='false';document.forms[0].submit();">
+                Kategorie
+            </a>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-nazev"
+             >
+            Název
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-znacka"
+             >
+            Číslo jednací
+        </th>
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-zverejnit"
+             >
+            Zveřejnit v období
+        </th>
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-dokument"
+             >
+            Dokument
+        </th>
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+    </tr>
+    <!-- Druhy riadok - od do -->
+    <tr>
+        
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-kategorie">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-nazev">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-znacka">
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+            <th class="content edeska-sloupec-zverejnit">
+                <a class="content" href="javascript:void(0);"
+                   onclick="document.forms[0].order.value='vyveseno';document.forms[0].desc.value='false';document.forms[0].submit();">
+                    Zveřejnit od data
+                </a>
+                
+
+
+
+
+
+
+
+
+
+
+
+            </th>
+            <th class="content edeska-sloupec-zverejnit">
+                <a class="content" href="javascript:void(0);"
+                   onclick="document.forms[0].order.value='sveseno';document.forms[0].desc.value='false';document.forms[0].submit();">
+                    Zveřejnit do data
+                </a>
+                
+
+
+
+
+
+
+
+
+
+
+
+            </th>
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-dokument">
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Zoznam zaznamov -->
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Záměry MMB
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38065">
+                Přesah stavby 20.11.2026 - ZVEŘEJNĚNÍ ZÁMĚRŮ  volební období 2022 - 2026
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0627095/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            09.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38066">
+                        Presah_20.11.2026.pdf
+                    </a>
+                     (325,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení (volná pracovní místa)
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38071">
+                VŘ - referent zeleně a majetku ÚMČ Brno-Královo Pole
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/054301/26
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            15.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38072">
+                        Vhodny_kandidat__referent_OZ_10_2026.pdf
+                    </a>
+                     (112,6 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38075">
+                Stanovení VPS na ul. Lozíbky 23
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0624504/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            09.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38076">
+                        0624504_26_Brno_sever_Lozibky_21_23.pdf
+                    </a>
+                     (387,0 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38077">
+                        Lozibky_21_23_tisk.pdf
+                    </a>
+                     (477,6 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38057">
+                Návrh OOP -  stanovení MÚP na PK_MK III. tř. Novotného 7, Brno - sjezd V12a
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0610052/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            20.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            21.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38058">
+                        0597475_26_4_Novotneho_nOOP.pdf
+                    </a>
+                     (240,2 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38059">
+                        0597475_26_1_Novotneho_7-V12a_k_novemu_vjezdu.pdf
+                    </a>
+                     (261,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38061">
+                Veř. vyhláška PDZ Vranovská 52 - Svitavská 27 - byt.dům-vozidla stavby
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0626334/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            20.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38062">
+                        0620616_26_Ver.vyhlaska_PDZ_Vranovska_52-Svitavska_27_byt.dum-vozidla_stavby.pdf
+                    </a>
+                     (280,9 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38063">
+                        DIO_sig_Vranovska_52_-_Svitavska_27_-_bytovy_dum_Vranovska.pdf
+                    </a>
+                     (1,0 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38045">
+                Stanovení VPS na ul. Fügnerova 50
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0624105/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            19.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38046">
+                        0624105_26_Brno_sever_Fugnerova_50.pdf
+                    </a>
+                     (406,3 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38047">
+                        Fugnerova_50__tisk.pdf
+                    </a>
+                     (1,8 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38049">
+                Návrh OOP -  stanovení MÚP na PK_MK III. tř. Novotného 7, Brno - sjezd V12a
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0610052/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            19.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            21.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38050">
+                        0597475_26_4_Novotneho_nOOP.pdf
+                    </a>
+                     (240,2 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38051">
+                        0597475_26_1_Novotneho_7-V12a_k_novemu_vjezdu.pdf
+                    </a>
+                     (261,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38053">
+                Opatření obecné povahy, stanovení místní úpravy provozu na PK-MK II.třídy, ul.Merhautova, Brno
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0624861/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            19.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38054">
+                        0348328_26_9_Merhautova_MII_OOP-19.11.26.pdf
+                    </a>
+                     (518,0 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38055">
+                        0348328_26_9_Pril._vykres_c._01.3._Merhautova-19.11.26.pdf
+                    </a>
+                     (867,7 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Dražební vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37992">
+                227EX 4123/26-34 Dražební vyhláška - EL. DR. -  MOVITÉ VĚCI,35 Dražební vyhláška - EL. DR. -  MOV...
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            227EX 4123/26-34,35,36
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            14.01.2027
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37993">
+                        260412334.pdf
+                    </a>
+                     (423,7 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37994">
+                        260412335.pdf
+                    </a>
+                     (427,9 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37995">
+                        260412336.pdf
+                    </a>
+                     (420,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Dražební vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37997">
+                227EX 3625/25-77 Dražební vyhláška - EL. DR. -  MOVITÉ VĚCI,78 Dražební vyhláška - EL. DR. -  MOV...
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            227EX 3625/25-77,78
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            14.01.2027
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37998">
+                        250362577.pdf
+                    </a>
+                     (425,1 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37999">
+                        250362578.pdf
+                    </a>
+                     (419,0 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Dražební vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38001">
+                227EX 4594/25-57 Dražební vyhláška - EL. DR. -  MOVITÉ VĚCI
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            227EX 4594/25-57
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.01.2027
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38002">
+                        250459457.pdf
+                    </a>
+                     (394,6 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Dražební vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38004">
+                227EX 563/26-41 Dražební vyhláška - EL. DR. -  MOVITÉ VĚCI
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            227EX 563/26-41
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            10.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38005">
+                        260056341.pdf
+                    </a>
+                     (380,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38007">
+                vyrozumění o zahájení: Polyfunkční objekt Brno - Husovice - II. Etapa (BRH2)
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0616506/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38008">
+                        2026-0612440.pdf
+                    </a>
+                     (428,4 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38010">
+                Stanovení VPS na ul. Francouzská 49-51
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0618479/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38011">
+                        0618479_26_Brno_sever_Francouzska_49_51.pdf
+                    </a>
+                     (418,3 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38012">
+                        Francouzska_49_51__tisk.pdf
+                    </a>
+                     (1,9 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38014">
+                Veř. vyhláška PDZ Husovická 1 - rekonstrukce domu a zábor pro kontejner
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0614483/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38015">
+                        0598772_26_Ver._vyhlaska_PDZ_Husovicka_1_-_rekonstrukce_domu_zabor_pro_kontejner.pdf
+                    </a>
+                     (273,6 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38016">
+                        DIO_sig_Husovicka_1_-_kontejner.pdf
+                    </a>
+                     (275,4 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Ostatní
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38018">
+                Oznámení o přerušení dodávky elektrické energie - ul. Soběšická č. 1470/126, 1471/128
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053221/26/OVV/Baš
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            09.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38019">
+                        eon_oznameni.pdf
+                    </a>
+                     (98,2 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení (volná pracovní místa)
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38021">
+                VŘ - vedoucí BO ÚMČ Brno-Černovice
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053478/26
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            06.01.2027
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38022">
+                        Vyberove_rizeni_-_vedouci_BO_2027.pdf
+                    </a>
+                     (205,3 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení (volná pracovní místa)
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38024">
+                VŘ - účetní ÚMČ Brno-Ivanovice
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053479/26
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            10.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38025">
+                        Vyberove_rizeni_1_2026_ucetni.pdf
+                    </a>
+                     (320,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Záměry MČ Brno-sever
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38027">
+                obecný záměr - pacht zahrady
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053502/26/ODRIM/Koš
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38028">
+                        obecny_zamer_pachtu_-_zahrada.pdf
+                    </a>
+                     (371,0 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Záměry MČ Brno-sever
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38030">
+                obecný záměr - pacht zahrady
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053500/26/ODRIM/Koš
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38031">
+                        zamer_pachtu_-_zahrada_c._52.pdf
+                    </a>
+                     (371,8 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Záměry MČ Brno-sever
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38033">
+                obecný záměr - pacht zahrady
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053498/26/ODRIM/Koš
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38034">
+                        zamer_pachtu_-_zahrada_c._13.pdf
+                    </a>
+                     (373,3 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Záměry MČ Brno-sever
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38036">
+                obecný záměr - pacht zahrady
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/053496/26/ODRIM/Koš
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38037">
+                        zamer_pachtu_-_zahrada_c._6.pdf
+                    </a>
+                     (373,8 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            MMB - doprava
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=38039">
+                Návrh opatření obecné povahy - Durďákova 6
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0621180/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            21.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38040">
+                        0621180_26_Navrh_stanoveni_mistni_upravy_provozu_Brno-sever_Durdakova_6.pdf
+                    </a>
+                     (434,5 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=38041">
+                        Durdakova_6_-_PD_229547-2.pdf
+                    </a>
+                     (1,9 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Dražební vyhlášky
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37956">
+                227EX 3511/26-43 Dražební vyhláška - EL. DR. -  MOVITÉ VĚCI
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            227EX 3511/26-43
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            12.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            10.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37957">
+                        260351143.pdf
+                    </a>
+                     (417,8 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Záměry MČ Brno-sever
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37959">
+                Adresný záměr na část pozemku p. č. 2281/1 v k. ú. Husovice
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052441/26/ODRIM/Czi
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            12.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            27.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37960">
+                        adresny_zamer_p.c._2281_1_k.u._Husovice.pdf
+                    </a>
+                     (422,0 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+<span>
+	
+        <span><span><em><img class="arrow-first" src="images/first.png" alt="První"></em></span></span>
+        <span><span><em><img class="arrow-prev" src="images/prev.png" alt="Předchozí"></em></span></span>
+    
+	
+	
+
+	&nbsp;<span>1 - 25 z 62</span>&nbsp;
+
+	
+	
+	
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='25';document.forms[0].submit();"><img src="images/next.png" alt="Další"></a></span>
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='50';document.forms[0].submit();"><img src="images/last.png" alt="Poslední"></a></span>
+    
+</span>
+
+
+    <div>
+</div></form>
+
+</body>
+</html>
+

@@ -1,0 +1,3678 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    
+
+    <link rel="stylesheet" type="text/css" media="all" href="js/calendar-system.css" title="calendar-system"/>
+    
+        <link rel="stylesheet" type="text/css" href="./css/eDeska.css"/>
+    
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS eDeska" href="rss.jsp"/>
+
+    <title>Úřední deska - Aktuální
+        
+    </title>
+
+    <script type="text/javascript" src="js/eDeska.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/lang/calendar-en.js"></script>
+    <script type="text/javascript" src="js/lang/calendar-cs-utf8.js"></script>
+    <script type="text/javascript" src="js/calendar-setup.js"></script>
+</head>
+<body>
+
+    <h1 class="common">
+        
+        Úřední deska - Stav k 
+        23.11.2026
+    </h1>
+
+    
+
+
+
+
+
+
+<table class="navigation">
+    <tr>
+    	
+    	
+    	
+
+        
+            <td class="navigation">
+                
+                    
+                        <a class="navigation" href="/eDeska04/eDeskaAktualni.jsp">
+                            
+                                
+                                
+                                    Aktuální
+                                
+                            
+                        </a>
+                    
+                    
+                    
+                
+            </td>
+        
+            <td class="navigation">
+                
+                    
+                    
+                        <a class="navigation" href="/eDeska04/eDeskaKDatumu.jsp">
+                            
+                                
+                                
+                                    Ke dni
+                                
+                            
+                        </a>
+                    
+                    
+                
+            </td>
+        
+            <td class="navigation">
+                
+                    
+                    
+                    
+                        <a class="navigation" href="/eDeska04/eDeskaHledej.jsp">
+                            
+                                
+                                
+                                    Hledat
+                                
+                            
+                        </a>
+                    
+                
+            </td>
+        
+    </tr>
+</table>
+<br/>
+
+    <form id="hledejFilter" action="eDeskaAktualni.jsp" method="post">
+        
+
+
+
+
+<div>
+    
+    
+    
+    
+    <br/>
+</div>
+
+        <input id="order" name="order" type="hidden" value="vyveseno"/>
+        <input id="desc" name="desc" type="hidden" value="true"/>
+        <input id="first" name="first" type="hidden" value="0"/>
+
+        
+
+
+
+
+
+
+<table id="edeska-search-form" class="search" style="min-width: 50%; max-width: 100%">
+    <tr>
+        
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                    <td class="search search-label">
+                        <label for="kategorie">
+                            Kategorie:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <select id="kategorie" name="kategorie" style="width: 100%">
+                            <option value="">Vše</option>
+                            <option value="Dražebn&iacute; vyhl&aacute;&scaron;ky">Dražebn&iacute; vyhl&aacute;&scaron;ky</option><option value="MMB - doprava">MMB - doprava</option><option value="MMB - jin&eacute;">MMB - jin&eacute;</option><option value="Nab&iacute;dky bytů k pron&aacute;jmu" selected="selected">Nab&iacute;dky bytů k pron&aacute;jmu</option><option value="Ostatn&iacute;">Ostatn&iacute;</option><option value="Pr&aacute;vn&iacute; předpisy statut&aacute;rn&iacute;ho města Brna">Pr&aacute;vn&iacute; předpisy statut&aacute;rn&iacute;ho města Brna</option><option value="Rozpočet">Rozpočet</option><option value="Svol&aacute;n&iacute; zased&aacute;n&iacute; zastupitelstva">Svol&aacute;n&iacute; zased&aacute;n&iacute; zastupitelstva</option><option value="Veřejn&eacute; vyhl&aacute;&scaron;ky">Veřejn&eacute; vyhl&aacute;&scaron;ky</option><option value="Volby/referenda">Volby/referenda</option><option value="V&yacute;běrov&aacute; ř&iacute;zen&iacute; (voln&aacute; pracovn&iacute; m&iacute;sta)">V&yacute;běrov&aacute; ř&iacute;zen&iacute; (voln&aacute; pracovn&iacute; m&iacute;sta)</option><option value="Z&aacute;měry MČ Brno-sever">Z&aacute;měry MČ Brno-sever</option><option value="Z&aacute;měry MMB">Z&aacute;měry MMB</option>
+                        </select>
+                    </td>
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+    </tr>
+    <tr>
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                    <td class="search search-label">
+                        <label for="nazev">
+                            Název:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <input id="nazev" name="nazev" class="search_text_field" style="width: 100%" type="text" value=""/>
+                    </td>
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+                    <td class="search search-label">
+                        <label for="text">
+                            Hledat v obsahu:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <input id="text" name="text" class="search_text_field" style="width: 100%" type="text" value="" maxlength="50"/>
+                    </td>
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+    </tr>
+
+    
+
+    <tr>
+        <td class="search" colspan="2">
+            <br/>
+            <input type="submit" name="search" value="Vyhledat" class="search_button"/>
+            <input type="submit" name="reset" value="Vymazat formulář"
+                   class="search_button"/>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    
+    
+
+    // uprava sirky elementu v tabulce, pokud je nakonfigurovano 4 nebo 5 poli
+    var maxLength = 0;
+    var table = document.getElementById('edeska-search-form');
+    var rows = document.getElementById('edeska-search-form').rows;
+    for (i = 0; i < rows.length; i++) {
+        if (rows[i].cells.length > maxLength) {
+            maxLength = rows[i].cells.length;
+        }
+    }
+    if (maxLength == 10) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "4%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "16%";
+        }
+        table.style.width = '100%';
+    }
+    if (maxLength == 8) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "6%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "19%";
+        }
+        table.style.width = '100%';
+    }
+    if (maxLength == 6) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "9%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "24%";
+        }
+        table.style.width = '66%';
+    }
+    if (maxLength <= 4) {
+        table.style.width = '50%';
+    }
+</script>
+
+
+        
+
+
+
+
+
+
+
+<table width="100%" class="edeska-strankovani">
+    <tr>
+        <td>
+
+
+<span>
+	
+        <span><span><em><img class="arrow-first" src="images/first.png" alt="První"></em></span></span>
+        <span><span><em><img class="arrow-prev" src="images/prev.png" alt="Předchozí"></em></span></span>
+    
+	
+	
+
+	&nbsp;<span>1 - 10 z 10</span>&nbsp;
+
+	
+        <span><span><em><img class="arrow-next" src="images/next.png" alt="Další"></em></span></span>
+        <span><span><em><img class="arrow-last" src="images/last.png" alt="Poslední"></em></span></span>
+    
+	
+	
+</span>
+</td>
+        <td align="right">
+            záznamů na stránku
+            <select id="count" name="count" onchange="setCookie(&#39;eDeskaPocet&#39;,this.value);document.forms[0].first.value=&#39;0&#39;;document.forms[0].submit();">
+                <option value="25" selected="selected">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<table class="content edeska-vypis-vyveseni">
+    <thead>
+    <!-- Prvy riadok - nadpisy -->
+    <tr>
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+        <th colspan="2" class="content edeska-sloupec-kategorie"
+             >
+            <a class="content" href="javascript:void(0);"
+               onclick="document.forms[0].order.value='kategorie';document.forms[0].desc.value='false';document.forms[0].submit();">
+                Kategorie
+            </a>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-nazev"
+             >
+            Název
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-znacka"
+             >
+            Číslo jednací
+        </th>
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-zverejnit"
+             >
+            Zveřejnit v období
+        </th>
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-dokument"
+             >
+            Dokument
+        </th>
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+    </tr>
+    <!-- Druhy riadok - od do -->
+    <tr>
+        
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-kategorie">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-nazev">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-znacka">
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+            <th class="content edeska-sloupec-zverejnit">
+                <a class="content" href="javascript:void(0);"
+                   onclick="document.forms[0].order.value='vyveseno';document.forms[0].desc.value='false';document.forms[0].submit();">
+                    Zveřejnit od data
+                </a>
+                
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            &#x25BC;
+        
+        
+    
+
+            </th>
+            <th class="content edeska-sloupec-zverejnit">
+                <a class="content" href="javascript:void(0);"
+                   onclick="document.forms[0].order.value='sveseno';document.forms[0].desc.value='false';document.forms[0].submit();">
+                    Zveřejnit do data
+                </a>
+                
+
+
+
+
+
+
+
+
+
+
+
+            </th>
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-dokument">
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Zoznam zaznamov -->
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37899">
+                Přadlácká 11, byt 10, 2+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052140/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37900">
+                        Pradlacka_11_byt_10_2_1.pdf
+                    </a>
+                     (720,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37902">
+                Nováčkova 6, byt 15, 2+kk
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052138/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37903">
+                        Novackova_6_byt_15_2_kk.pdf
+                    </a>
+                     (986,0 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37905">
+                Přadlácká 11, byt 9, 2+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052139/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37906">
+                        Pradlacka_11_byt_9_2_1.pdf
+                    </a>
+                     (641,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37908">
+                Nováčkova 4, byt 14, 2+kk
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052137/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37909">
+                        Novackova_4_byt_14_2_kk.pdf
+                    </a>
+                     (1,1 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37911">
+                Francouzská 51, byt 4, 3+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052136/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37912">
+                        Francouzska_51_byt_4_3_1.pdf
+                    </a>
+                     (1,5 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37914">
+                Brechtova 17, byt 18, 3+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052135/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37915">
+                        Brechtova_17_byt_18_3_1.pdf
+                    </a>
+                     (1,2 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37917">
+                Brechtova 17, byt 7, 3+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052134/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37918">
+                        Brechtova_17_byt_7_3_1.pdf
+                    </a>
+                     (1,1 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37920">
+                Brechtova 14, byt 12, 2+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052133/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37921">
+                        Brechtova_14_byt_12_2_1.pdf
+                    </a>
+                     (829,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37923">
+                Brechtova 12, byt 23, 2+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052130/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37924">
+                        Brechtova_12_byt_23_2_1.pdf
+                    </a>
+                     (571,0 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Nabídky bytů k pronájmu
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=37926">
+                Brechtova 13, byt 24, 2+1
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MCBSev/052131/26/OB/Fuk
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            24.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=37927">
+                        Brechtova_13_byt_24_2_1.pdf
+                    </a>
+                     (863,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+<span>
+	
+        <span><span><em><img class="arrow-first" src="images/first.png" alt="První"></em></span></span>
+        <span><span><em><img class="arrow-prev" src="images/prev.png" alt="Předchozí"></em></span></span>
+    
+	
+	
+
+	&nbsp;<span>1 - 10 z 10</span>&nbsp;
+
+	
+        <span><span><em><img class="arrow-next" src="images/next.png" alt="Další"></em></span></span>
+        <span><span><em><img class="arrow-last" src="images/last.png" alt="Poslední"></em></span></span>
+    
+	
+	
+</span>
+
+
+    <div>
+</div></form>
+
+</body>
+</html>
+

@@ -1,6 +1,276 @@
 [
  {
   "active": true,
+  "address": "Přadlácká 11",
+  "attachments": [
+   {
+    "name": "Přadlácká 11, byt 10, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899"
+   },
+   {
+    "name": "Pradlacka_11_byt_10_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37900"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052140/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "2c18f3319e2f",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Přadlácká 11, byt 10, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899"
+ },
+ {
+  "active": true,
+  "address": "Nováčkova 6",
+  "attachments": [
+   {
+    "name": "Nováčkova 6, byt 15, 2+kk",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37902"
+   },
+   {
+    "name": "Novackova_6_byt_15_2_kk.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37903"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052138/26/OB/Fuk",
+  "dispozice": "2+kk",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "d27c87e2e9ea",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Nováčkova 6, byt 15, 2+kk",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37902"
+ },
+ {
+  "active": true,
+  "address": "Přadlácká 11",
+  "attachments": [
+   {
+    "name": "Přadlácká 11, byt 9, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37905"
+   },
+   {
+    "name": "Pradlacka_11_byt_9_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37906"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052139/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "184f4b4ebdd0",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Přadlácká 11, byt 9, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37905"
+ },
+ {
+  "active": true,
+  "address": "Nováčkova 4",
+  "attachments": [
+   {
+    "name": "Nováčkova 4, byt 14, 2+kk",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37908"
+   },
+   {
+    "name": "Novackova_4_byt_14_2_kk.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37909"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052137/26/OB/Fuk",
+  "dispozice": "2+kk",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "b9aec34a6e7e",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Nováčkova 4, byt 14, 2+kk",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37908"
+ },
+ {
+  "active": true,
+  "address": "Francouzská 51",
+  "attachments": [
+   {
+    "name": "Francouzská 51, byt 4, 3+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37911"
+   },
+   {
+    "name": "Francouzska_51_byt_4_3_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37912"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052136/26/OB/Fuk",
+  "dispozice": "3+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "747edf973c7c",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Francouzská 51, byt 4, 3+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37911"
+ },
+ {
+  "active": true,
+  "address": "Brechtova 17",
+  "attachments": [
+   {
+    "name": "Brechtova 17, byt 18, 3+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37914"
+   },
+   {
+    "name": "Brechtova_17_byt_18_3_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37915"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052135/26/OB/Fuk",
+  "dispozice": "3+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "5599b56b17c7",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Brechtova 17, byt 18, 3+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37914"
+ },
+ {
+  "active": true,
+  "address": "Brechtova 17",
+  "attachments": [
+   {
+    "name": "Brechtova 17, byt 7, 3+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37917"
+   },
+   {
+    "name": "Brechtova_17_byt_7_3_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37918"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052134/26/OB/Fuk",
+  "dispozice": "3+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "abdf9170fbc8",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Brechtova 17, byt 7, 3+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37917"
+ },
+ {
+  "active": true,
+  "address": "Brechtova 14",
+  "attachments": [
+   {
+    "name": "Brechtova 14, byt 12, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37920"
+   },
+   {
+    "name": "Brechtova_14_byt_12_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37921"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052133/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "8af0975a1a9b",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Brechtova 14, byt 12, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37920"
+ },
+ {
+  "active": true,
+  "address": "Brechtova 12",
+  "attachments": [
+   {
+    "name": "Brechtova 12, byt 23, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37923"
+   },
+   {
+    "name": "Brechtova_12_byt_23_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37924"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052130/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "924cbca9e3ac",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Brechtova 12, byt 23, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37923"
+ },
+ {
+  "active": true,
+  "address": "Brechtova 13",
+  "attachments": [
+   {
+    "name": "Brechtova 13, byt 24, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37926"
+   },
+   {
+    "name": "Brechtova_13_byt_24_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37927"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052131/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "id": "58b499b90770",
+  "last_seen": "2026-11-23T12:10:44+00:00",
+  "photos": [],
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "source": "sever",
+  "title": "Brechtova 13, byt 24, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37926"
+ },
+ {
+  "active": true,
   "address": "Botanická 68",
   "attachments": [
    {
@@ -13,7 +283,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6bf8d9967a7e",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -71,6 +341,7 @@
   ],
   "plocha_m2": 52.0,
   "podlazi": "1. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Botanická 68",
@@ -81,14 +352,10 @@
    "vytah": "ne"
   },
   "title": "Botanická 68, byt č. 1",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "1",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/botanicka-68-byt-c-1~f32140",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7T9zs?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
  },
  {
@@ -105,7 +372,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "18c9edcbdcec",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -155,6 +422,7 @@
   ],
   "plocha_m2": 83.8,
   "podlazi": "4. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Bratislavská 62",
@@ -165,14 +433,10 @@
    "vytah": "ne"
   },
   "title": "Bratislavská 62, byt č. 22",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "22",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/bratislavska-62-byt-c-22~f32141",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7d57Q?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
  },
  {
@@ -189,7 +453,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "25ac1cefc63d",
   "kategorie": "III",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -263,6 +527,7 @@
   ],
   "plocha_m2": 107.0,
   "podlazi": "2. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Dvořákova 8",
@@ -273,14 +538,10 @@
    "vytah": "ne"
   },
   "title": "Dvořákova 8, byt č. 2",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "2",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/dvorakova-8-byt-c-2~f32143",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7dP7L?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
  },
  {
@@ -297,7 +558,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "2ebdd9fe17b8",
   "kategorie": "I",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -339,6 +600,7 @@
   ],
   "plocha_m2": 40.5,
   "podlazi": "3. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Francouzská 20",
@@ -349,14 +611,10 @@
    "vytah": "ne"
   },
   "title": "Francouzská 20, byt č. 23",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "23",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/francouzska-20-byt-c-23~f32144",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7MWzn?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
  },
  {
@@ -373,7 +631,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "0b3213a4a102",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -431,6 +689,7 @@
   ],
   "plocha_m2": 55.1,
   "podlazi": "5. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Kapucínské náměstí 10",
@@ -441,14 +700,10 @@
    "vytah": "ne"
   },
   "title": "Kapucínské náměstí 10, byt č. 12",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "12",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/kapucinske-namesti-10-byt-c-12~f32145",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7TtQQ?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
  },
  {
@@ -465,7 +720,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "047ddd56c978",
   "kategorie": "III",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -515,6 +770,7 @@
   ],
   "plocha_m2": 90.63,
   "podlazi": "3. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Kopečná 9",
@@ -526,14 +782,10 @@
    "vytah": "ano"
   },
   "title": "Kopečná 9, byt č. 11",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "11",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/kopecna-9-byt-c-11~f32146",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7HLMG?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": true
  },
  {
@@ -550,7 +802,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6e41ab8b1061",
   "kategorie": "I",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -620,6 +872,7 @@
   ],
   "plocha_m2": 56.5,
   "podlazi": "3. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Stavební 9",
@@ -630,14 +883,10 @@
    "vytah": "ne"
   },
   "title": "Stavební 9, byt č. 14",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "14",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/stavebni-9-byt-c-14~f32147",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7TW6g?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1\"",
   "vytah": false
  },
  {
@@ -654,7 +903,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "76f0e04d61ef",
   "kategorie": "III",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -724,6 +973,7 @@
   ],
   "plocha_m2": 79.6,
   "podlazi": "2. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Zelný trh 21",
@@ -734,14 +984,10 @@
    "vytah": "ano"
   },
   "title": "Zelný trh 21, byt č. 10",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "10",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/zelny-trh-21-byt-c-10~f32148",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7HwLn?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": true
  },
  {
@@ -758,7 +1004,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "30db781ac5f0",
   "kategorie": "II",
-  "last_seen": "2026-11-23T12:04:43+00:00",
+  "last_seen": "2026-11-23T12:10:44+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -860,6 +1106,7 @@
   ],
   "plocha_m2": 93.1,
   "podlazi": "2. nadzemní",
+  "reminded": false,
   "source": "stred",
   "tech": {
    "adresa": "Žižkova 2",
@@ -870,14 +1117,10 @@
    "vytah": "ne"
   },
   "title": "Žižkova 2, byt č. 3",
-  "typ": [
-   "byt zvláštního určení",
-   "e-aukce",
-   "oprava na vlastní náklady"
-  ],
   "unit": "3",
   "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/zizkova-2-byt-c-3~f32149",
   "uzaverka": "2026-11-30",
+  "virtual_tour": "https://kuula.co/share/collection/7dcjt?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1",
   "vytah": false
  }
 ]
