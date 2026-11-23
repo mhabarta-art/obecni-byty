@@ -144,7 +144,9 @@ _FLAT = re.compile(r"\bbyt\w*", re.I)  # \b excludes "nebytový"
 _OFFER = re.compile(r"pronaj|najem|nabid|vyberov|zamer|obalkov|aukc", re.I)
 _NEGATIVE = re.compile(
     r"garaz|pozemk|parkovac|prodej|vymen\w* byt|vypoved|"
-    r"exekuc|drazb|nalezen|stavebni povoleni|uzemni",
+    r"exekuc|drazb|nalezen|stavebni povoleni|uzemni|"
+    # job openings at housing departments ("výběrové řízení – referent bytového odboru")
+    r"bytov\w* odbor|odbor\w* .{0,25}bytov|referent|asistent|vedouc|ucetn|predpisovatel|tajemn|pracovni mist",
     re.I,
 )
 

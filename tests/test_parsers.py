@@ -78,15 +78,25 @@ def test_edeska():
     assert c.diagnostics["pages"] == 2
 
 
-def test_zabovresky():
-    c = ctx({"/detail/555": "zabovresky_detail.html", "/uredni-deska/1": "zabovresky.html",
-             "/uredni-deska/2": "zabovresky.html"})
-    offers = zabovresky.scrape("zabovresky", {"name": "Brno-Žabovřesky", "url": "https://www.zabovresky.cz/uredni-deska/1"}, c)
-    assert len(offers) == 1
+def test_zabovresky_rss():
+    c = ctx({})
+    offers = zabovresky.scrape("zabovresky", {"name": "Brno-Žabovřesky", "rss_file": FX / "zabovresky_rss.xml"}, c)
+    assert len(offers) == 1  # job ad and land lease are filtered out
     o = offers[0]
-    assert o["dispozice"] == "2+kk" and o["uzaverka"] == "2026-12-02" and o["prohlidka"] == "2026-11-25T15:30"
-    assert o["published_from"] == "2026-11-18" and o["published_to"] == "2026-12-03"
-    assert o["attachments"][0]["url"].endswith("minska20.pdf")
+    assert o["dispozice"] == "2+kk" and o["plocha_m2"] == 48.5 and o["uzaverka"] == "2026-12-09"
+    assert o["published_from"] == "2026-11-23" and o["sticky_days"] == 30
+    assert c.fetch.calls == []  # never touches the website
+
+
+def test_zabovresky_stale_rss(tmp_path):
+    import pytest
+    stale = (FX / "zabovresky_rss.xml").read_text("utf-8")
+    import re
+    stale = re.sub(r"<lastBuildDate>.*?</lastBuildDate>", "<lastBuildDate>Mon, 02 Nov 2026 10:00:00 GMT</lastBuildDate>", stale)
+    f = tmp_path / "rss.xml"
+    f.write_text(stale, "utf-8")
+    with pytest.raises(RuntimeError, match="dní staré"):
+        zabovresky.scrape("zabovresky", {"name": "Brno-Žabovřesky", "rss_file": f}, ctx({}))
 
 
 def test_notify_build():

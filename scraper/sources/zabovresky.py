@@ -1,100 +1,69 @@
-"""Brno-Žabovřesky – generic official board (/uredni-deska/<page>), filtered by keywords."""
+"""Brno-Žabovřesky – official RSS feed (https://www.zabovresky.cz/rss/).
+
+The website blocks non-Czech servers and shows an anti-bot page on the board, so we do NOT
+scrape it. Instead, a small job on the user's Mac (see mac/) downloads the public RSS feed
+and commits it as data/zabovresky_rss.xml. Here we only parse that file.
+
+The feed mixes news and board documents and only keeps ~50 latest items, so offers stay
+active for STICKY_DAYS (or until their deadline) instead of disappearing with the feed.
+"""
 from __future__ import annotations
 
-import re
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+
+import defusedxml.ElementTree as ET
 
 from .. import util
-from ..html import container_text, is_pdf, link_url, links, main_content, next_page, soup
-from .common import Context, enrich_from_pdfs, merge_fields, new_offer
+from .common import Context, merge_fields, new_offer
 
-MAX_PAGES = 6
-PAGE_RE = re.compile(r"/uredni-deska/(\d+)/?$")
-
-
-def _page_links(s, base: str, visited: set[str]) -> list[str]:
-    out = []
-    nxt = next_page(s, base, visited)
-    if nxt:
-        out.append(nxt)
-    for a in s.find_all("a"):
-        url = link_url(a, base)
-        if url and PAGE_RE.search(url.split("?")[0]) and url not in visited and url not in out:
-            out.append(url)
-    return out
+RSS_FILE = Path(__file__).resolve().parents[2] / "data" / "zabovresky_rss.xml"
+STALE_DAYS = 3
+STICKY_DAYS = 30
 
 
-def _category_link(s, base: str):
-    for a in s.find_all("a"):
-        t = util.fold(a.get_text(" "))
-        if re.search(r"\bbyt", t) and re.search(r"nabid|pronaj|najem", t) and len(t) < 60:
-            return link_url(a, base)
-    return None
+def parse_rss(xml: str) -> tuple[list[dict], datetime | None]:
+    root = ET.fromstring(xml)
+    channel = root.find("channel")
+    if channel is None:
+        raise ValueError("RSS bez <channel>")
+    built = channel.findtext("lastBuildDate")
+    built_dt = parsedate_to_datetime(built) if built else None
+    items = []
+    for it in channel.findall("item"):
+        pub = it.findtext("pubDate")
+        items.append({
+            "title": util.clean(it.findtext("title") or ""),
+            "link": util.clean(it.findtext("link") or ""),
+            "description": util.clean(it.findtext("description") or ""),
+            "published": parsedate_to_datetime(pub).date().isoformat() if pub else None,
+        })
+    return items, built_dt
 
 
 def scrape(source: str, cfg: dict, ctx: Context) -> list[dict]:
-    html, final = ctx.fetch(cfg["url"])
-    ctx.snapshot(f"{source}-start", html)
-    pages = [(final, html)]
-    visited = {final, cfg["url"]}
+    path = Path(cfg.get("rss_file", RSS_FILE))
+    if not path.exists():
+        raise RuntimeError("RSS Žabovřesk zatím nebylo staženo – běží stahování na Macu?")
+    items, built = parse_rss(path.read_text("utf-8"))
+    ctx.diagnostics["rss_items"] = len(items)
+    ctx.diagnostics["rows_seen"] = len(items)
+    if built:
+        age = (datetime.now(timezone.utc) - built).days
+        ctx.diagnostics["rss_age_days"] = age
+        if age > STALE_DAYS:
+            raise RuntimeError(f"RSS je {age} dní staré – stahování na Macu pravděpodobně neběží.")
 
-    cat = _category_link(soup(html), final)
-    if cat and cat not in visited:
-        visited.add(cat)
-        h, f = ctx.fetch(cat)
-        pages.append((f, h))
-        ctx.diagnostics["category_link"] = cat
-
-    queue = _page_links(soup(html), final, visited)
-    while queue and len(pages) < MAX_PAGES:
-        url = queue.pop(0)
-        if url in visited:
+    offers = []
+    for it in items:
+        if not it["link"].startswith("https://") or not util.looks_like_flat_offer(it["title"], it["description"][:300]):
             continue
-        visited.add(url)
-        try:
-            h, f = ctx.fetch(url)
-        except Exception:  # noqa: BLE001 - past the last page
-            break
-        pages.append((f, h))
-        queue += [u for u in _page_links(soup(h), f, visited) if u not in queue]
-    ctx.diagnostics["pages"] = len(pages)
-
-    offers: dict[str, dict] = {}
-    items_seen = 0
-    for base, h in pages:
-        node = main_content(soup(h))
-        for a in node.find_all("a"):
-            url = link_url(a, base)
-            label = util.clean(a.get_text(" "))
-            if not url or len(label) < 8:
-                continue
-            items_seen += 1
-            ctx_text = container_text(a)
-            if not util.looks_like_flat_offer(label) and not util.looks_like_flat_offer(ctx_text[:200]):
-                continue
-            o = new_offer(source, cfg["name"], url, label)
-            if o["id"] in offers:
-                continue
-            dates = re.findall(r"\d{1,2}\.\s*\d{1,2}\.\s*\d{4}", ctx_text)
-            if dates:
-                o["published_from"] = util.parse_date(dates[0])
-                if len(dates) > 1:
-                    o["published_to"] = util.parse_date(dates[1])
-            merge_fields(o, util.extract_fields(label))
-            if is_pdf(url, label):
-                o["attachments"] = [{"name": label, "url": url}]
-            elif o["id"] not in ctx.known:
-                try:
-                    dh, df = ctx.fetch(url)
-                    dnode = main_content(soup(dh))
-                    merge_fields(o, util.extract_fields(dnode.get_text(" ")))
-                    o["attachments"] = [{"name": lbl or "příloha", "url": u}
-                                        for u, lbl in links(dnode, df) if is_pdf(u, lbl)][:5]
-                except Exception as e:  # noqa: BLE001
-                    util.log.warning("detail %s failed: %s", url, e)
-            else:
-                o["attachments"] = ctx.known[o["id"]].get("attachments", [])
-            offers[o["id"]] = o
-    ctx.diagnostics["rows_seen"] = items_seen
-    for o in offers.values():
-        enrich_from_pdfs(o, ctx)
-    return list(offers.values())
+        o = new_offer(source, cfg["name"], it["link"], it["title"])
+        o["published_from"] = it["published"]
+        o["sticky_days"] = STICKY_DAYS
+        merge_fields(o, util.extract_fields(it["title"] + " " + it["description"]))
+        if it["description"]:
+            o["snippet"] = it["description"][:600]
+        offers.append(o)
+    return offers

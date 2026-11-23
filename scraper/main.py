@@ -105,13 +105,19 @@ def run(only: set[str] | None, snapshots: bool, email: bool) -> int:
         # Offers no longer on the board -> archive (only when the source worked).
         if st["status"] == "ok":
             for o in offers.values():
-                if o["source"] == key and o["id"] not in seen_ids and o.get("active"):
+                if o["source"] == key and o["id"] not in seen_ids and o.get("active") and not o.get("sticky_days"):
                     o["active"] = False
                     o["gone_since"] = now
 
     today = date.today().isoformat()
     for o in offers.values():
-        if o.get("active") and o.get("published_to") and o["published_to"] < today:
+        if not o.get("active"):
+            continue
+        expired = (o.get("published_to") and o["published_to"] < today) or (o.get("uzaverka") and o["uzaverka"] < today)
+        if o.get("sticky_days"):  # feed-based sources: keep for N days after first seen
+            age = (date.today() - date.fromisoformat(o["first_seen"][:10])).days
+            expired = expired or age > o["sticky_days"]
+        if expired:
             o["active"] = False
             o.setdefault("gone_since", now)
 
