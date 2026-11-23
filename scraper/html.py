@@ -58,8 +58,9 @@ def next_page(s: BeautifulSoup, base: str, visited: set[str]) -> Optional[str]:
 
 
 def is_pdf(url: str, label: str = "") -> bool:
-    u = url.lower()
-    return u.endswith(".pdf") or ".pdf?" in u or "pdf" in fold(label).split() or "/download/" in u
+    u, lab = url.lower(), fold(label)
+    return (u.endswith(".pdf") or ".pdf?" in u or "/download/" in u or "download.jsp" in u
+            or lab.endswith(".pdf") or ".pdf " in lab or "pdf" in lab.split())
 
 
 def container_text(a: Tag, max_len: int = 600) -> str:

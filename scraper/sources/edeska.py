@@ -104,6 +104,13 @@ def scrape(source: str, cfg: dict, ctx: Context) -> list[dict]:
     html, final = ctx.fetch(start)
     ctx.snapshot(f"{source}-start", html)
     s = soup(html)
+    # The board root is a wrapper page with <iframe src="eDeskaAktualni.jsp">; follow it.
+    if not s.find("table"):
+        fr = s.find("iframe", src=True) or s.find("frame", src=True)
+        if fr:
+            html, final = ctx.fetch(util.absolute(final, fr["src"]))
+            s = soup(html)
+            ctx.diagnostics["iframe"] = True
 
     filtered = False
     pages: list[tuple[str, str]] = []

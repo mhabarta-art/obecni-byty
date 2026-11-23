@@ -144,3 +144,16 @@ def test_brnostred_no_boilerplate_typ_and_iframe_tour():
     d = parse_detail(html, "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/x~f1")
     assert "typ" not in d
     assert d["virtual_tour"] == "https://kuula.co/share/collection/ABC"
+
+
+def test_edeska_iframe_wrapper_and_pdf_detection():
+    from scraper.html import is_pdf
+    assert is_pdf("https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37900", "Pradlacka_11_byt_10_2_1.pdf")
+    assert not is_pdf("https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899", "Přadlácká 11, byt 10, 2+1")
+    (FX / "_wrapper.html").write_text('<html><body><iframe src="eDeskaAktualni.jsp" id="mainFrame"></iframe></body></html>')
+    try:
+        c = ctx({"eDeska03/eDeskaAktualni": "edeska.html", "page=2": "edeska.html", "eDeska03/": "_wrapper.html"})
+        offers = edeska.scrape("kralovopole", {"name": "Brno-Královo Pole", "url": "https://edeska.brno.cz/eDeska03/"}, c)
+        assert len(offers) == 1 and c.diagnostics["iframe"]
+    finally:
+        (FX / "_wrapper.html").unlink()

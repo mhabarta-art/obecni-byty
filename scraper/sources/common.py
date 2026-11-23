@@ -48,15 +48,16 @@ def enrich_from_pdfs(offer: dict, ctx: Context) -> None:
     Known offers reuse previously extracted fields, so PDFs are downloaded only once.
     """
     prev = ctx.known.get(offer["id"])
-    if prev:
+    if prev and prev.get("pdf_checked"):
         for k in ("dispozice", "plocha_m2", "podlazi", "vytah", "najem_m2", "najem_celkem",
                   "min_nabidka_m2", "kategorie", "uzaverka", "prohlidka", "typ", "pdf_text_missing",
-                  "snippet"):
+                  "snippet", "pdf_checked"):
             if k in prev and k not in offer:
                 offer[k] = prev[k]
         return
     texts = []
-    for att in [a for a in offer["attachments"] if is_pdf(a["url"], a.get("name", ""))][:MAX_PDFS_PER_OFFER]:
+    pdf_atts = [a for a in offer["attachments"] if is_pdf(a["url"], a.get("name", ""))][:MAX_PDFS_PER_OFFER]
+    for att in pdf_atts:
         try:
             data, _, ctype = ctx.fetch(att["url"], binary=True)
         except Exception as e:  # noqa: BLE001
@@ -64,6 +65,7 @@ def enrich_from_pdfs(offer: dict, ctx: Context) -> None:
             continue
         if data[:4] == b"%PDF" or "pdf" in ctype.lower():
             texts.append(util.pdf_text(data))
+    offer["pdf_checked"] = bool(texts) or not pdf_atts  # retry next run if every download failed
     text = "\n".join(t for t in texts if t.strip())
     if texts and not text.strip():
         offer["pdf_text_missing"] = True  # scanned PDF without a text layer

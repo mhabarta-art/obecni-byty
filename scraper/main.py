@@ -30,7 +30,7 @@ SOURCES = {
                    "url": "https://www.zabovresky.cz/uredni-deska/1",
                    "board": "https://www.zabovresky.cz/uredni-deska/1"},
     "kralovopole": {"name": "Brno-Královo Pole", "kind": edeska,
-                    "url": "https://edeska.brno.cz/eDeska03/",
+                    "url": "https://edeska.brno.cz/eDeska03/eDeskaAktualni.jsp",
                     "board": "https://edeska.brno.cz/eDeska03/"},
 }
 
