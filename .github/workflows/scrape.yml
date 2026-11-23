@@ -57,13 +57,12 @@ jobs:
           git pull --rebase --quiet   # the Mac may have pushed a fresh Žabovřesky RSS meanwhile
           git push
 
-  deploy:
+  # Build and deploy are separate jobs (as in GitHub's official Pages workflow): deploy-pages
+  # sometimes cannot see an artifact uploaded seconds earlier in the same job.
+  build:
     needs: scrape
     if: always() && (needs.scrape.result == 'success' || needs.scrape.result == 'skipped')
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -80,5 +79,21 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+  deploy:
+    needs: build
+    if: always() && needs.build.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
+    steps:
       - id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Počkat a zkusit znovu
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
