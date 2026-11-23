@@ -50,6 +50,8 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .upd i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .upd.warn i{background:var(--alert)}
 .refresh{border:0;background:none;padding:0;margin-left:6px;color:var(--ink);text-decoration:underline;text-underline-offset:2px;cursor:pointer;font-size:13px}
+.srclink{display:inline-block;margin:-14px 0 20px;font-size:13px;color:var(--muted);text-decoration:none}
+.srclink:hover{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
 .warning{margin:-10px 0 24px;font-size:13px;color:var(--alert)}
 .warning a{color:inherit}
 
@@ -61,11 +63,24 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .img .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:13px}
 .img .ph[hidden]{display:none}
 .badge{position:absolute;left:10px;top:10px;background:var(--surface);font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;letter-spacing:.02em}
-.t{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:12px}
-.addr{font-weight:600}
-.new{font-size:12px;color:var(--accent);font-weight:600;flex:none}
+.card .body{padding:14px 2px 0}
+.addr{font-weight:600;font-size:16px;letter-spacing:-.005em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sub{font-size:13px;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .meta{font-size:13px;color:var(--muted)}
-.foot{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:14px}
+/* key facts: the three numbers people compare – same position on every card */
+.facts{display:grid;grid-template-columns:.8fr 1fr 1.35fr;margin-top:12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact{padding:9px 0 9px 12px;border-left:1px solid var(--line);min-width:0}
+.fact:first-child{padding-left:0;border-left:0}
+.fact b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fact b small{font-size:12px;font-weight:400;color:var(--muted);margin-left:2px}
+.fact span{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.facts.none{display:block;padding:12px 0;font-size:13px;color:var(--muted)}
+.fact.na b{font-size:14px;font-weight:400;color:var(--muted);padding:2px 0 1px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;font-size:13px}
+.dl{display:inline-flex;align-items:center;gap:6px}
+.dl i{width:6px;height:6px;border-radius:50%;background:var(--muted)}
+.dl.urg i{background:var(--alert)}
+.new{position:absolute;right:10px;top:10px;background:var(--accent);color:#fff;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;letter-spacing:.02em}
 .urg{color:var(--alert)}
 .past{color:var(--muted)}
 .empty{grid-column:1/-1;padding:80px 0;text-align:center;color:var(--muted)}
@@ -106,6 +121,7 @@ footer{max-width:1120px;margin:0 auto;padding:0 24px 40px;font-size:12px;color:v
     </div>
   </header>
   <div class="bar" id="bar"></div>
+  <div id="source"></div>
   <div id="warning"></div>
   <main class="grid" id="grid" aria-live="polite"></main>
 </div>
@@ -121,6 +137,13 @@ const MAPY_KEY = "__MAPY_API_KEY__";
 const HAS_KEY = MAPY_KEY && !MAPY_KEY.startsWith("__");
 const MC = {stred:"Brno-střed", sever:"Brno-sever", zabovresky:"Žabovřesky", kralovopole:"Královo Pole"};
 const ORDER = ["stred", "sever", "zabovresky", "kralovopole"];
+// Official boards (fallback when sources.json is not loaded yet)
+const BOARD = {
+  stred: "https://www.brno-stred.cz/potrebuji-si-vyridit/byty",
+  sever: "https://edeska.brno.cz/eDeska04/eDeskaAktualni.jsp",
+  zabovresky: "https://www.zabovresky.cz/uredni-deska/1",
+  kralovopole: "https://edeska.brno.cz/eDeska03/",
+};
 // On <user>.github.io/<repo>/ link to the workflow page, where a signed-in owner can start a check.
 const RUN_URL = (() => { const m = location.hostname.match(/^([\w-]+)\.github\.io$/); const repo = location.pathname.split("/")[1];
   return m && repo ? `https://github.com/${m[1]}/${repo}/actions/workflows/scrape.yml` : ""; })();
@@ -186,14 +209,29 @@ function cardHtml(o){
   // Without an explicit deadline, the end of publication on the board is the next best signal.
   const until = o.uzaverka || o.published_to;
   const d = until ? daysTo(until) : null;
-  const label = o.uzaverka ? "uzávěrka" : "na desce do";
-  const dl = d === null ? "" : `<span class="${d < 0 ? "past" : d <= 3 ? "urg" : "meta"}">${label} ${o.uzaverka ? inDays(d) : fmt(until)}</span>`;
+  const dlText = d === null ? "" : o.uzaverka ? `Uzávěrka ${inDays(d)}` : `Na desce do ${fmt(until)}`;
+  const dlCls = d === null ? "" : d < 0 ? "past" : d <= 3 ? "urg" : "";
+  const fact = (label, value, unit = "") => value
+    ? `<div class="fact"><b>${esc(value)}${unit ? `<small>${unit}</small>` : ""}</b><span>${label}</span></div>`
+    : `<div class="fact na"><b>v příloze</b><span>${label}</span></div>`;
+  const t = total(o);
+  const rent = t ? fact("Měsíčně", n(t), " Kč")
+    : o.najem_m2 ? fact("Nájem", n(o.najem_m2), " Kč/m²")
+    : o.min_nabidka_m2 ? fact("Min. nabídka", n(o.min_nabidka_m2), " Kč/m²") : fact("Nájem", "");
+  const floor = (o.podlazi || "").replace(/(\d+)\.\s*nadzemn\S*/i, "$1. NP");
+  const sub = [MC[o.source] && !filter ? MC[o.source] : "", floor, o.vytah === true ? "výtah" : ""].filter(Boolean).join(" · ");
+  const known = o.dispozice || o.plocha_m2 || t || o.najem_m2 || o.min_nabidka_m2;
   return `<button class="card" data-id="${esc(o.id)}" aria-label="${esc(name(o))}">
     <div class="img" data-id="${esc(o.id)}"><div class="ph" hidden>bez náhledu</div>
-      ${filter ? "" : `<span class="badge" style="color:var(--c-${esc(o.source)})">${esc(MC[o.source] || o.district)}</span>`}</div>
-    <div class="t"><div class="addr">${esc(name(o))}</div>${isNew(o) ? '<span class="new">Nové</span>' : ""}</div>
-    <div class="meta">${esc(params(o) || "parametry v příloze")}</div>
-    <div class="foot num"><span>${esc(rentShort(o))}</span>${dl}</div>
+      ${isNew(o) ? '<span class="new">Nové</span>' : ""}</div>
+    <div class="body">
+      <div class="addr">${esc(name(o))}</div>
+      <div class="sub">${esc(sub || o.district)}</div>
+      ${known ? `<div class="facts num">${fact("Dispozice", (o.dispozice || "").split(",")[0])}${fact("Výměra", o.plocha_m2 ? n(o.plocha_m2, 1) : "", " m²")}${rent}</div>`
+              : `<div class="facts none"><span>Parametry jsou jen v příloze</span></div>`}
+      <div class="foot">${dlText ? `<span class="dl ${dlCls}"><i></i>${esc(dlText)}</span>` : "<span></span>"}
+        ${t && o.najem_m2 ? `<span class="meta num">${n(o.najem_m2)} Kč/m²</span>` : ""}</div>
+    </div>
   </button>`;
 }
 
@@ -215,6 +253,9 @@ function renderBar(){
     upd.toLocaleTimeString("cs-CZ", {hour: "2-digit", minute: "2-digit"}) : "–";
   document.getElementById("bar").innerHTML = `<div class="mctabs" role="tablist" aria-label="Městská část">${chip("", "Vše", total) + ORDER.map(k => chip(k, MC[k], counts[k])).join("")}</div>` +
     `<span class="upd ${broken.length ? "warn" : ""}"><i></i>Aktualizováno ${esc(updTxt)}${RUN_URL ? `<a class="refresh" href="${esc(RUN_URL)}" target="_blank" rel="noopener" title="Otevře GitHub, kde kliknete na Run workflow. Za 2–3 minuty se stránka obnoví sama.">Zkontrolovat teď</a>` : ""}</span>`;
+  const board = filter && (sources[filter]?.board || BOARD[filter]);
+  document.getElementById("source").innerHTML = board
+    ? `<a class="srclink" href="${esc(safe(board))}" target="_blank" rel="noopener">Úřední deska ${esc(MC[filter])} ↗</a>` : "";
   document.getElementById("warning").innerHTML = broken.length
     ? `<div class="warning">Nepodařilo se načíst: ${broken.map(k => `<a href="${esc(safe(sources[k].board))}" target="_blank" rel="noopener">${esc(MC[k])}</a>`).join(", ")}. Zkontrolujte prosím úřední desku ručně.</div>` : "";
 }
@@ -225,7 +266,7 @@ function openDetail(id){
   const d = o.uzaverka ? daysTo(o.uzaverka) : null;
   const kv = [
     ["Dispozice", o.dispozice], ["Plocha", o.plocha_m2 && `${n(o.plocha_m2, 1)} m²`],
-    ["Podlaží", o.podlazi], ["Výtah", o.vytah == null ? null : o.vytah ? "ano" : "ne"],
+    ["Podlaží", (o.podlazi || "").replace(/(\d+)\.\s*nadzemn\S*/i, "$1. NP") || null], ["Výtah", o.vytah == null ? null : o.vytah ? "ano" : "ne"],
     ["Nájemné", o.najem_m2 ? `${n(o.najem_m2)} Kč/m²` + (o.kategorie ? ` (kat. ${o.kategorie})` : "") : o.min_nabidka_m2 ? `od ${n(o.min_nabidka_m2)} Kč/m²` : null],
     ["Celkem měsíčně", total(o) && `${n(total(o))} Kč`],
     ["Uzávěrka", o.uzaverka && `${fmt(o.uzaverka)} (${inDays(d)})`],
