@@ -1,1 +1,883 @@
-[]
+[
+ {
+  "active": true,
+  "address": "Botanická 68",
+  "attachments": [
+   {
+    "name": "Botanická 68, byt č. 1 PDF | 247.17 KB",
+    "url": "https://www.brno-stred.cz/download/32131"
+   }
+  ],
+  "dispozice": "1+1",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "6bf8d9967a7e",
+  "kategorie": "II",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 180.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26313/image-thumb__26313__width1920/botanicka_68.8505745b.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26313/image-thumb__26313__img360x240/botanicka_68.09d0f955.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26319/image-thumb__26319__width1920/botanicka-68-byt-1%20%283%29.84057925.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26319/image-thumb__26319__img360x240/botanicka-68-byt-1%20%283%29.fc8f275a.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26317/image-thumb__26317__width1920/botanicka-68-byt-1%20%281%29.3df27277.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26317/image-thumb__26317__img360x240/botanicka-68-byt-1%20%281%29.b40d811f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26326/image-thumb__26326__width1920/botanicka-68-byt-1%20%2810%29.73477887.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26326/image-thumb__26326__img360x240/botanicka-68-byt-1%20%2810%29.53675e27.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26327/image-thumb__26327__width1920/botanicka-68-byt-1%20%2811%29.619068c7.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26327/image-thumb__26327__img360x240/botanicka-68-byt-1%20%2811%29.ce2029af.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26328/image-thumb__26328__width1920/botanicka-68-byt-1%20%2812%29.97e747c0.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26328/image-thumb__26328__img360x240/botanicka-68-byt-1%20%2812%29.37f49b63.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26318/image-thumb__26318__width1920/botanicka-68-byt-1%20%282%29.47f4625d.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26318/image-thumb__26318__img360x240/botanicka-68-byt-1%20%282%29.28ee9833.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26320/image-thumb__26320__width1920/botanicka-68-byt-1%20%284%29.5f965119.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26320/image-thumb__26320__img360x240/botanicka-68-byt-1%20%284%29.5edd6f7a.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26321/image-thumb__26321__width1920/botanicka-68-byt-1%20%285%29.2ed4fa52.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26321/image-thumb__26321__img360x240/botanicka-68-byt-1%20%285%29.0751d51e.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26323/image-thumb__26323__width1920/botanicka-68-byt-1%20%287%29.b9f490da.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26323/image-thumb__26323__img360x240/botanicka-68-byt-1%20%287%29.5e529227.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26324/image-thumb__26324__width1920/botanicka-68-byt-1%20%288%29.aeb73ec0.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26324/image-thumb__26324__img360x240/botanicka-68-byt-1%20%288%29.d27749a4.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26325/image-thumb__26325__width1920/botanicka-68-byt-1%20%289%29.f6718554.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26325/image-thumb__26325__img360x240/botanicka-68-byt-1%20%289%29.01a5958e.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26322/image-thumb__26322__width1920/botanicka-68-byt-1%20%286%29.d004b21a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/botanicka-68-byt-1/26322/image-thumb__26322__img360x240/botanicka-68-byt-1%20%286%29.28edcf03.jpg"
+   }
+  ],
+  "plocha_m2": 52.0,
+  "podlazi": "1. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Botanická 68",
+   "podlazi": "1. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "52 m²",
+   "vyse a kategorie najemneho": "180 Kč/m², kategorie II.",
+   "vytah": "ne"
+  },
+  "title": "Botanická 68, byt č. 1",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "1",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/botanicka-68-byt-c-1~f32140",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Bratislavská 62",
+  "attachments": [
+   {
+    "name": "Bratislavská 62, byt č. 22 PDF | 246.66 KB",
+    "url": "https://www.brno-stred.cz/download/32132"
+   }
+  ],
+  "dispozice": "2+kk",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "18c9edcbdcec",
+  "kategorie": "II",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 180.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26314/image-thumb__26314__width1920/bratislavska_62.e28e6dff.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26314/image-thumb__26314__img360x240/bratislavska_62.3119dfef.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26329/image-thumb__26329__width1920/bratislavska-62-byt-22%20%281%29.bb5d325f.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26329/image-thumb__26329__img360x240/bratislavska-62-byt-22%20%281%29.21672b12.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26332/image-thumb__26332__width1920/bratislavska-62-byt-22%20%284%29.080e024e.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26332/image-thumb__26332__img360x240/bratislavska-62-byt-22%20%284%29.fdc1d56f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26333/image-thumb__26333__width1920/bratislavska-62-byt-22%20%285%29.2f284518.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26333/image-thumb__26333__img360x240/bratislavska-62-byt-22%20%285%29.639344ca.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26334/image-thumb__26334__width1920/bratislavska-62-byt-22%20%286%29.e730879c.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26334/image-thumb__26334__img360x240/bratislavska-62-byt-22%20%286%29.04c94321.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26337/image-thumb__26337__width1920/bratislavska-62-byt-22%20%289%29.ce1a4e5b.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26337/image-thumb__26337__img360x240/bratislavska-62-byt-22%20%289%29.87500f99.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26335/image-thumb__26335__width1920/bratislavska-62-byt-22%20%287%29.ea1982e9.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26335/image-thumb__26335__img360x240/bratislavska-62-byt-22%20%287%29.94ea79ee.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26338/image-thumb__26338__width1920/bratislavska-62-byt-22%20%2810%29.f8c60639.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26338/image-thumb__26338__img360x240/bratislavska-62-byt-22%20%2810%29.b03278a3.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26331/image-thumb__26331__width1920/bratislavska-62-byt-22%20%283%29.8317e971.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26331/image-thumb__26331__img360x240/bratislavska-62-byt-22%20%283%29.ed11d81c.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26330/image-thumb__26330__width1920/bratislavska-62-byt-22%20%282%29.8908a0b1.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26330/image-thumb__26330__img360x240/bratislavska-62-byt-22%20%282%29.c58385e6.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26336/image-thumb__26336__width1920/bratislavska-62-byt-22%20%288%29.6ffdbff0.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/bratislavska-62-byt-22/26336/image-thumb__26336__img360x240/bratislavska-62-byt-22%20%288%29.052c65a5.jpg"
+   }
+  ],
+  "plocha_m2": 83.8,
+  "podlazi": "4. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Bratislavská 62",
+   "podlazi": "4. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "83,8 m²",
+   "vyse a kategorie najemneho": "180 Kč/m², kategorie II.",
+   "vytah": "ne"
+  },
+  "title": "Bratislavská 62, byt č. 22",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "22",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/bratislavska-62-byt-c-22~f32141",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Dvořákova 8",
+  "attachments": [
+   {
+    "name": "Dvořáková 8, byt č. 2 PDF | 246.63 KB",
+    "url": "https://www.brno-stred.cz/download/32133"
+   }
+  ],
+  "dispozice": "3+1",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "25ac1cefc63d",
+  "kategorie": "III",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 240.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26414/image-thumb__26414__width1920/dvorakova-8.c7657038.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26414/image-thumb__26414__img360x240/dvorakova-8.944bd852.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26349/image-thumb__26349__width1920/dvorakova-8-byt-2%20%2811%29.3a25355a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26349/image-thumb__26349__img360x240/dvorakova-8-byt-2%20%2811%29.83e860f9.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26348/image-thumb__26348__width1920/dvorakova-8-byt-2%20%2810%29.df4a9ec2.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26348/image-thumb__26348__img360x240/dvorakova-8-byt-2%20%2810%29.94443337.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26352/image-thumb__26352__width1920/dvorakova-8-byt-2%20%2814%29.c4526cc5.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26352/image-thumb__26352__img360x240/dvorakova-8-byt-2%20%2814%29.2c020801.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26339/image-thumb__26339__width1920/dvorakova-8-byt-2%20%281%29.38e6c1b5.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26339/image-thumb__26339__img360x240/dvorakova-8-byt-2%20%281%29.7a063ddc.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26354/image-thumb__26354__width1920/dvorakova-8-byt-2%20%2815%29.54bcd633.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26354/image-thumb__26354__img360x240/dvorakova-8-byt-2%20%2815%29.7796c93f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26353/image-thumb__26353__width1920/dvorakova-8-byt-2%20%2816%29.fd33277e.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26353/image-thumb__26353__img360x240/dvorakova-8-byt-2%20%2816%29.bd66821f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26340/image-thumb__26340__width1920/dvorakova-8-byt-2%20%282%29.0e086a24.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26340/image-thumb__26340__img360x240/dvorakova-8-byt-2%20%282%29.b428a4b8.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26341/image-thumb__26341__width1920/dvorakova-8-byt-2%20%283%29.1f2704f9.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26341/image-thumb__26341__img360x240/dvorakova-8-byt-2%20%283%29.942edf3a.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26343/image-thumb__26343__width1920/dvorakova-8-byt-2%20%284%29.534af896.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26343/image-thumb__26343__img360x240/dvorakova-8-byt-2%20%284%29.3f83ce25.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26344/image-thumb__26344__width1920/dvorakova-8-byt-2%20%286%29.47521eb5.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26344/image-thumb__26344__img360x240/dvorakova-8-byt-2%20%286%29.ac22f049.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26345/image-thumb__26345__width1920/dvorakova-8-byt-2%20%287%29.98b315f7.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26345/image-thumb__26345__img360x240/dvorakova-8-byt-2%20%287%29.7ff80e1d.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26346/image-thumb__26346__width1920/dvorakova-8-byt-2%20%288%29.ff614e8d.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26346/image-thumb__26346__img360x240/dvorakova-8-byt-2%20%288%29.e56f2799.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26347/image-thumb__26347__width1920/dvorakova-8-byt-2%20%289%29.7584232c.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26347/image-thumb__26347__img360x240/dvorakova-8-byt-2%20%289%29.882c3ce6.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26342/image-thumb__26342__width1920/dvorakova-8-byt-2%20%285%29.00681416.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26342/image-thumb__26342__img360x240/dvorakova-8-byt-2%20%285%29.5191a40b.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26351/image-thumb__26351__width1920/dvorakova-8-byt-2%20%2813%29.163e60d4.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26351/image-thumb__26351__img360x240/dvorakova-8-byt-2%20%2813%29.9d8f9635.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26350/image-thumb__26350__width1920/dvorakova-8-byt-2%20%2812%29.675ea768.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/dvorakova-8-byt-2/26350/image-thumb__26350__img360x240/dvorakova-8-byt-2%20%2812%29.b5105392.jpg"
+   }
+  ],
+  "plocha_m2": 107.0,
+  "podlazi": "2. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Dvořákova 8",
+   "podlazi": "2. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "107 m²",
+   "vyse a kategorie najemneho": "240 Kč/m², kategorie III.",
+   "vytah": "ne"
+  },
+  "title": "Dvořákova 8, byt č. 2",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "2",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/dvorakova-8-byt-c-2~f32143",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Francouzská 20",
+  "attachments": [
+   {
+    "name": "Francouzská 20, byt č. 23 PDF | 246.23 KB",
+    "url": "https://www.brno-stred.cz/download/32134"
+   }
+  ],
+  "dispozice": "1+kk",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "2ebdd9fe17b8",
+  "kategorie": "I",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 132.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26315/image-thumb__26315__width1920/francouzska_20.47418d4f.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26315/image-thumb__26315__img360x240/francouzska_20.b4eb302c.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26360/image-thumb__26360__width1920/francouzska-20-byt-23%20%286%29.7b8aff63.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26360/image-thumb__26360__img360x240/francouzska-20-byt-23%20%286%29.d611ee5e.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26355/image-thumb__26355__width1920/francouzska-20-byt-23%20%281%29.8cb52d60.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26355/image-thumb__26355__img360x240/francouzska-20-byt-23%20%281%29.41f027e0.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26359/image-thumb__26359__width1920/francouzska-20-byt-23%20%285%29.35b93673.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26359/image-thumb__26359__img360x240/francouzska-20-byt-23%20%285%29.f8b34ad6.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26361/image-thumb__26361__width1920/francouzska-20-byt-23%20%287%29.41167e87.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26361/image-thumb__26361__img360x240/francouzska-20-byt-23%20%287%29.46c58a3c.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26362/image-thumb__26362__width1920/francouzska-20-byt-23%20%288%29.d8287a8e.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26362/image-thumb__26362__img360x240/francouzska-20-byt-23%20%288%29.176caeb1.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26357/image-thumb__26357__width1920/francouzska-20-byt-23%20%283%29.c5b651ac.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26357/image-thumb__26357__img360x240/francouzska-20-byt-23%20%283%29.bc2634ee.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26356/image-thumb__26356__width1920/francouzska-20-byt-23%20%282%29.8de282a2.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26356/image-thumb__26356__img360x240/francouzska-20-byt-23%20%282%29.fea605af.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26358/image-thumb__26358__width1920/francouzska-20-byt-23%20%284%29.094a4333.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/francouzska-20-byt-23/26358/image-thumb__26358__img360x240/francouzska-20-byt-23%20%284%29.e9efaa8c.jpg"
+   }
+  ],
+  "plocha_m2": 40.5,
+  "podlazi": "3. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Francouzská 20",
+   "podlazi": "3. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "40,5 m²",
+   "vyse a kategorie najemneho": "132 Kč/m², kategorie I.",
+   "vytah": "ne"
+  },
+  "title": "Francouzská 20, byt č. 23",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "23",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/francouzska-20-byt-c-23~f32144",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Kapucínské náměstí 10",
+  "attachments": [
+   {
+    "name": "Kapucínské náměstí 10, byt č. 12 PDF | 246.25 KB",
+    "url": "https://www.brno-stred.cz/download/32135"
+   }
+  ],
+  "dispozice": "2+1",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "0b3213a4a102",
+  "kategorie": "II",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 180.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26375/image-thumb__26375__width1920/kapucinske_namesti_10.4dde5f89.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26375/image-thumb__26375__img360x240/kapucinske_namesti_10.1eb27783.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26363/image-thumb__26363__width1920/kapucinske-namesti-10-byt-12%20%281%29.89d05c67.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26363/image-thumb__26363__img360x240/kapucinske-namesti-10-byt-12%20%281%29.f1a77035.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26372/image-thumb__26372__width1920/kapucinske-namesti-10-byt-12%20%2810%29.f6b96561.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26372/image-thumb__26372__img360x240/kapucinske-namesti-10-byt-12%20%2810%29.d6d40187.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26374/image-thumb__26374__width1920/kapucinske-namesti-10-byt-12%20%2811%29.ca4ee59c.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26374/image-thumb__26374__img360x240/kapucinske-namesti-10-byt-12%20%2811%29.3a0867f1.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26373/image-thumb__26373__width1920/kapucinske-namesti-10-byt-12%20%2812%29.ca9db6c5.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26373/image-thumb__26373__img360x240/kapucinske-namesti-10-byt-12%20%2812%29.24278136.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26364/image-thumb__26364__width1920/kapucinske-namesti-10-byt-12%20%282%29.2d43282d.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26364/image-thumb__26364__img360x240/kapucinske-namesti-10-byt-12%20%282%29.84fc5bba.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26365/image-thumb__26365__width1920/kapucinske-namesti-10-byt-12%20%283%29.be6b92be.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26365/image-thumb__26365__img360x240/kapucinske-namesti-10-byt-12%20%283%29.6882918a.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26367/image-thumb__26367__width1920/kapucinske-namesti-10-byt-12%20%285%29.861bd5d1.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26367/image-thumb__26367__img360x240/kapucinske-namesti-10-byt-12%20%285%29.e20f7b3f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26368/image-thumb__26368__width1920/kapucinske-namesti-10-byt-12%20%286%29.b4a3a3cd.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26368/image-thumb__26368__img360x240/kapucinske-namesti-10-byt-12%20%286%29.c63fbcd5.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26371/image-thumb__26371__width1920/kapucinske-namesti-10-byt-12%20%289%29.5c74f768.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26371/image-thumb__26371__img360x240/kapucinske-namesti-10-byt-12%20%289%29.25eeffac.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26369/image-thumb__26369__width1920/kapucinske-namesti-10-byt-12%20%287%29.d88766e3.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26369/image-thumb__26369__img360x240/kapucinske-namesti-10-byt-12%20%287%29.bf0e7072.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26370/image-thumb__26370__width1920/kapucinske-namesti-10-byt-12%20%288%29.4bd78a4b.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26370/image-thumb__26370__img360x240/kapucinske-namesti-10-byt-12%20%288%29.e6f27b57.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26366/image-thumb__26366__width1920/kapucinske-namesti-10-byt-12%20%284%29.de829c62.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kapucinske-namesti-10-byt-12/26366/image-thumb__26366__img360x240/kapucinske-namesti-10-byt-12%20%284%29.3c6eb608.jpg"
+   }
+  ],
+  "plocha_m2": 55.1,
+  "podlazi": "5. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Kapucínské náměstí 10",
+   "podlazi": "5. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "55,1 m²",
+   "vyse a kategorie najemneho": "180 Kč/m², kategorie II.",
+   "vytah": "ne"
+  },
+  "title": "Kapucínské náměstí 10, byt č. 12",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "12",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/kapucinske-namesti-10-byt-c-12~f32145",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Kopečná 9",
+  "attachments": [
+   {
+    "name": "Kopečná 9, byt č. 11 PDF | 248.1 KB",
+    "url": "https://www.brno-stred.cz/download/32136"
+   }
+  ],
+  "dispozice": "2+kk",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "047ddd56c978",
+  "kategorie": "III",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 240.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26284/image-thumb__26284__width1920/kopecna-9.42e6e11f.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26284/image-thumb__26284__img360x240/kopecna-9.10ecfd54.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26285/image-thumb__26285__width1920/kopecna-9-byt-11%20%281%29.cccc263a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26285/image-thumb__26285__img360x240/kopecna-9-byt-11%20%281%29.36eb922e.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26294/image-thumb__26294__width1920/kopecna-9-byt-11%20%2810%29.69f723cd.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26294/image-thumb__26294__img360x240/kopecna-9-byt-11%20%2810%29.561b64a1.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26286/image-thumb__26286__width1920/kopecna-9-byt-11%20%282%29.37082f77.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26286/image-thumb__26286__img360x240/kopecna-9-byt-11%20%282%29.39af7a3c.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26287/image-thumb__26287__width1920/kopecna-9-byt-11%20%283%29.1d29a422.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26287/image-thumb__26287__img360x240/kopecna-9-byt-11%20%283%29.97598fcc.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26290/image-thumb__26290__width1920/kopecna-9-byt-11%20%286%29.ff408bff.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26290/image-thumb__26290__img360x240/kopecna-9-byt-11%20%286%29.856fd3cd.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26291/image-thumb__26291__width1920/kopecna-9-byt-11%20%287%29.5c992da3.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26291/image-thumb__26291__img360x240/kopecna-9-byt-11%20%287%29.4ffa9630.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26293/image-thumb__26293__width1920/kopecna-9-byt-11%20%288%29.31adc190.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26293/image-thumb__26293__img360x240/kopecna-9-byt-11%20%288%29.650e850f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26292/image-thumb__26292__width1920/kopecna-9-byt-11%20%289%29.655c0b24.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26292/image-thumb__26292__img360x240/kopecna-9-byt-11%20%289%29.624c807f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26288/image-thumb__26288__width1920/kopecna-9-byt-11%20%285%29.a28554f5.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26288/image-thumb__26288__img360x240/kopecna-9-byt-11%20%285%29.11fbaa0f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26289/image-thumb__26289__width1920/kopecna-9-byt-11%20%284%29.df29c6d9.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/kopecna-9-byt-11/26289/image-thumb__26289__img360x240/kopecna-9-byt-11%20%284%29.c3e73656.jpg"
+   }
+  ],
+  "plocha_m2": 90.63,
+  "podlazi": "3. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Kopečná 9",
+   "garazove stani": "2 500 Kč/měsíc",
+   "podlazi": "3. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "90,63 m²",
+   "vyse a kategorie najemneho": "240 Kč/m², kategorie III.",
+   "vytah": "ano"
+  },
+  "title": "Kopečná 9, byt č. 11",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "11",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/kopecna-9-byt-c-11~f32146",
+  "uzaverka": "2026-11-30",
+  "vytah": true
+ },
+ {
+  "active": true,
+  "address": "Stavební 9",
+  "attachments": [
+   {
+    "name": "Stavební 9, byt č. 14 PDF | 246.3 KB",
+    "url": "https://www.brno-stred.cz/download/32137"
+   }
+  ],
+  "dispozice": "1+1",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "6e41ab8b1061",
+  "kategorie": "I",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 132.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26295/image-thumb__26295__width1920/stavebni_9.9b4b1fc1.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26295/image-thumb__26295__img360x240/stavebni_9.f06cef24.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26389/image-thumb__26389__width1920/stavebni-9-byt-14%20%2814%29.920828b5.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26389/image-thumb__26389__img360x240/stavebni-9-byt-14%20%2814%29.2908afa1.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26387/image-thumb__26387__width1920/stavebni-9-byt-14%20%2812%29.7cebfb74.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26387/image-thumb__26387__img360x240/stavebni-9-byt-14%20%2812%29.978d3482.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26388/image-thumb__26388__width1920/stavebni-9-byt-14%20%2813%29.1969cd96.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26388/image-thumb__26388__img360x240/stavebni-9-byt-14%20%2813%29.04be2088.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26390/image-thumb__26390__width1920/stavebni-9-byt-14%20%2815%29.b08724be.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26390/image-thumb__26390__img360x240/stavebni-9-byt-14%20%2815%29.8f206520.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26378/image-thumb__26378__width1920/stavebni-9-byt-14%20%283%29.5bf86c57.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26378/image-thumb__26378__img360x240/stavebni-9-byt-14%20%283%29.dade452d.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26379/image-thumb__26379__width1920/stavebni-9-byt-14%20%284%29.1366e178.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26379/image-thumb__26379__img360x240/stavebni-9-byt-14%20%284%29.a2dab806.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26380/image-thumb__26380__width1920/stavebni-9-byt-14%20%285%29.047b5b32.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26380/image-thumb__26380__img360x240/stavebni-9-byt-14%20%285%29.2d3e2980.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26382/image-thumb__26382__width1920/stavebni-9-byt-14%20%287%29.509daac9.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26382/image-thumb__26382__img360x240/stavebni-9-byt-14%20%287%29.49131664.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26376/image-thumb__26376__width1920/stavebni-9-byt-14%20%281%29.63bc3494.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26376/image-thumb__26376__img360x240/stavebni-9-byt-14%20%281%29.e7619c36.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26383/image-thumb__26383__width1920/stavebni-9-byt-14%20%288%29.1bb8323a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26383/image-thumb__26383__img360x240/stavebni-9-byt-14%20%288%29.8108e9a9.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26384/image-thumb__26384__width1920/stavebni-9-byt-14%20%289%29.c3adc9f4.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26384/image-thumb__26384__img360x240/stavebni-9-byt-14%20%289%29.899f2011.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26381/image-thumb__26381__width1920/stavebni-9-byt-14%20%286%29.76e8ef08.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26381/image-thumb__26381__img360x240/stavebni-9-byt-14%20%286%29.432a0dd7.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26377/image-thumb__26377__width1920/stavebni-9-byt-14%20%282%29.8767eb16.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26377/image-thumb__26377__img360x240/stavebni-9-byt-14%20%282%29.9d023ceb.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26386/image-thumb__26386__width1920/stavebni-9-byt-14%20%2811%29.5ab35568.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26386/image-thumb__26386__img360x240/stavebni-9-byt-14%20%2811%29.1e4a34e8.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26385/image-thumb__26385__width1920/stavebni-9-byt-14%20%2810%29.755f9919.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/stavebni-9-byt-14/26385/image-thumb__26385__img360x240/stavebni-9-byt-14%20%2810%29.c6d64e96.jpg"
+   }
+  ],
+  "plocha_m2": 56.5,
+  "podlazi": "3. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Stavební 9",
+   "podlazi": "3. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "56,5 m²",
+   "vyse a kategorie najemneho": "132 Kč/m², kategorie I.",
+   "vytah": "ne"
+  },
+  "title": "Stavební 9, byt č. 14",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "14",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/stavebni-9-byt-c-14~f32147",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Zelný trh 21",
+  "attachments": [
+   {
+    "name": "Zelný trh 21, byt č. 10 PDF | 246.48 KB",
+    "url": "https://www.brno-stred.cz/download/32138"
+   }
+  ],
+  "dispozice": "2+1",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "76f0e04d61ef",
+  "kategorie": "III",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 240.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26296/image-thumb__26296__width1920/zelny_trh_21.ace2d00e.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26296/image-thumb__26296__img360x240/zelny_trh_21.4f8f8d41.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26297/image-thumb__26297__width1920/zelny-trh-21-byt-10%20%281%29.8f08a654.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26297/image-thumb__26297__img360x240/zelny-trh-21-byt-10%20%281%29.2fcbbd48.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26306/image-thumb__26306__width1920/zelny-trh-21-byt-10%20%2811%29.d2e85452.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26306/image-thumb__26306__img360x240/zelny-trh-21-byt-10%20%2811%29.8c190787.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26305/image-thumb__26305__width1920/zelny-trh-21-byt-10%20%2812%29.ab5340f7.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26305/image-thumb__26305__img360x240/zelny-trh-21-byt-10%20%2812%29.335d6566.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26307/image-thumb__26307__width1920/zelny-trh-21-byt-10%20%2813%29.5539f4d8.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26307/image-thumb__26307__img360x240/zelny-trh-21-byt-10%20%2813%29.e8a0c960.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26298/image-thumb__26298__width1920/zelny-trh-21-byt-10%20%283%29.47a235b9.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26298/image-thumb__26298__img360x240/zelny-trh-21-byt-10%20%283%29.e0a93947.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26302/image-thumb__26302__width1920/zelny-trh-21-byt-10%20%284%29.17cf53cc.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26302/image-thumb__26302__img360x240/zelny-trh-21-byt-10%20%284%29.7f82c414.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26300/image-thumb__26300__width1920/zelny-trh-21-byt-10%20%285%29.14fc84f3.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26300/image-thumb__26300__img360x240/zelny-trh-21-byt-10%20%285%29.96f95ee7.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26303/image-thumb__26303__width1920/zelny-trh-21-byt-10%20%286%29.4ec6b5f4.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26303/image-thumb__26303__img360x240/zelny-trh-21-byt-10%20%286%29.4916ac2f.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26299/image-thumb__26299__width1920/zelny-trh-21-byt-10%20%287%29.1bb43815.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26299/image-thumb__26299__img360x240/zelny-trh-21-byt-10%20%287%29.6d675e0d.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26301/image-thumb__26301__width1920/zelny-trh-21-byt-10%20%288%29.236f993b.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26301/image-thumb__26301__img360x240/zelny-trh-21-byt-10%20%288%29.4e3a9c6b.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26308/image-thumb__26308__width1920/zelny-trh-21-byt-10%20%289%29.5497584a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26308/image-thumb__26308__img360x240/zelny-trh-21-byt-10%20%289%29.dd0d333a.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26310/image-thumb__26310__width1920/zelny-trh-21-byt-10%20%2814%29.bf4f1a48.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26310/image-thumb__26310__img360x240/zelny-trh-21-byt-10%20%2814%29.cc288d09.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26311/image-thumb__26311__width1920/zelny-trh-21-byt-10%20%2816%29.aaf09a8a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26311/image-thumb__26311__img360x240/zelny-trh-21-byt-10%20%2816%29.35f03642.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26309/image-thumb__26309__width1920/zelny-trh-21-byt-10%20%2815%29.10f5662c.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26309/image-thumb__26309__img360x240/zelny-trh-21-byt-10%20%2815%29.ef78568b.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26304/image-thumb__26304__width1920/zelny-trh-21-byt-10%20%2810%29.976960f2.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zelny-trh-21-byt-10/26304/image-thumb__26304__img360x240/zelny-trh-21-byt-10%20%2810%29.e01184e8.jpg"
+   }
+  ],
+  "plocha_m2": 79.6,
+  "podlazi": "2. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Zelný trh 21",
+   "podlazi": "2. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "79,6 m²",
+   "vyse a kategorie najemneho": "240 Kč/m², kategorie III.",
+   "vytah": "ano"
+  },
+  "title": "Zelný trh 21, byt č. 10",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "10",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/zelny-trh-21-byt-c-10~f32148",
+  "uzaverka": "2026-11-30",
+  "vytah": true
+ },
+ {
+  "active": true,
+  "address": "Žižkova 2",
+  "attachments": [
+   {
+    "name": "Žižkova 2, byt č. 3 PDF | 247.22 KB",
+    "url": "https://www.brno-stred.cz/download/32139"
+   }
+  ],
+  "dispozice": "2+1",
+  "district": "Brno-střed",
+  "first_seen": "2026-11-23T12:04:43+00:00",
+  "id": "30db781ac5f0",
+  "kategorie": "II",
+  "last_seen": "2026-11-23T12:04:43+00:00",
+  "najem_m2": 180.0,
+  "photos": [
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26312/image-thumb__26312__width1920/zizkova_2.5c5e5563.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26312/image-thumb__26312__img360x240/zizkova_2.72816ecd.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26398/image-thumb__26398__width1920/zizkova-2byt-3%20%288%29.5d5ae63d.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26398/image-thumb__26398__img360x240/zizkova-2byt-3%20%288%29.3b7bb725.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26399/image-thumb__26399__width1920/zizkova-2byt-3%20%289%29.98389ffd.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26399/image-thumb__26399__img360x240/zizkova-2byt-3%20%289%29.2b7f3215.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26400/image-thumb__26400__width1920/zizkova-2byt-3%20%2810%29.491a1e90.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26400/image-thumb__26400__img360x240/zizkova-2byt-3%20%2810%29.837fa1b9.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26391/image-thumb__26391__width1920/zizkova-2byt-3%20%281%29.987d0309.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26391/image-thumb__26391__img360x240/zizkova-2byt-3%20%281%29.fca852e5.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26401/image-thumb__26401__width1920/zizkova-2byt-3%20%2811%29.4c060004.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26401/image-thumb__26401__img360x240/zizkova-2byt-3%20%2811%29.f48be917.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26402/image-thumb__26402__width1920/zizkova-2byt-3%20%2812%29.6ed3b594.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26402/image-thumb__26402__img360x240/zizkova-2byt-3%20%2812%29.f3459152.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26403/image-thumb__26403__width1920/zizkova-2byt-3%20%2813%29.65ae88b3.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26403/image-thumb__26403__img360x240/zizkova-2byt-3%20%2813%29.0c3e8b96.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26409/image-thumb__26409__width1920/zizkova-2byt-3%20%2819%29.93b71023.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26409/image-thumb__26409__img360x240/zizkova-2byt-3%20%2819%29.005d9c7d.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26392/image-thumb__26392__width1920/zizkova-2byt-3%20%282%29.e45f7675.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26392/image-thumb__26392__img360x240/zizkova-2byt-3%20%282%29.08994aae.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26410/image-thumb__26410__width1920/zizkova-2byt-3%20%2820%29.debb4785.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26410/image-thumb__26410__img360x240/zizkova-2byt-3%20%2820%29.0e149018.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26411/image-thumb__26411__width1920/zizkova-2byt-3%20%2821%29.0c2c0601.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26411/image-thumb__26411__img360x240/zizkova-2byt-3%20%2821%29.aa4820c3.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26412/image-thumb__26412__width1920/zizkova-2byt-3%20%2822%29.3e4f2c8c.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26412/image-thumb__26412__img360x240/zizkova-2byt-3%20%2822%29.7bca77f8.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26413/image-thumb__26413__width1920/zizkova-2byt-3%20%2823%29.ad13270f.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26413/image-thumb__26413__img360x240/zizkova-2byt-3%20%2823%29.28227a59.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26396/image-thumb__26396__width1920/zizkova-2byt-3%20%286%29.d900b7d7.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26396/image-thumb__26396__img360x240/zizkova-2byt-3%20%286%29.c81558bb.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26397/image-thumb__26397__width1920/zizkova-2byt-3%20%287%29.ae6f2cbd.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26397/image-thumb__26397__img360x240/zizkova-2byt-3%20%287%29.34907fae.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26406/image-thumb__26406__width1920/zizkova-2byt-3%20%2816%29.3f12e43a.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26406/image-thumb__26406__img360x240/zizkova-2byt-3%20%2816%29.c32caff4.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26404/image-thumb__26404__width1920/zizkova-2byt-3%20%2814%29.e15d0449.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26404/image-thumb__26404__img360x240/zizkova-2byt-3%20%2814%29.6882b74c.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26407/image-thumb__26407__width1920/zizkova-2byt-3%20%2817%29.2174f1a9.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26407/image-thumb__26407__img360x240/zizkova-2byt-3%20%2817%29.8d486bf7.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26393/image-thumb__26393__width1920/zizkova-2byt-3%20%283%29.5e6d4c77.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26393/image-thumb__26393__img360x240/zizkova-2byt-3%20%283%29.abc5f23d.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26405/image-thumb__26405__width1920/zizkova-2byt-3%20%2815%29.76d45ba4.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26405/image-thumb__26405__img360x240/zizkova-2byt-3%20%2815%29.b0efa3d4.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26408/image-thumb__26408__width1920/zizkova-2byt-3%20%2818%29.b414b5ac.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26408/image-thumb__26408__img360x240/zizkova-2byt-3%20%2818%29.88aaf746.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26394/image-thumb__26394__width1920/zizkova-2byt-3%20%284%29.1cc4c352.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26394/image-thumb__26394__img360x240/zizkova-2byt-3%20%284%29.01b207d8.jpg"
+   },
+   {
+    "full": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26395/image-thumb__26395__width1920/zizkova-2byt-3%20%285%29.99d3ef85.jpg",
+    "thumb": "https://www.brno-stred.cz/dokumenty/potrebuju-si-vyridit/byty/Byty_pronajem/listopad-2026/zizkova-2-byt-3/26395/image-thumb__26395__img360x240/zizkova-2byt-3%20%285%29.3ebcbc46.jpg"
+   }
+  ],
+  "plocha_m2": 93.1,
+  "podlazi": "2. nadzemní",
+  "source": "stred",
+  "tech": {
+   "adresa": "Žižkova 2",
+   "podlazi": "2. nadzemní",
+   "termin zadosti do": "30. 11. 2026",
+   "vymera": "93,1 m²",
+   "vyse a kategorie najemneho": "180 Kč/m², kategorie II.",
+   "vytah": "ne"
+  },
+  "title": "Žižkova 2, byt č. 3",
+  "typ": [
+   "byt zvláštního určení",
+   "e-aukce",
+   "oprava na vlastní náklady"
+  ],
+  "unit": "3",
+  "url": "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/zizkova-2-byt-c-3~f32149",
+  "uzaverka": "2026-11-30",
+  "vytah": false
+ }
+]
