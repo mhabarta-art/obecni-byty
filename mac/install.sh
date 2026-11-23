@@ -1,5 +1,5 @@
 #!/bin/bash
-# Installs a macOS background job (launchd) that fetches the Žabovřesky RSS 3× a day.
+# Installs a macOS background job (launchd) that fetches the Žabovřesky RSS once a day.
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO_URL="$(git -C "$HERE/.." remote get-url origin)"
@@ -19,11 +19,7 @@ cat > "$PLIST" <<PLIST
   <key>Label</key><string>cz.obecni-byty.zabovresky</string>
   <key>ProgramArguments</key><array><string>/bin/bash</string><string>$APP_DIR/fetch-zabovresky.sh</string></array>
   <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string></dict>
-  <key>StartCalendarInterval</key><array>
-    <dict><key>Hour</key><integer>5</integer><key>Minute</key><integer>50</integer></dict>
-    <dict><key>Hour</key><integer>11</integer><key>Minute</key><integer>50</integer></dict>
-    <dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>50</integer></dict>
-  </array>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>5</integer><key>Minute</key><integer>50</integer></dict>
   <key>RunAtLoad</key><true/>
   <key>StandardOutPath</key><string>$LOG</string>
   <key>StandardErrorPath</key><string>$LOG</string>
@@ -32,5 +28,5 @@ PLIST
 
 launchctl bootout "gui/$(id -u)" "$PLIST" 2>/dev/null || true
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
-echo "Hotovo. Stahování běží v 5:50, 11:50 a 17:50 (a po probuzení Macu, pokud se čas zmeškal)."
+echo "Hotovo. Stahování běží v denně 5:50 (a po probuzení Macu, pokud se čas zmeškal)."
 echo "Log: $LOG"

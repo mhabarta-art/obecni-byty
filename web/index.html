@@ -43,6 +43,7 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .upd{margin-left:auto;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
 .upd i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .upd.warn i{background:var(--alert)}
+.refresh{border:0;background:none;padding:0;margin-left:6px;color:var(--ink);text-decoration:underline;text-underline-offset:2px;cursor:pointer;font-size:13px}
 .warning{margin:-10px 0 24px;font-size:13px;color:var(--alert)}
 .warning a{color:inherit}
 
@@ -111,6 +112,9 @@ const MAPY_KEY = "__MAPY_API_KEY__";
 const HAS_KEY = MAPY_KEY && !MAPY_KEY.startsWith("__");
 const MC = {stred:"Brno-střed", sever:"Brno-sever", zabovresky:"Žabovřesky", kralovopole:"Královo Pole"};
 const ORDER = ["stred", "sever", "zabovresky", "kralovopole"];
+// On <user>.github.io/<repo>/ link to the workflow page, where a signed-in owner can start a check.
+const RUN_URL = (() => { const m = location.hostname.match(/^([\w-]+)\.github\.io$/); const repo = location.pathname.split("/")[1];
+  return m && repo ? `https://github.com/${m[1]}/${repo}/actions/workflows/scrape.yml` : ""; })();
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safe = u => /^https?:\/\//i.test(u || "") ? u : "#";
@@ -200,7 +204,7 @@ function renderBar(){
   const updTxt = upd ? (upd.toDateString() === new Date().toDateString() ? "dnes " : upd.toLocaleDateString("cs-CZ") + " ") +
     upd.toLocaleTimeString("cs-CZ", {hour: "2-digit", minute: "2-digit"}) : "–";
   document.getElementById("bar").innerHTML = chip("", "Vše") + ORDER.map(k => chip(k, MC[k] + (counts[k] ? ` <span class="meta">${counts[k]}</span>` : ""))).join("") +
-    `<span class="upd ${broken.length ? "warn" : ""}"><i></i>Aktualizováno ${esc(updTxt)}</span>`;
+    `<span class="upd ${broken.length ? "warn" : ""}"><i></i>Aktualizováno ${esc(updTxt)}${RUN_URL ? `<a class="refresh" href="${esc(RUN_URL)}" target="_blank" rel="noopener" title="Otevře GitHub, kde kliknete na Run workflow. Za 2–3 minuty se stránka obnoví sama.">Zkontrolovat teď</a>` : ""}</span>`;
   document.getElementById("warning").innerHTML = broken.length
     ? `<div class="warning">Nepodařilo se načíst: ${broken.map(k => `<a href="${esc(safe(sources[k].board))}" target="_blank" rel="noopener">${esc(MC[k])}</a>`).join(", ")}. Zkontrolujte prosím úřední desku ručně.</div>` : "";
 }
@@ -290,6 +294,15 @@ const getJson = (p, d) => fetch(p + "?t=" + Date.now()).then(r => r.ok ? r.json(
   [offers, sources, meta] = await Promise.all([getJson("data/offers.json", []), getJson("data/sources.json", {}), getJson("data/meta.json", {})]);
   renderBar(); render();
   const id = location.hash.slice(1); if (id) openDetail(id);
+  // Pick up a fresh run without a manual reload (checks a tiny file once a minute while visible).
+  setInterval(async () => {
+    if (document.visibilityState !== "visible") return;
+    const m = await getJson("data/meta.json", null);
+    if (m?.updated && m.updated !== meta.updated) {
+      [offers, sources, meta] = await Promise.all([getJson("data/offers.json", offers), getJson("data/sources.json", sources), Promise.resolve(m)]);
+      renderBar(); render();
+    }
+  }, 60000);
 })();
 </script>
 </body>

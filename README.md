@@ -1,6 +1,6 @@
 # Obecní byty Brno – hlídač nabídek
 
-Třikrát denně projde úřední desky MČ **Brno-střed, Brno-sever, Žabovřesky a Královo Pole**, vytáhne nabídky obecních bytů (dispozice, plocha, podlaží, výtah, nájemné, uzávěrka, prohlídka, fotky, PDF) a:
+Jednou denně (6:17) projde úřední desky MČ **Brno-střed, Brno-sever, Žabovřesky a Královo Pole**, vytáhne nabídky obecních bytů (dispozice, plocha, podlaží, výtah, nájemné, uzávěrka, prohlídka, fotky, PDF) a:
 
 - zobrazí je v jednoduché webové appce (GitHub Pages): karty s náhledem domu z Mapy.com Panorama, filtr podle MČ, štítek **Nové**, odpočet do uzávěrky, detail s fotkami, PDF a exportem do kalendáře,
 - pošle e-mail, když se objeví nová nabídka, když se blíží uzávěrka (≤ 3 dny) nebo když některý zdroj přestane fungovat.
@@ -38,13 +38,17 @@ GitHub Actions (cron) ──► scraper/ (Python) ──► data/*.json ──�
    Klíč vložte do *Settings → Secrets and variables → Actions → Variables* jako `MAPY_API_KEY`. Při nasazení se doplní do stránky.
    Bez klíče karty ukazují fotky od MČ (Brno-střed) nebo neutrální plochu. Obrázky se podle podmínek Mapy.com neukládají, načítají se vždy živě.
 
+## Ruční kontrola
+
+Odkaz **Zkontrolovat teď** v appce otevře stránku workflow na GitHubu. Tam (přihlášený jako vlastník) klikněte na **Run workflow**. Za 2–3 minuty se appka obnoví sama. Žabovřesky se při ruční kontrole berou z posledního RSS staženého Macem.
+
 ## Žabovřesky – stahování z Macu
 
 Web Žabovřesk neodpovídá serverům mimo ČR (GitHub) a úřední deska má ochranu proti robotům, kterou nechceme obcházet. Používáme proto jejich **veřejné RSS** (`https://www.zabovresky.cz/rss/`), které stahuje malá úloha na Macu a nahrává ho do `data/zabovresky_rss.xml`:
 
 ```bash
 cd ~/Claude/obecni-byty
-bash mac/install.sh      # nainstaluje úlohu (5:50, 11:50, 17:50 + po probuzení Macu)
+bash mac/install.sh      # nainstaluje úlohu (denně 5:50 + po přihlášení/probuzení Macu)
 bash mac/uninstall.sh    # odinstaluje
 ```
 
