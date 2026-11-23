@@ -165,13 +165,16 @@ const lazy = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersect
 function visible(){
   return offers.filter(o => (tab === "active") === !!o.active && (!filter.size || filter.has(o.source)))
     .sort((a, b) => tab === "active"
-      ? (a.uzaverka || "9999").localeCompare(b.uzaverka || "9999") || (b.first_seen || "").localeCompare(a.first_seen || "")
+      ? (a.uzaverka || a.published_to || "9999").localeCompare(b.uzaverka || b.published_to || "9999") || (b.first_seen || "").localeCompare(a.first_seen || "")
       : (b.gone_since || "").localeCompare(a.gone_since || ""));
 }
 
 function cardHtml(o){
-  const d = o.uzaverka ? daysTo(o.uzaverka) : null;
-  const dl = d === null ? "" : `<span class="${d < 0 ? "past" : d <= 3 ? "urg" : "meta"}">uzávěrka ${inDays(d)}</span>`;
+  // Without an explicit deadline, the end of publication on the board is the next best signal.
+  const until = o.uzaverka || o.published_to;
+  const d = until ? daysTo(until) : null;
+  const label = o.uzaverka ? "uzávěrka" : "na desce do";
+  const dl = d === null ? "" : `<span class="${d < 0 ? "past" : d <= 3 ? "urg" : "meta"}">${label} ${o.uzaverka ? inDays(d) : fmt(until)}</span>`;
   return `<button class="card" data-id="${esc(o.id)}" aria-label="${esc(name(o))}">
     <div class="img" data-id="${esc(o.id)}"><div class="ph" hidden>bez náhledu</div>
       <span class="badge" style="color:var(--c-${esc(o.source)})">${esc(MC[o.source] || o.district)}</span></div>

@@ -14,7 +14,7 @@ from ..html import is_pdf, link_url, next_page, soup
 from .common import Context, enrich_from_pdfs, merge_fields, new_offer
 
 MAX_PAGES = 15
-CATEGORY_RE = re.compile(r"nabidk\w*\s+byt", re.I)
+CATEGORY_RE = re.compile(r"(?:nabidk|pronajm)\w*.{0,25}\bbyt", re.I)
 
 
 def _category_url(s, base: str) -> Optional[str]:
@@ -39,6 +39,11 @@ def _category_form(s, base: str):
                             chosen = other.find("option", selected=True) or other.find("option")
                             data[other["name"]] = chosen.get("value", "") if chosen else ""
                     data[sel.get("name", "")] = opt.get("value", opt.get_text(strip=True))
+                    count = form.find("select", attrs={"name": "count"})  # page size – take the largest
+                    if count:
+                        sizes = [o.get("value", "") for o in count.find_all("option") if o.get("value", "").isdigit()]
+                        if sizes:
+                            data["count"] = max(sizes, key=int)
                     method = form.get("method", "get").upper()
                     return method, util.absolute(base, form.get("action") or base), data
     return None
@@ -81,10 +86,13 @@ def parse_rows(html: str, base: str, filtered: bool) -> tuple[list[dict], int]:
             title = cell("nazev", 1)
             cj = cell("cj", 2)
             dates = re.findall(r"\d{1,2}\.\s*\d{1,2}\.\s*\d{4}", " ".join(cells))
-            relevant = (
-                filtered and "byt" in util.fold(category)
-            ) or util.looks_like_flat_offer(category, title) or CATEGORY_RE.search(util.fold(category))
-            if not relevant:
+            fcat, ftitle = util.fold(category), util.fold(title)
+            flat_category = bool(CATEGORY_RE.search(fcat)) or (filtered and re.search(r"\bbyt", fcat))
+            # A flat category may also hold non-residential premises ("PSP", "nebytové prostory")
+            # or bulk notices, so the title itself must mention a flat ("byt č. 5", "2+1").
+            title_is_flat = bool(re.search(r"\bbyt\b|\bbyt(u|y|ech)\b|\b[1-6]\s*\+\s*(kk|1)\b", ftitle)) \
+                and not re.search(r"nebyt|\bpsp\b|garaz|pozem|zameru", ftitle)
+            if not ((flat_category and title_is_flat) or util.looks_like_flat_offer(category, title)):
                 continue
             atts = []
             for a in tr.find_all("a"):

@@ -199,7 +199,8 @@ def extract_fields(text: str) -> dict:
         if v and 10 <= v <= 250:
             out["plocha_m2"] = v
 
-    m = re.search(r"(\d{1,2})\s*\.\s*(?:np|nadzemni|podlazi|patr)", f)
+    m = re.search(r"(\d{1,2})\s*\.\s*(?:np|nadzemni|podlazi|patr)", f) or \
+        re.search(r"(?:podlazi|patro)\s*[:\-]?\s*(\d{1,2})\b(?!\s*m)", f)
     if m:
         out["podlazi"] = f"{m.group(1)}. NP"
     elif re.search(r"\b(prizemi|1\.?\s*pp|suteren)\b", f):
@@ -216,7 +217,7 @@ def extract_fields(text: str) -> dict:
     m = re.search(r"(\d{2,4}(?:[.,]\d{1,2})?)\s*kc\s*/\s*m\s*(?:2|²)", f)
     if m:
         out["najem_m2"] = _num(m.group(1))
-    m = re.search(r"(?:mesicni\s+)?najemn\w*[^0-9]{0,40}?(\d{1,3}(?:[ .]\d{3})+|\d{4,6})\s*,?-?\s*kc(?!\s*/\s*m)", f)
+    m = re.search(r"(?:mesicni\s+|ciste\s+)?najemn\w*[^0-9]{0,40}?(\d{1,3}(?:[ .]\d{3})+|\d{4,6})\s*,?-?\s*kc(?!\s*/\s*m\s*(?:2|²))", f)
     if m:
         out["najem_celkem"] = _num(m.group(1).replace(".", ""))
     m = re.search(r"(?:minimaln\w*|nejnizsi)\s+(?:vyse\s+)?(?:nabid\w*|najemn\w*)[^0-9]{0,40}?(\d{2,4}(?:[.,]\d{1,2})?)\s*kc\s*/\s*m", f)

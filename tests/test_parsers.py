@@ -167,3 +167,20 @@ def test_edeska_iframe_wrapper_and_pdf_detection():
         assert len(offers) == 1 and c.diagnostics["iframe"]
     finally:
         (FX / "_wrapper.html").unlink()
+
+
+def test_edeska_kralovopole_category_form():
+    posted = {}
+    base = fake_fetch({"eDeskaAktualni": "edeska_kp.html"})
+
+    def fetch(url, binary=False, method="GET", data=None):
+        if method == "POST":
+            posted.update(data)
+        return base(url, binary=binary, method=method, data=data)
+
+    c = Context(known={}, snapshot=lambda n, h: None, fetch=fetch)
+    offers = edeska.scrape("kralovopole", {"name": "Brno-Královo Pole", "url": "https://edeska.brno.cz/eDeska03/eDeskaAktualni.jsp"}, c)
+    assert c.diagnostics["category_filter"] == "form"
+    assert posted["kategorie"].startswith("Pronájmy a prodeje obecních bytů") and posted["count"] == "100"
+    assert [o["title"] for o in offers] == ["Herčíkova 1, byt č. 57, Herčíkova 1, byt č. 71, Rybníček 1, byt č. 18"]
+    assert offers[0]["published_to"] == "2026-12-04"

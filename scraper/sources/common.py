@@ -8,6 +8,7 @@ from .. import util
 from ..html import is_pdf
 
 MAX_PDFS_PER_OFFER = 3
+PDF_PARSER_VERSION = 2  # bump to re-read PDFs of known offers after improving extraction
 
 
 @dataclass
@@ -48,7 +49,7 @@ def enrich_from_pdfs(offer: dict, ctx: Context) -> None:
     Known offers reuse previously extracted fields, so PDFs are downloaded only once.
     """
     prev = ctx.known.get(offer["id"])
-    if prev and prev.get("pdf_checked"):
+    if prev and prev.get("pdf_checked") == PDF_PARSER_VERSION:
         for k in ("dispozice", "plocha_m2", "podlazi", "vytah", "najem_m2", "najem_celkem",
                   "min_nabidka_m2", "kategorie", "uzaverka", "prohlidka", "typ", "pdf_text_missing",
                   "snippet", "pdf_checked"):
@@ -65,7 +66,7 @@ def enrich_from_pdfs(offer: dict, ctx: Context) -> None:
             continue
         if data[:4] == b"%PDF" or "pdf" in ctype.lower():
             texts.append(util.pdf_text(data))
-    offer["pdf_checked"] = bool(texts) or not pdf_atts  # retry next run if every download failed
+    offer["pdf_checked"] = PDF_PARSER_VERSION if (texts or not pdf_atts) else False  # retry if downloads failed
     text = "\n".join(t for t in texts if t.strip())
     if texts and not text.strip():
         offer["pdf_text_missing"] = True  # scanned PDF without a text layer
