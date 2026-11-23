@@ -136,6 +136,9 @@ def scrape(source: str, cfg: dict, ctx: Context) -> list[dict]:
             o["title"] = h1 or re.split(r"\s+Pronájem\b", label_clean)[0]
             merge_fields(o, util.extract_fields(label))
             merge_fields(o, d, overwrite=True)
+            pub = util.parse_date(label)  # listing items start with the publication date
+            if pub:
+                o["published_from"] = pub
             if is_ovn:
                 o["typ"] = sorted(set(o.get("typ", [])) | {"oprava na vlastní náklady"})
             m = re.match(r"(.+?)\s*,?\s*byt\s*(?:č\.?)?\s*(\d+)", o["title"], re.I)

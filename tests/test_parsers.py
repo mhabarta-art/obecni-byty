@@ -62,6 +62,7 @@ def test_brnostred():
     assert d8["uzaverka"] == "2026-11-30"
     assert len(d8["photos"]) == 2 and "width1920" in d8["photos"][0]["full"]
     assert d8["virtual_tour"].startswith("https://kuula.co")
+    assert d8["published_from"] == "2026-11-02"
     assert d8["attachments"][0]["url"].endswith("/download/32133")
     # OVN listing reuses same fixture -> same ids, flagged as own-cost repair
     assert len(offers) == 2
