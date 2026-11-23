@@ -37,9 +37,15 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .seg button{border:0;background:none;padding:6px 16px;border-radius:999px;font-size:14px;color:var(--muted);cursor:pointer}
 .seg button[aria-selected=true]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
 
-.bar{display:flex;gap:8px;margin:22px 0 26px;flex-wrap:wrap;align-items:center}
-.chip{border:0;background:var(--surface);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line)}
-.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);box-shadow:none}
+.bar{display:flex;gap:4px 24px;margin:22px 0 28px;flex-wrap:wrap;align-items:flex-end;border-bottom:1px solid var(--line)}
+.mc{border:0;background:none;padding:0 0 10px;margin-bottom:-1px;font-size:15px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent}
+.mc:hover{color:var(--ink)}
+.mc[aria-selected=true]{color:var(--ink);border-color:var(--ink);font-weight:500}
+.mc .n{font-size:13px;color:var(--muted);margin-left:4px;font-weight:400}
+.bar .upd{padding-bottom:10px}
+.mctabs{display:flex;gap:24px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.mctabs::-webkit-scrollbar{display:none}
+.mc{white-space:nowrap;flex:none}
 .upd{margin-left:auto;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
 .upd i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .upd.warn i{background:var(--alert)}
@@ -83,7 +89,10 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .links a,.links button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;text-decoration:none;cursor:pointer}
 .note{margin-top:22px;font-size:12px;color:var(--muted)}
 footer{max-width:1120px;margin:0 auto;padding:0 24px 40px;font-size:12px;color:var(--muted)}
-@media (max-width:520px){.page{padding:28px 16px 48px}h1{font-size:22px}.upd{margin-left:0;width:100%}.drawer{padding:20px}}
+@media (max-width:520px){.page{padding:28px 16px 48px}h1{font-size:22px}.drawer{padding:20px}
+  .bar{border-bottom:0;flex-direction:column;align-items:stretch;gap:12px}
+  .mctabs{border-bottom:1px solid var(--line)}
+  .bar .upd{margin-left:0;padding-bottom:0}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -129,7 +138,7 @@ const name = o => o.address || o.title;
 const params = o => [o.dispozice, o.plocha_m2 && `${n(o.plocha_m2, 1)} m²`, o.podlazi].filter(Boolean).join(" · ");
 
 let offers = [], sources = {}, meta = {}, tab = "active";
-const filter = new Set();
+let filter = "";  // "" = all districts, otherwise one district key
 const prevVisit = (() => { try { const v = localStorage.getItem("lastVisit"); localStorage.setItem("lastVisit", new Date().toISOString()); return v; } catch { return null; } })();
 const isNew = o => o.active && ((Date.now() - new Date(o.first_seen)) < 48 * 3600e3 || (prevVisit && o.first_seen > prevVisit));
 
@@ -167,7 +176,7 @@ const lazy = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersect
 
 // ---------------------------------------------------------------- render
 function visible(){
-  return offers.filter(o => (tab === "active") === !!o.active && (!filter.size || filter.has(o.source)))
+  return offers.filter(o => (tab === "active") === !!o.active && (!filter || o.source === filter))
     .sort((a, b) => tab === "active"
       ? (a.uzaverka || a.published_to || "9999").localeCompare(b.uzaverka || b.published_to || "9999") || (b.first_seen || "").localeCompare(a.first_seen || "")
       : (b.gone_since || "").localeCompare(a.gone_since || ""));
@@ -181,7 +190,7 @@ function cardHtml(o){
   const dl = d === null ? "" : `<span class="${d < 0 ? "past" : d <= 3 ? "urg" : "meta"}">${label} ${o.uzaverka ? inDays(d) : fmt(until)}</span>`;
   return `<button class="card" data-id="${esc(o.id)}" aria-label="${esc(name(o))}">
     <div class="img" data-id="${esc(o.id)}"><div class="ph" hidden>bez náhledu</div>
-      <span class="badge" style="color:var(--c-${esc(o.source)})">${esc(MC[o.source] || o.district)}</span></div>
+      ${filter ? "" : `<span class="badge" style="color:var(--c-${esc(o.source)})">${esc(MC[o.source] || o.district)}</span>`}</div>
     <div class="t"><div class="addr">${esc(name(o))}</div>${isNew(o) ? '<span class="new">Nové</span>' : ""}</div>
     <div class="meta">${esc(params(o) || "parametry v příloze")}</div>
     <div class="foot num"><span>${esc(rentShort(o))}</span>${dl}</div>
@@ -198,12 +207,13 @@ function render(){
 
 function renderBar(){
   const counts = Object.fromEntries(ORDER.map(k => [k, offers.filter(o => o.active && o.source === k).length]));
-  const chip = (k, label) => `<button class="chip" data-mc="${k}" aria-pressed="${k ? filter.has(k) : !filter.size}">${label}</button>`;
+  const total = ORDER.reduce((a, k) => a + counts[k], 0);
+  const chip = (k, label, c) => `<button class="mc" role="tab" data-mc="${k}" aria-selected="${filter === k}">${label}${c ? `<span class="n">${c}</span>` : ""}</button>`;
   const broken = ORDER.filter(k => sources[k]?.status && sources[k].status !== "ok");
   const upd = meta.updated ? new Date(meta.updated) : null;
   const updTxt = upd ? (upd.toDateString() === new Date().toDateString() ? "dnes " : upd.toLocaleDateString("cs-CZ") + " ") +
     upd.toLocaleTimeString("cs-CZ", {hour: "2-digit", minute: "2-digit"}) : "–";
-  document.getElementById("bar").innerHTML = chip("", "Vše") + ORDER.map(k => chip(k, MC[k] + (counts[k] ? ` <span class="meta">${counts[k]}</span>` : ""))).join("") +
+  document.getElementById("bar").innerHTML = `<div class="mctabs" role="tablist" aria-label="Městská část">${chip("", "Vše", total) + ORDER.map(k => chip(k, MC[k], counts[k])).join("")}</div>` +
     `<span class="upd ${broken.length ? "warn" : ""}"><i></i>Aktualizováno ${esc(updTxt)}${RUN_URL ? `<a class="refresh" href="${esc(RUN_URL)}" target="_blank" rel="noopener" title="Otevře GitHub, kde kliknete na Run workflow. Za 2–3 minuty se stránka obnoví sama.">Zkontrolovat teď</a>` : ""}</span>`;
   document.getElementById("warning").innerHTML = broken.length
     ? `<div class="warning">Nepodařilo se načíst: ${broken.map(k => `<a href="${esc(safe(sources[k].board))}" target="_blank" rel="noopener">${esc(MC[k])}</a>`).join(", ")}. Zkontrolujte prosím úřední desku ručně.</div>` : "";
@@ -282,7 +292,7 @@ document.getElementById("scrim").onclick = closeDetail;
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeDetail(); });
 document.getElementById("bar").addEventListener("click", e => {
   const c = e.target.closest("[data-mc]"); if (!c) return;
-  const k = c.dataset.mc; if (!k) filter.clear(); else filter.has(k) ? filter.delete(k) : filter.add(k);
+  filter = c.dataset.mc;
   renderBar(); render();
 });
 document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => {
