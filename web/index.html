@@ -53,10 +53,12 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .refresh{border:0;background:none;padding:0;margin-left:6px;color:var(--ink);text-decoration:underline;text-underline-offset:2px;cursor:pointer;font-size:13px}
 .tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin:0 0 26px}
 .tgroup{display:flex;align-items:center;gap:10px;min-width:0}
+.tgroup.disp{flex-basis:100%}
 .tlabel{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
 .pills{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
 .pills::-webkit-scrollbar{display:none}
 .pill{flex:none;border:0;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);border-radius:999px;padding:4px 11px;font-size:13px;cursor:pointer;font-variant-numeric:tabular-nums}
+.pill.zero:not([aria-pressed=true]){color:var(--muted);box-shadow:inset 0 0 0 1px var(--line);background:transparent}
 .pill[aria-pressed=true]{background:var(--ink);color:var(--bg);box-shadow:none}
 .mini-seg{display:inline-flex;background:var(--soft);border-radius:999px;padding:2px}
 .mini-seg button{border:0;background:none;padding:4px 11px;border-radius:999px;font-size:13px;color:var(--muted);cursor:pointer;white-space:nowrap}
@@ -227,6 +229,7 @@ const prefs = (() => { try { return {disp: [], ovn: "all", sort: "published", ..
 const savePrefs = () => { try { localStorage.setItem("prefs", JSON.stringify(prefs)); } catch {} };
 const dispList = o => (o.dispozice || "").split(/,\s*/).filter(Boolean);
 const dispKey = d => { const m = /^(\d)\+(kk|\d)$/.exec(d); return m ? +m[1] * 10 + (m[2] === "kk" ? 0 : 1 + +m[2]) : 99; };
+const matchDisp = (x, d) => d === "5+" ? /^([5-9]|\d{2})\+/.test(x) : x === d;
 const isOvn = o => (o.typ || []).some(t => t.includes("vlastní náklady"));
 const pubDate = o => o.published_from || (o.first_seen || "").slice(0, 10);
 const perM2 = o => o.najem_m2 || o.min_nabidka_m2 || (o.najem_celkem && o.plocha_m2 ? o.najem_celkem / o.plocha_m2 : null);
@@ -320,7 +323,7 @@ function visible(t = tab){
     if (prefs.disp.length) {
       const ds = dispList(o);
       if (!ds.length) { hiddenUnknown++; return false; }
-      if (!ds.some(d => prefs.disp.includes(d))) return false;
+      if (!ds.some(x => prefs.disp.some(d => matchDisp(x, d)))) return false;
     }
     return true;
   });
@@ -329,14 +332,18 @@ function visible(t = tab){
 }
 
 function renderTools(){
-  const all = [...new Set(offers.filter(o => o.active).flatMap(dispList))].sort((a, b) => dispKey(a) - dispKey(b));
-  prefs.disp = prefs.disp.filter(d => all.includes(d));
+  // Fixed set so a preference (e.g. 3+kk) can be chosen even before such a flat appears;
+  // counts show how many are on offer right now. "5+" covers 5+kk, 5+1 and bigger.
+  const DISP = ["1+kk", "1+1", "2+kk", "2+1", "3+kk", "3+1", "4+kk", "4+1", "5+"];
+  const pool = offers.filter(o => (tab === "active") === !!o.active && (!filter || o.source === filter));
+  const count = d => pool.filter(o => dispList(o).some(x => matchDisp(x, d))).length;
   const dchips = `<button class="pill" data-disp="" aria-pressed="${!prefs.disp.length}">Vše</button>` +
-    all.map(d => `<button class="pill" data-disp="${esc(d)}" aria-pressed="${prefs.disp.includes(d)}">${esc(d)}</button>`).join("");
+    DISP.map(d => { const c = count(d);
+      return `<button class="pill${c ? "" : " zero"}" data-disp="${d}" aria-pressed="${prefs.disp.includes(d)}" title="${c} ${c === 1 ? "byt" : c > 1 && c < 5 ? "byty" : "bytů"}">${d}</button>`; }).join("");
   const seg = [["all", "Všechny"], ["without", "Bez oprav"], ["only", "Jen k opravě"]]
     .map(([k, l]) => `<button data-ovn="${k}" aria-pressed="${prefs.ovn === k}">${l}</button>`).join("");
   document.getElementById("tools").innerHTML = `
-    <div class="tgroup"><span class="tlabel">Dispozice</span><div class="pills">${dchips}</div></div>
+    <div class="tgroup disp"><span class="tlabel">Dispozice</span><div class="pills">${dchips}</div></div>
     <div class="tgroup"><span class="tlabel">Byty k opravě</span><div class="mini-seg" role="group" aria-label="Byty k opravě">${seg}</div></div>
     <label class="tgroup sort"><span class="tlabel">Řadit</span>
       <select id="sort">${Object.entries(SORTS).map(([k, l]) => `<option value="${k}"${prefs.sort === k ? " selected" : ""}>${l}</option>`).join("")}</select></label>`;
@@ -475,7 +482,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") { closeDetai
 document.getElementById("bar").addEventListener("click", e => {
   const c = e.target.closest("[data-mc]"); if (!c) return;
   filter = c.dataset.mc;
-  renderBar(); render();
+  renderBar(); renderTools(); render();
 });
 document.getElementById("ftoggle").onclick = () => { document.getElementById("tools").classList.toggle("open"); renderToggle(); };
 document.getElementById("tools").addEventListener("click", e => {
@@ -491,7 +498,7 @@ document.getElementById("note").addEventListener("click", e => {
   if (e.target.id === "showAll") { prefs.disp = []; savePrefs(); renderTools(); renderToggle(); render(); }
 });
 document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => {
-  tab = b.dataset.tab; document.querySelectorAll("[data-tab]").forEach(x => x.setAttribute("aria-selected", x === b)); render(); });
+  tab = b.dataset.tab; document.querySelectorAll("[data-tab]").forEach(x => x.setAttribute("aria-selected", x === b)); renderTools(); render(); });
 
 // ---------------------------------------------------------------- boot
 const getJson = (p, d) => fetch(p + "?t=" + Date.now()).then(r => r.ok ? r.json() : d).catch(() => d);
