@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+_raw/
+_site/
+worker/.wrangler/
+node_modules/
+.env
+.DS_Store

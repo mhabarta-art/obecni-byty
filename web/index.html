@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Obecní byty Brno</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231b1d1c'/><path d='M8 16 16 9l8 7v8H8z' fill='white'/></svg>">
+<style>
+/* Quiet photo cards: building view on top, essentials below; details slide in from the right. */
+:root{
+  --bg:#f4f3f0;--surface:#fff;--ink:#1b1d1c;--muted:#7b807d;--line:#e6e5e0;--soft:#e9e8e3;
+  --accent:#2d6a57;--alert:#b4431f;
+  --c-stred:#6f5fa8;--c-sever:#2f7f95;--c-zabovresky:#a87628;--c-kralovopole:#a8516f;
+  --font:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151716;--surface:#1e2120;--ink:#ecefed;--muted:#99a19d;--line:#2c302e;--soft:#262a28;
+  --accent:#74c3aa;--alert:#f08a6c;
+  --c-stred:#b3a6ec;--c-sever:#6cc6dc;--c-zabovresky:#e0b367;--c-kralovopole:#e593b0;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151716;--surface:#1e2120;--ink:#ecefed;--muted:#99a19d;--line:#2c302e;--soft:#262a28;
+  --accent:#74c3aa;--alert:#f08a6c;
+  --c-stred:#b3a6ec;--c-sever:#6cc6dc;--c-zabovresky:#e0b367;--c-kralovopole:#e593b0;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--font)}
+button{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.page{max-width:1120px;margin:0 auto;padding:40px 24px 64px}
+
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
+.seg{display:inline-flex;background:var(--soft);border-radius:999px;padding:3px}
+.seg button{border:0;background:none;padding:6px 16px;border-radius:999px;font-size:14px;color:var(--muted);cursor:pointer}
+.seg button[aria-selected=true]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+
+.bar{display:flex;gap:8px;margin:22px 0 26px;flex-wrap:wrap;align-items:center}
+.chip{border:0;background:var(--surface);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);box-shadow:none}
+.upd{margin-left:auto;font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.upd i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.upd.warn i{background:var(--alert)}
+.warning{margin:-10px 0 24px;font-size:13px;color:var(--alert)}
+.warning a{color:inherit}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px 22px}
+.card{cursor:pointer;border:0;background:none;padding:0;text-align:left;display:block;width:100%;align-self:start}
+.img{aspect-ratio:4/3;border-radius:14px;position:relative;overflow:hidden;background:var(--soft)}
+.img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .img img{transform:scale(1.03)}
+.img .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:13px}
+.img .ph[hidden]{display:none}
+.badge{position:absolute;left:10px;top:10px;background:var(--surface);font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;letter-spacing:.02em}
+.t{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:12px}
+.addr{font-weight:600}
+.new{font-size:12px;color:var(--accent);font-weight:600;flex:none}
+.meta{font-size:13px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-size:14px}
+.urg{color:var(--alert)}
+.past{color:var(--muted)}
+.empty{grid-column:1/-1;padding:80px 0;text-align:center;color:var(--muted)}
+
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s;z-index:9}
+.scrim.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--surface);box-shadow:-20px 0 60px rgba(0,0,0,.14);
+  padding:26px 28px 40px;overflow:auto;transform:translateX(100%);transition:transform .25s ease;z-index:10}
+.drawer.open{transform:none}
+.close{position:sticky;top:0;float:right;border:0;background:var(--soft);width:32px;height:32px;border-radius:50%;font-size:18px;cursor:pointer;color:var(--muted)}
+.drawer h2{margin:2px 0 0;font-size:22px;letter-spacing:-.01em;text-wrap:balance}
+.drawer .img{aspect-ratio:3/2;margin:18px 0 8px}
+.strip{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.strip a{flex:none;width:86px;aspect-ratio:3/2;border-radius:6px;overflow:hidden;background:var(--soft)}
+.strip img{width:100%;height:100%;object-fit:cover;display:block}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin:20px 0;font-size:15px}
+.kv span{display:block;font-size:12px;color:var(--muted)}
+.typ{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.typ span{font-size:12px;padding:3px 10px;border-radius:999px;background:var(--soft)}
+.links{display:flex;gap:10px;flex-wrap:wrap;font-size:14px}
+.links a,.links button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;text-decoration:none;cursor:pointer}
+.note{margin-top:22px;font-size:12px;color:var(--muted)}
+footer{max-width:1120px;margin:0 auto;padding:0 24px 40px;font-size:12px;color:var(--muted)}
+@media (max-width:520px){.page{padding:28px 16px 48px}h1{font-size:22px}.upd{margin-left:0;width:100%}.drawer{padding:20px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Obecní byty</h1>
+    <div class="seg" role="tablist">
+      <button role="tab" id="tab-active" data-tab="active" aria-selected="true">Aktuální</button>
+      <button role="tab" id="tab-archive" data-tab="archive" aria-selected="false">Archiv</button>
+    </div>
+  </header>
+  <div class="bar" id="bar"></div>
+  <div id="warning"></div>
+  <main class="grid" id="grid" aria-live="polite"></main>
+</div>
+<footer>Údaje se stahují automaticky z úředních desek městských částí. Rozhodující je vždy originál. Náhledy domů: Mapy.com Panorama.</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Detail bytu" aria-hidden="true"></aside>
+
+<script>
+"use strict";
+// Mapy.com API key is injected at deploy time (GitHub variable MAPY_API_KEY). Restrict it to your Pages domain.
+const MAPY_KEY = "__MAPY_API_KEY__";
+const HAS_KEY = MAPY_KEY && !MAPY_KEY.startsWith("__");
+const MC = {stred:"Brno-střed", sever:"Brno-sever", zabovresky:"Žabovřesky", kralovopole:"Královo Pole"};
+const ORDER = ["stred", "sever", "zabovresky", "kralovopole"];
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safe = u => /^https?:\/\//i.test(u || "") ? u : "#";
+const n = (v, d = 0) => Number(v).toLocaleString("cs-CZ", {maximumFractionDigits: d});
+const fmt = iso => { if (!iso) return ""; const d = new Date(iso.length > 10 ? iso : iso + "T00:00");
+  return `${d.getDate()}. ${d.getMonth() + 1}.` + (iso.length > 10 ? ` v ${iso.slice(11, 16)}` : ""); };
+const daysTo = iso => { const t = new Date(); t.setHours(0,0,0,0); return Math.round((new Date(iso + "T00:00") - t) / 864e5); };
+const inDays = d => d < 0 ? "uplynula" : d === 0 ? "dnes" : d === 1 ? "zítra" : d < 5 ? `za ${d} dny` : `za ${d} dní`;
+const total = o => o.najem_celkem || (o.najem_m2 && o.plocha_m2 ? Math.round(o.najem_m2 * o.plocha_m2) : null);
+const rentShort = o => total(o) ? `${n(total(o))} Kč` : o.najem_m2 ? `${n(o.najem_m2)} Kč/m²` : o.min_nabidka_m2 ? `od ${n(o.min_nabidka_m2)} Kč/m²` : "";
+const name = o => o.address || o.title;
+const params = o => [o.dispozice, o.plocha_m2 && `${n(o.plocha_m2, 1)} m²`, o.podlazi].filter(Boolean).join(" · ");
+
+let offers = [], sources = {}, meta = {}, tab = "active";
+const filter = new Set();
+const prevVisit = (() => { try { const v = localStorage.getItem("lastVisit"); localStorage.setItem("lastVisit", new Date().toISOString()); return v; } catch { return null; } })();
+const isNew = o => o.active && ((Date.now() - new Date(o.first_seen)) < 48 * 3600e3 || (prevVisit && o.first_seen > prevVisit));
+
+// ---------------------------------------------------------------- building view (Mapy.com)
+const geoCache = new Map();
+function geocode(addr){
+  if (!geoCache.has(addr)) {
+    const q = new URLSearchParams({query: addr + ", Brno", lang: "cs", limit: "1", type: "regional.address", apikey: MAPY_KEY});
+    geoCache.set(addr, fetch("https://api.mapy.com/v1/geocode?" + q).then(r => r.ok ? r.json() : null)
+      .then(j => { const p = (j?.items || [])[0]?.position; return p ? {lon: p.lon, lat: p.lat} : null; }).catch(() => null));
+  }
+  return geoCache.get(addr);
+}
+const panoUrl = (p, w, h) => "https://api.mapy.com/v1/static/pano?" + new URLSearchParams({
+  width: w, height: h, lon: p.lon, lat: p.lat, yaw: "point", fov: "1.1", pitch: "-0.1", apikey: MAPY_KEY});
+
+// Fill an .img box: building panorama -> first photo from the district -> neutral placeholder.
+async function fillImage(box, o, w, h){
+  const fallback = () => {
+    const ph = o.photos?.[0];
+    if (ph && !box.dataset.photoTried) { box.dataset.photoTried = 1; setImg(safe(ph.thumb || ph.full), fallback); }
+    else box.querySelector(".ph").hidden = false;
+  };
+  const setImg = (src, onerr) => { const img = new Image(); img.alt = ""; img.decoding = "async";
+    img.onload = () => { box.querySelector("img")?.remove(); box.prepend(img); box.querySelector(".ph").hidden = true; };
+    img.onerror = onerr; img.src = src; };
+  if (HAS_KEY && o.address) {
+    const p = await geocode(o.address);
+    if (p) { setImg(panoUrl(p, w, h), fallback); return; }
+  }
+  fallback();
+}
+const lazy = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return;
+  lazy.unobserve(e.target); const o = offers.find(x => x.id === e.target.dataset.id); if (o) fillImage(e.target, o, 640, 480); }), {rootMargin: "300px"});
+
+// ---------------------------------------------------------------- render
+function visible(){
+  return offers.filter(o => (tab === "active") === !!o.active && (!filter.size || filter.has(o.source)))
+    .sort((a, b) => tab === "active"
+      ? (a.uzaverka || "9999").localeCompare(b.uzaverka || "9999") || (b.first_seen || "").localeCompare(a.first_seen || "")
+      : (b.gone_since || "").localeCompare(a.gone_since || ""));
+}
+
+function cardHtml(o){
+  const d = o.uzaverka ? daysTo(o.uzaverka) : null;
+  const dl = d === null ? "" : `<span class="${d < 0 ? "past" : d <= 3 ? "urg" : "meta"}">uzávěrka ${inDays(d)}</span>`;
+  return `<button class="card" data-id="${esc(o.id)}" aria-label="${esc(name(o))}">
+    <div class="img" data-id="${esc(o.id)}"><div class="ph" hidden>bez náhledu</div>
+      <span class="badge" style="color:var(--c-${esc(o.source)})">${esc(MC[o.source] || o.district)}</span></div>
+    <div class="t"><div class="addr">${esc(name(o))}</div>${isNew(o) ? '<span class="new">Nové</span>' : ""}</div>
+    <div class="meta">${esc(params(o) || "parametry v příloze")}</div>
+    <div class="foot num"><span>${esc(rentShort(o))}</span>${dl}</div>
+  </button>`;
+}
+
+function render(){
+  const list = visible();
+  const grid = document.getElementById("grid");
+  grid.innerHTML = list.length ? list.map(cardHtml).join("")
+    : `<div class="empty">${offers.length ? (tab === "active" ? "Teď tu nic není. Nové nabídky se objeví samy." : "Archiv je prázdný.") : "Zatím nejsou načtená žádná data."}</div>`;
+  grid.querySelectorAll(".img").forEach(el => lazy.observe(el));
+}
+
+function renderBar(){
+  const counts = Object.fromEntries(ORDER.map(k => [k, offers.filter(o => o.active && o.source === k).length]));
+  const chip = (k, label) => `<button class="chip" data-mc="${k}" aria-pressed="${k ? filter.has(k) : !filter.size}">${label}</button>`;
+  const broken = ORDER.filter(k => sources[k]?.status && sources[k].status !== "ok");
+  const upd = meta.updated ? new Date(meta.updated) : null;
+  const updTxt = upd ? (upd.toDateString() === new Date().toDateString() ? "dnes " : upd.toLocaleDateString("cs-CZ") + " ") +
+    upd.toLocaleTimeString("cs-CZ", {hour: "2-digit", minute: "2-digit"}) : "–";
+  document.getElementById("bar").innerHTML = chip("", "Vše") + ORDER.map(k => chip(k, MC[k] + (counts[k] ? ` <span class="meta">${counts[k]}</span>` : ""))).join("") +
+    `<span class="upd ${broken.length ? "warn" : ""}"><i></i>Aktualizováno ${esc(updTxt)}</span>`;
+  document.getElementById("warning").innerHTML = broken.length
+    ? `<div class="warning">Nepodařilo se načíst: ${broken.map(k => `<a href="${esc(safe(sources[k].board))}" target="_blank" rel="noopener">${esc(MC[k])}</a>`).join(", ")}. Zkontrolujte prosím úřední desku ručně.</div>` : "";
+}
+
+// ---------------------------------------------------------------- detail
+function openDetail(id){
+  const o = offers.find(x => x.id === id); if (!o) return;
+  const d = o.uzaverka ? daysTo(o.uzaverka) : null;
+  const kv = [
+    ["Dispozice", o.dispozice], ["Plocha", o.plocha_m2 && `${n(o.plocha_m2, 1)} m²`],
+    ["Podlaží", o.podlazi], ["Výtah", o.vytah == null ? null : o.vytah ? "ano" : "ne"],
+    ["Nájemné", o.najem_m2 ? `${n(o.najem_m2)} Kč/m²` + (o.kategorie ? ` (kat. ${o.kategorie})` : "") : o.min_nabidka_m2 ? `od ${n(o.min_nabidka_m2)} Kč/m²` : null],
+    ["Celkem měsíčně", total(o) && `${n(total(o))} Kč`],
+    ["Uzávěrka", o.uzaverka && `${fmt(o.uzaverka)} (${inDays(d)})`],
+    ["Prohlídka", o.prohlidka ? fmt(o.prohlidka) : o.prohlidka_text],
+    ["Na desce do", o.published_to && fmt(o.published_to)],
+  ].filter(([, v]) => v);
+  const photos = (o.photos || []).slice(0, 24);
+  const pdfs = (o.attachments || []).filter(a => /pdf|download/i.test(a.url + a.name)).slice(0, 3);
+  const mapUrl = "https://mapy.com/fnc/v1/search?" + new URLSearchParams({query: (o.address || o.title) + ", Brno"});
+  const dr = document.getElementById("drawer");
+  dr.innerHTML = `<button class="close" id="close" aria-label="Zavřít">×</button>
+    <div class="meta">${esc(MC[o.source] || o.district)}${o.unit ? ` · byt č. ${esc(o.unit)}` : ""}${o.cj ? ` · č. j. ${esc(o.cj)}` : ""}</div>
+    <h2>${esc(name(o))}</h2>
+    ${o.address && o.title !== o.address && !o.title.startsWith(o.address) ? `<div class="meta">${esc(o.title)}</div>` : ""}
+    <div class="img" id="d-img"><div class="ph" hidden>bez náhledu</div></div>
+    ${photos.length ? `<div class="strip">${photos.map(p => `<a href="${esc(safe(p.full || p.thumb))}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(safe(p.thumb || p.full))}" alt=""></a>`).join("")}</div>` : ""}
+    <div class="kv num">${kv.map(([k, v]) => `<div><span>${k}</span>${esc(v)}</div>`).join("") || '<div class="meta">Parametry se nepodařilo vyčíst – jsou v příloze.</div>'}</div>
+    ${o.typ?.length ? `<div class="typ">${o.typ.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
+    <div class="links">
+      <a href="${esc(safe(o.url))}" target="_blank" rel="noopener">Originál ↗</a>
+      ${pdfs.map((a, i) => `<a href="${esc(safe(a.url))}" target="_blank" rel="noopener">${pdfs.length > 1 ? "PDF " + (i + 1) : "PDF"}</a>`).join("")}
+      ${o.virtual_tour ? `<a href="${esc(safe(o.virtual_tour))}" target="_blank" rel="noopener">3D prohlídka</a>` : ""}
+      <a href="${esc(mapUrl)}" target="_blank" rel="noopener">Mapa</a>
+      ${o.uzaverka || o.prohlidka ? `<button id="ics">Do kalendáře</button>` : ""}
+    </div>
+    ${o.pdf_text_missing ? '<p class="note">Příloha je naskenovaná, část údajů je jen v PDF.</p>' : ""}`;
+  fillImage(dr.querySelector("#d-img"), o, 920, 614);
+  dr.querySelector("#close").onclick = closeDetail;
+  dr.querySelector("#ics")?.addEventListener("click", () => ics(o));
+  dr.classList.add("open"); dr.setAttribute("aria-hidden", "false");
+  document.getElementById("scrim").classList.add("open");
+  dr.scrollTop = 0; dr.querySelector("#close").focus();
+  history.replaceState(null, "", "#" + o.id);
+}
+function closeDetail(){
+  const dr = document.getElementById("drawer");
+  dr.classList.remove("open"); dr.setAttribute("aria-hidden", "true");
+  document.getElementById("scrim").classList.remove("open");
+  history.replaceState(null, "", location.pathname + location.search);
+}
+
+function ics(o){
+  const pad = v => String(v).padStart(2, "0");
+  const stamp = d => `${d.getUTCFullYear()}${pad(d.getUTCMonth()+1)}${pad(d.getUTCDate())}T${pad(d.getUTCHours())}${pad(d.getUTCMinutes())}00Z`;
+  const day = iso => iso.slice(0, 10).replace(/-/g, "");
+  const txt = s => String(s).replace(/[\\,;]/g, m => "\\" + m);
+  const label = `${name(o)} (${MC[o.source] || o.district})`;
+  const ev = [];
+  if (o.uzaverka) ev.push([`Uzávěrka: ${label}`, `DTSTART;VALUE=DATE:${day(o.uzaverka)}`, "-P2D"]);
+  if (o.prohlidka) {
+    if (o.prohlidka.length > 10) { const s = new Date(o.prohlidka); ev.push([`Prohlídka: ${label}`, `DTSTART:${stamp(s)}\r\nDTEND:${stamp(new Date(+s + 3600e3))}`, "-PT2H"]); }
+    else ev.push([`Prohlídka: ${label}`, `DTSTART;VALUE=DATE:${day(o.prohlidka)}`, "-PT12H"]);
+  }
+  const body = ev.map(([s, start, trig], i) => ["BEGIN:VEVENT", `UID:${o.id}-${i}@obecni-byty`, `DTSTAMP:${stamp(new Date())}`, start,
+    `SUMMARY:${txt(s)}`, `URL:${o.url}`, "BEGIN:VALARM", `TRIGGER:${trig}`, "ACTION:DISPLAY", `DESCRIPTION:${txt(s)}`, "END:VALARM", "END:VEVENT"].join("\r\n")).join("\r\n");
+  const blob = new Blob([`BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//obecni-byty//CS\r\n${body}\r\nEND:VCALENDAR\r\n`], {type: "text/calendar"});
+  const a = Object.assign(document.createElement("a"), {href: URL.createObjectURL(blob), download: `byt-${o.id}.ics`});
+  a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+// ---------------------------------------------------------------- events
+document.getElementById("grid").addEventListener("click", e => { const c = e.target.closest(".card"); if (c) openDetail(c.dataset.id); });
+document.getElementById("scrim").onclick = closeDetail;
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeDetail(); });
+document.getElementById("bar").addEventListener("click", e => {
+  const c = e.target.closest("[data-mc]"); if (!c) return;
+  const k = c.dataset.mc; if (!k) filter.clear(); else filter.has(k) ? filter.delete(k) : filter.add(k);
+  renderBar(); render();
+});
+document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => {
+  tab = b.dataset.tab; document.querySelectorAll("[data-tab]").forEach(x => x.setAttribute("aria-selected", x === b)); render(); });
+
+// ---------------------------------------------------------------- boot
+const getJson = (p, d) => fetch(p + "?t=" + Date.now()).then(r => r.ok ? r.json() : d).catch(() => d);
+(async () => {
+  [offers, sources, meta] = await Promise.all([getJson("data/offers.json", []), getJson("data/sources.json", {}), getJson("data/meta.json", {})]);
+  renderBar(); render();
+  const id = location.hash.slice(1); if (id) openDetail(id);
+})();
+</script>
+</body>
+</html>
