@@ -6,28 +6,7961 @@
 
 
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>eDeska</title>
+
+    
+
+    <link rel="stylesheet" type="text/css" media="all" href="js/calendar-system.css" title="calendar-system"/>
+    
+        <link rel="stylesheet" type="text/css" href="./css/eDeska.css"/>
+    
+    
     <link rel="alternate" type="application/rss+xml" title="RSS eDeska" href="rss.jsp"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script type="text/javascript">
-        function frameLoad() {
-            document.title = document.getElementById('mainFrame').contentDocument.title;
-        }
-    </script>
+
+    <title>Úřední deska - Aktuální
+        
+    </title>
+
+    <script type="text/javascript" src="js/eDeska.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/lang/calendar-en.js"></script>
+    <script type="text/javascript" src="js/lang/calendar-cs-utf8.js"></script>
+    <script type="text/javascript" src="js/calendar-setup.js"></script>
 </head>
+<body>
+
+    <h1 class="common">
+        
+        Úřední deska - Stav k 
+        23.11.2026
+    </h1>
+
+    
+
+
+
+
+
+
+<table class="navigation">
+    <tr>
+    	
+    	
+    	
+
+        
+            <td class="navigation">
+                
+                    
+                        <a class="navigation" href="/eDeska03/eDeskaAktualni.jsp;jsessionid=D208823D035D344060FCA291C4F156E7">
+                            
+                                
+                                
+                                    Aktuální
+                                
+                            
+                        </a>
+                    
+                    
+                    
+                
+            </td>
+        
+            <td class="navigation">
+                
+                    
+                    
+                        <a class="navigation" href="/eDeska03/eDeskaKDatumu.jsp;jsessionid=D208823D035D344060FCA291C4F156E7">
+                            
+                                
+                                
+                                    Ke dni
+                                
+                            
+                        </a>
+                    
+                    
+                
+            </td>
+        
+            <td class="navigation">
+                
+                    
+                    
+                    
+                        <a class="navigation" href="/eDeska03/eDeskaHledej.jsp;jsessionid=D208823D035D344060FCA291C4F156E7">
+                            
+                                
+                                
+                                    Hledat
+                                
+                            
+                        </a>
+                    
+                
+            </td>
+        
+    </tr>
+</table>
+<br/>
+
+    <form id="hledejFilter" action="eDeskaAktualni.jsp" method="post">
+        
+
+
+
+
+<div>
+    
+    
+    
+    
+    <br/>
+</div>
+
+        <input id="order" name="order" type="hidden" value="vyveseno"/>
+        <input id="desc" name="desc" type="hidden" value="true"/>
+        <input id="first" name="first" type="hidden" value="0"/>
+
+        
+
+
+
+
+
+
+<table id="edeska-search-form" class="search" style="min-width: 50%; max-width: 100%">
+    <tr>
+        
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                    <td class="search search-label">
+                        <label for="oblast">
+                            Oblast:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <select id="oblast" name="oblast" style="width: 100%">
+                            <option value="">Vše</option>
+                            <option value="&Uacute;ředn&iacute; deska">&Uacute;ředn&iacute; deska</option>
+                        </select>
+                    </td>
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                    <td class="search search-label">
+                        <label for="kategorie">
+                            Kategorie:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <select id="kategorie" name="kategorie" style="width: 100%">
+                            <option value="">Vše</option>
+                            <option value="Dotace">Dotace</option><option value="Ostatn&iacute;">Ostatn&iacute;</option><option value="Pr&aacute;vn&iacute; předpisy  statut&aacute;rn&iacute;ho města Brna">Pr&aacute;vn&iacute; předpisy  statut&aacute;rn&iacute;ho města Brna</option><option value="Pron&aacute;jmy a prodeje obecn&iacute;ch bytů a nebytov&yacute;ch prostor">Pron&aacute;jmy a prodeje obecn&iacute;ch bytů a nebytov&yacute;ch prostor</option><option value="Pron&aacute;jmy a prodeje pozemků">Pron&aacute;jmy a prodeje pozemků</option><option value="Rozpočet">Rozpočet</option><option value="Veřejn&eacute; vyhl&aacute;&scaron;ky, v&yacute;zvy a rozhodnut&iacute;">Veřejn&eacute; vyhl&aacute;&scaron;ky, v&yacute;zvy a rozhodnut&iacute;</option><option value="V&yacute;běrov&aacute; ř&iacute;zen&iacute;, voln&aacute; pracovn&iacute; m&iacute;sta">V&yacute;běrov&aacute; ř&iacute;zen&iacute;, voln&aacute; pracovn&iacute; m&iacute;sta</option>
+                        </select>
+                    </td>
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+    </tr>
+    <tr>
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                    <td class="search search-label">
+                        <label for="nazev">
+                            Název:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <input id="nazev" name="nazev" class="search_text_field" style="width: 100%" type="text" value=""/>
+                    </td>
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+                    <td class="search search-label">
+                        <label for="text">
+                            Hledat v obsahu:
+                        </label>
+                    </td>
+                    <td class="search search-input">
+                        <input id="text" name="text" class="search_text_field" style="width: 100%" type="text" value="" maxlength="50"/>
+                    </td>
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+            
+                
+                
+                
+                
+            
+        
+    </tr>
+
+    
+
+    <tr>
+        <td class="search" colspan="2">
+            <br/>
+            <input type="submit" name="search" value="Vyhledat" class="search_button"/>
+            <input type="submit" name="reset" value="Vymazat formulář"
+                   class="search_button"/>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    
+    
+
+    // uprava sirky elementu v tabulce, pokud je nakonfigurovano 4 nebo 5 poli
+    var maxLength = 0;
+    var table = document.getElementById('edeska-search-form');
+    var rows = document.getElementById('edeska-search-form').rows;
+    for (i = 0; i < rows.length; i++) {
+        if (rows[i].cells.length > maxLength) {
+            maxLength = rows[i].cells.length;
+        }
+    }
+    if (maxLength == 10) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "4%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "16%";
+        }
+        table.style.width = '100%';
+    }
+    if (maxLength == 8) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "6%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "19%";
+        }
+        table.style.width = '100%';
+    }
+    if (maxLength == 6) {
+        var labels = document.getElementsByClassName("search-label");
+        for (i = 0; i < labels.length; i++) {
+            labels[i].style.width = "9%";
+        }
+        var inputs = document.getElementsByClassName("search-input");
+        for (i = 0; i < inputs.length; i++) {
+            inputs[i].style.width = "24%";
+        }
+        table.style.width = '66%';
+    }
+    if (maxLength <= 4) {
+        table.style.width = '50%';
+    }
+</script>
+
+
+        
+
+
+
+
+
+
+
+<table width="100%" class="edeska-strankovani">
+    <tr>
+        <td>
+
+
+<span>
+	
+        <span><span><em><img class="arrow-first" src="images/first.png" alt="První"></em></span></span>
+        <span><span><em><img class="arrow-prev" src="images/prev.png" alt="Předchozí"></em></span></span>
+    
+	
+	
+
+	&nbsp;<span>1 - 25 z 44</span>&nbsp;
+
+	
+	
+	
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='25';document.forms[0].submit();"><img src="images/next.png" alt="Další"></a></span>
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='25';document.forms[0].submit();"><img src="images/last.png" alt="Poslední"></a></span>
+    
+</span>
+</td>
+        <td align="right">
+            záznamů na stránku
+            <select id="count" name="count" onchange="setCookie(&#39;eDeskaPocet&#39;,this.value);document.forms[0].first.value=&#39;0&#39;;document.forms[0].submit();">
+                <option value="25" selected="selected">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<table class="content edeska-vypis-vyveseni">
+    <thead>
+    <!-- Prvy riadok - nadpisy -->
+    <tr>
+        
+            
+
+
+
+
+
+
 
 
     
-        <iframe src="eDeskaAktualni.jsp" frameborder="0" id="mainFrame" onload="frameLoad();"
-                style="border: 0; position:fixed; top:0; left:0; right:0; bottom:0; width:100%; height:100%"></iframe>
+        <th colspan="2" class="content edeska-sloupec-oblast"
+             >
+            <a class="content" href="javascript:void(0);"
+               onclick="document.forms[0].order.value='oblast';document.forms[0].desc.value='false';document.forms[0].submit();">
+                Oblast
+            </a>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 
 
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+        <th colspan="2" class="content edeska-sloupec-kategorie"
+             >
+            <a class="content" href="javascript:void(0);"
+               onclick="document.forms[0].order.value='kategorie';document.forms[0].desc.value='false';document.forms[0].submit();">
+                Kategorie
+            </a>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-nazev"
+             >
+            Název
+        </th>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-znacka"
+             >
+            Číslo jednací
+        </th>
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-puvodce"
+             >
+            <a class="content" href="javascript:void(0);"
+               onclick="document.forms[0].order.value='puvodceNazev';document.forms[0].desc.value='false';document.forms[0].submit();">
+                Původce
+            </a>
+            
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-zverejnit"
+             >
+            Zveřejnit v období
+        </th>
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <th colspan="2" class="content edeska-sloupec-dokument"
+             >
+            Dokument
+        </th>
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+            
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+    </tr>
+    <!-- Druhy riadok - od do -->
+    <tr>
+        
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-oblast">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-kategorie">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-nazev">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-znacka">
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-puvodce">
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+            <th class="content edeska-sloupec-zverejnit">
+                <a class="content" href="javascript:void(0);"
+                   onclick="document.forms[0].order.value='vyveseno';document.forms[0].desc.value='false';document.forms[0].submit();">
+                    Zveřejnit od data
+                </a>
+                
+
+
+
+
+
+
+
+
+
+
+
+            </th>
+            <th class="content edeska-sloupec-zverejnit">
+                <a class="content" href="javascript:void(0);"
+                   onclick="document.forms[0].order.value='sveseno';document.forms[0].desc.value='false';document.forms[0].submit();">
+                    Zveřejnit do data
+                </a>
+                
+
+
+
+
+
+
+
+
+
+
+
+            </th>
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+            <th colspan="2" class="content edeska-sloupec-dokument">
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    
+        
+        
+        
+        
+    
+
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Zoznam zaznamov -->
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Pronájmy a prodeje obecních bytů a nebytových prostor
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19420">
+                Přesah stavby 20.11.2026 - ZVEŘEJNĚNÍ ZÁMĚRŮ  volební období 2022 - 2026
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0627095/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            09.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19421">
+                        Presah_20.11.2026.pdf
+                    </a>
+                     (325,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19423">
+                VŘ referent/referentka Oddělení veřejné zeleně a majetku 10_2026
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/040019/2026/2010/BARM
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            ÚMČmB, Brno - Královo Pole
+            <br/>
+            Palackého tř. 1365/59, 612 93 Brno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            15.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19424">
+                        Vhodny_kandidat__referent_OZ_10_2026.pdf
+                    </a>
+                     (112,6 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Pronájmy a prodeje obecních bytů a nebytových prostor
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19426">
+                Záměr PSP č. 601, Palackého třída 13, Brno
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039855/2026/2700/LIPO
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            ÚMČmB, Brno - Královo Pole
+            <br/>
+            Palackého tř. 1365/59, 612 93 Brno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            30.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19427">
+                        zamer_PSP_601-Palackeho_tr._13.pdf
+                    </a>
+                     (549,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Rozpočet
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19429">
+                Oznámení o zveřejnění návrhu rozpočtu MČ Brno-Královo Pole na rok 2027
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/040078/2026/2100/VOJS FIN
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            ÚMČmB, Brno - Královo Pole
+            <br/>
+            Palackého tř. 1365/59, 612 93 Brno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            23.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            10.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19430">
+                        Oznameni_zverejneni_navrhu_rozpoctu_na_rok_2027.pdf
+                    </a>
+                     (2,1 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky, výzvy a rozhodnutí
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19414">
+                Veřejná vyhláška, OOP, stanovení PDZ - Trtílkova (B28=vjezd a výjezd ze stavby)
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0624409/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            20.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19415">
+                        0621479_26_3_Vykres_-_opr._Trtilkova.pdf
+                    </a>
+                     (365,3 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19416">
+                        0621479_26_3_OOP-PDZ-Trtilkova_--20-11-2026.pdf
+                    </a>
+                     (450,1 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky, výzvy a rozhodnutí
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19408">
+                Veřejná vyhláška, OOP, stanovení PDZ - Vackova 38 (zábor pro kontejner)
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0614118/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            19.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19409">
+                        _0611593_26_2_Vykres_PCR_Vackova_38.pdf
+                    </a>
+                     (3,2 MB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19410">
+                        0611593_26_2_OOP-PDZ-Vackova_38_--_19-11-2026.pdf
+                    </a>
+                     (436,2 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19378">
+                VŘ - asistentka starosty + předpisovatelka nájemného - Brno Černovice
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039340/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            MMB
+            <br/>
+            hyttychova.eva@brno.cz
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19379">
+                        Vyberove_rizeni_-_predpisovatelka_najemneho_BO.pdf
+                    </a>
+                     (202,7 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19380">
+                        Vyberove_rizeni_-_asistentka_starosty_2026.pdf
+                    </a>
+                     (186,7 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19382">
+                VŘ  - účetní - Brno - Ivanovice
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039357/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            MMB
+            <br/>
+            hyttychova.eva@brno.cz
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19383">
+                        Vyberove_rizeni_1_2026_ucetni.pdf
+                    </a>
+                     (320,9 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19385">
+                VŘ -  vedoucí bytového odboru - Brno - Černnovice
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039356/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            MMB
+            <br/>
+            hyttychova.eva@brno.cz
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19386">
+                        Vyberove_rizeni_-_vedouci_BO_2027.pdf
+                    </a>
+                     (205,3 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Ostatní
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19388">
+                Oznámení o přerušení dodávky el. energie -30.11.2026 - Technická
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039315/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            EG.D, s.r.o., IČO: 21055050
+            <br/>
+            DS: b4gxki9, Lidická 1873/36, 602 00 Brno - Černá Pole, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19389">
+                        eon_oznameni.pdf
+                    </a>
+                     (98,6 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Ostatní
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19391">
+                Oznámení o přerušení dodávky el. energie - Technická 12:00 -12:15
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039316/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            EG.D, s.r.o., IČO: 21055050
+            <br/>
+            DS: b4gxki9, Lidická 1873/36, 602 00 Brno - Černá Pole, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19392">
+                        eon_oznameni.pdf
+                    </a>
+                     (98,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Ostatní
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19394">
+                Oznámení o přerušení dodávky el. energie - Sadová a Zaječí hora (zahrádkářská oblast) -9.12.
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039327/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            EG.D, s.r.o., IČO: 21055050
+            <br/>
+            DS: b4gxki9, Lidická 1873/36, 602 00 Brno - Černá Pole, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            10.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19395">
+                        Situace.pdf
+                    </a>
+                     (69,5 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19396">
+                        eon_oznameni.pdf
+                    </a>
+                     (99,8 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky, výzvy a rozhodnutí
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19398">
+                Stanovení OOP Sportovní - instalace V12a
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0614007/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19399">
+                        0614007_Sportovni_V_12a_OOP.pdf
+                    </a>
+                     (226,8 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19400">
+                        Pionyrska_23_V12a_v_ul._Sportovni_vykres.pdf
+                    </a>
+                     (925,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Pronájmy a prodeje obecních bytů a nebytových prostor
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19402">
+                Herčíkova 1, byt č. 57, Herčíkova 1, byt č. 71, Rybníček 1, byt č. 18
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039451/2026/2700/KRAO BYT
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            ÚMČmB, Brno - Královo Pole
+            <br/>
+            Palackého tř. 1365/59, 612 93 Brno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            18.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            04.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19403">
+                        Brno_Rybnicek_1_byt_c._18_2_kk_.pdf
+                    </a>
+                     (182,8 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19404">
+                        Brno_Hercikova_1_byt_c._71_3_1_.pdf
+                    </a>
+                     (525,4 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19405">
+                        Brno_Hercikova_1_byt_c._57_1_kk_.pdf
+                    </a>
+                     (396,5 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Ostatní
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19337">
+                Oznámení o přerušení dodávky elektrické energie
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/039075/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            EG.D, s.r.o., IČO: 21055050
+            <br/>
+            DS: b4gxki9, Lidická 1873/36, 602 00 Brno - Černá Pole, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            12.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            07.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19338">
+                        eon_oznameni.pdf
+                    </a>
+                     (100,4 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky, výzvy a rozhodnutí
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19340">
+                Stanovení OOP - Hradecká, Purkyňova, Technické muzeum Brno, směrové značení II
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0612838/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            12.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            30.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19341">
+                        Technicke_muzeum_o1_DZ_Hradecka_-_list_07.pdf
+                    </a>
+                     (223,4 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19342">
+                        Technicke_muzeum_o2_DZ_Hradecka_-_list_06_-_cerven_2026.pdf
+                    </a>
+                     (302,8 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19343">
+                        Technicke_muzeum_o3_DZ_Hradecka_-_list_05_-_cerven_2026.pdf
+                    </a>
+                     (231,5 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19344">
+                        Technicke_muzeum_o4_DZ_Hradecka_-_list_04_-_cerven_2026.pdf
+                    </a>
+                     (238,0 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19345">
+                        Technicke_muzeum_o5_DZ_Hradecka_-_list_03-_cerven_2026.pdf
+                    </a>
+                     (266,0 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19346">
+                        Technicke_muzeum_o6_DZ_Hradecka_-_list_02-_cerven_2026.pdf
+                    </a>
+                     (286,7 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19347">
+                        Technicke_muzeum_o7_DZ_Hradecka_-_list_01_-_klad_listu_cerven_2026.pdf
+                    </a>
+                     (291,5 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19348">
+                        0612838_Hradecka_Purkynova_smerove_znaceni_pro_Technicke_muzeum_OOP.pdf
+                    </a>
+                     (226,2 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Pronájmy a prodeje pozemků
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19334">
+                Přesah stavby 11.11.2026 - ZVEŘEJNĚNÍ ZÁMĚRŮ  volební období 2022 - 2026
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0610708/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            11.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            27.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19335">
+                        Presah_11.11.2026.pdf
+                    </a>
+                     (290,7 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Právní předpisy  statutárního města Brna
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19327">
+                Oznámení o zveřejnění nařízení č. 24/2026 - &#034;novela nařízení č. 1/2002, kterým se vydává Tržní řád
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0600927/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            10.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            26.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19328">
+                        zverejneni.pdf
+                    </a>
+                     (76,4 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19329">
+                        MC_-_oznameni_o_vyhlaseni_pravniho_predpisu_-_24_2026.pdf
+                    </a>
+                     (144,6 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky, výzvy a rozhodnutí
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19307">
+                Veř. vyhláška PDZ - Křiž. SSZ 8.22 Technická - Královopolská - zapravení komunikace
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            MMB/0599628/2026
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Brno, IČO: 44992785
+            <br/>
+            DS: a7kbrrn, Dominikánské náměstí 196/1, 602 00 Brno - Brno-město, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            25.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19309">
+                        DIO_sig__SSZ_8.22_Technicka_-_Kralovopolska_26Z10997_-_ZAPRAVENI_KOMUNIKACE.pdf
+                    </a>
+                     (4,5 MB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19308">
+                        0583767_26_Ver._vyhlaska_PDZ_Kriz._SSZ_8.22_Technicka_xKralovopolska-zapraveni_komunikace.pdf
+                    </a>
+                     (287,1 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19311">
+                inzerát volného pracovního místa
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/038222/2026/2200/ZATE
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            MMB
+            <br/>
+            hyttychova.eva@brno.cz
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            25.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19312">
+                        vhodny_kandidat_referent_majetku_a_dopravy__OM_9_2026.pdf
+                    </a>
+                     (142,3 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Veřejné vyhlášky, výzvy a rozhodnutí
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19314">
+                SMKL/262974/2026/OF/1 - Žádost o vyvěšení veřejné vyhlášky k HPS 2024
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            SMKL/262974/2026/OF/1
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            Statutární město Kladno, IČO: 00234516
+            <br/>
+            DS: dyubpcm, náměstí starosty Pavla 44, 272 01 Kladno - Kladno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            09.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19315">
+                        Verejna_vyhlaska_HPS_2024_podepsana.pdf
+                    </a>
+                     (164,3 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19316">
+                        Zadost_o_vyveseni_verejne_vyhlasky_HPS_2024.pdf
+                    </a>
+                     (208,2 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19318">
+                4x VŘ Brno - Bohunice (účetní školských zařízení, tajemnník/ce, mzdová účetní, kronikář/ka)
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/038580/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            (MMB_ORGO) Hyttychová Eva
+            <br/>
+            hyttychova.eva@brno.cz
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            09.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            25.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19319">
+                        VR_kronikar.pdf
+                    </a>
+                     (2,0 MB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19320">
+                        VR_1.pdf
+                    </a>
+                     (4,3 MB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19321">
+                        VR_2.pdf
+                    </a>
+                     (4,2 MB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19322">
+                        VR_3.pdf
+                    </a>
+                     (6,5 MB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Výběrová řízení, volná pracovní místa
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19296">
+                VŘ referent/referentka dopravy a majetku Odboru majetkového 9_2026
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/038198/2026/2010/BARM
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            ÚMČmB, Brno - Královo Pole
+            <br/>
+            Palackého tř. 1365/59, 612 93 Brno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            05.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            31.12.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19297">
+                        vhodny_kandidat_referent_majetku_a_dopravy__OM_9_2026.pdf
+                    </a>
+                     (142,3 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Dotace
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19271">
+                Oznámení o zveřejnění dotačních programů pro poskytnutí neinvestičních dotací v roce 2027
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/037884/2026/2100/FEFV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            ÚMČmB, Brno - Královo Pole
+            <br/>
+            Palackého tř. 1365/59, 612 93 Brno
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            04.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            01.03.2027
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19272">
+                        Dotacni_program_-_sport_2027.pdf
+                    </a>
+                     (170,6 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19273">
+                        vzor_zadosti_o_dotaci.pdf
+                    </a>
+                     (324,4 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19274">
+                        Oznameni_o_zverejneni_dotacnich_programu_pro_poskytnuti_neinvesticnich_dotaci_v_roce_2027.pdf
+                    </a>
+                     (48,3 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19275">
+                        Dotacni_program_-_kultura_2027.pdf
+                    </a>
+                     (166,6 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19276">
+                        Dotacni_program_-_deti_a_mladez_2027.pdf
+                    </a>
+                     (166,6 kB)
+                    <br/>
+                
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19277">
+                        Dotacni_program_-_socialni_oblast_2027.pdf
+                    </a>
+                     (170,8 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+        <tr>
+            
+                
+
+
+
+
+
+
+
+
+    
+        <td colspan="2" class="content edeska-sloupec-oblast">
+            Úřední deska
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+        <td colspan="2" class="content edeska-sloupec-kategorie">
+            Ostatní
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-nazev">
+            <a class="detail" href="eDeskaDetail.jsp?detailId=19260">
+                Přerušení dodávky el. energie - Kociánka 16a + parcela č. 129/12 - 26.11.2026
+            </a>
+        </td>
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-znacka">
+            BKPO/037670/2026/2200/LUDV
+        </td>
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-puvodce">
+            EG.D, s.r.o., IČO: 21055050
+            <br/>
+            DS: b4gxki9, Lidická 1873/36, 602 00 Brno - Černá Pole, Czech Republic
+        </td>
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        <td class="content edeska-sloupec-zverejnit">
+            03.11.2026
+        </td>
+        <td class="content edeska-sloupec-zverejnit">
+            27.11.2026
+        </td>
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+        <td colspan="2" class="content edeska-sloupec-dokument">
+            
+                
+
+                
+                    <a class="download" href="download.jsp?idPriloha=19261">
+                        eon_oznameni.pdf
+                    </a>
+                     (98,3 kB)
+                    <br/>
+                
+            
+        </td>
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+                
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+            
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+<span>
+	
+        <span><span><em><img class="arrow-first" src="images/first.png" alt="První"></em></span></span>
+        <span><span><em><img class="arrow-prev" src="images/prev.png" alt="Předchozí"></em></span></span>
+    
+	
+	
+
+	&nbsp;<span>1 - 25 z 44</span>&nbsp;
+
+	
+	
+	
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='25';document.forms[0].submit();"><img src="images/next.png" alt="Další"></a></span>
+        <span><a href="javascript:void(0);"
+                 onclick="document.forms[0].first.value='25';document.forms[0].submit();"><img src="images/last.png" alt="Poslední"></a></span>
+    
+</span>
+
+
+    <div>
+</div></form>
+
+</body>
 </html>
+
