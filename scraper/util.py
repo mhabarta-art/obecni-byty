@@ -11,6 +11,11 @@ from datetime import date, datetime
 from typing import Optional
 from urllib.parse import urljoin
 
+import ssl
+import tempfile
+from urllib.parse import urlsplit
+
+import certifi
 import requests
 
 log = logging.getLogger("scraper")
@@ -36,6 +41,52 @@ def session() -> requests.Session:
     return _session
 
 
+# Some municipal servers (edeska.brno.cz) don't send their intermediate certificate.
+# Browsers fetch it via the AIA extension; we do the same and still verify the full chain
+# against the standard root store, so TLS verification stays on.
+_ca_bundles: dict[str, str] = {}
+
+
+def aia_issuer_url(pem: str) -> Optional[str]:
+    from cryptography import x509
+    from cryptography.x509.oid import AuthorityInformationAccessOID, ExtensionOID
+
+    cert = x509.load_pem_x509_certificate(pem.encode())
+    try:
+        aia = cert.extensions.get_extension_for_oid(ExtensionOID.AUTHORITY_INFORMATION_ACCESS).value
+    except x509.ExtensionNotFound:
+        return None
+    for desc in aia:
+        if desc.access_method == AuthorityInformationAccessOID.CA_ISSUERS:
+            return desc.access_location.value
+    return None
+
+
+def _bundle_with_intermediate(host: str, port: int = 443) -> Optional[str]:
+    if host in _ca_bundles:
+        return _ca_bundles[host]
+    leaf = ssl.get_server_certificate((host, port), timeout=TIMEOUT_S)  # read only, not trusted
+    issuer_url = aia_issuer_url(leaf)
+    if not issuer_url:
+        return None
+    raw = requests.get(issuer_url, timeout=TIMEOUT_S, headers={"User-Agent": USER_AGENT}).content
+    if b"-----BEGIN CERTIFICATE-----" in raw:
+        inter = raw.decode()
+    else:
+        from cryptography import x509
+        from cryptography.hazmat.primitives.serialization import Encoding
+
+        inter = x509.load_der_x509_certificate(raw).public_bytes(Encoding.PEM).decode()
+    with open(certifi.where(), encoding="ascii") as f:
+        roots = f.read()
+    tmp = tempfile.NamedTemporaryFile("w", suffix=".pem", delete=False)
+    tmp.write(roots + "\n" + inter)
+    tmp.close()
+    log.info("using AIA intermediate for %s from %s", host, issuer_url)
+    _ca_bundles[host] = tmp.name
+    return tmp.name
+
+
 def fetch(url: str, *, binary: bool = False, method: str = "GET", data=None):
     """Polite fetch with a delay between requests. Returns text (or bytes) and final URL."""
     global _last_request
@@ -43,7 +94,17 @@ def fetch(url: str, *, binary: bool = False, method: str = "GET", data=None):
     if wait > 0:
         time.sleep(wait)
     _last_request = time.time()
-    resp = session().request(method, url, data=data, timeout=TIMEOUT_S, stream=binary)
+    host = urlsplit(url).hostname or ""
+    kwargs = dict(data=data, timeout=TIMEOUT_S, stream=binary)
+    if host in _ca_bundles:
+        kwargs["verify"] = _ca_bundles[host]
+    try:
+        resp = session().request(method, url, **kwargs)
+    except requests.exceptions.SSLError:
+        bundle = _bundle_with_intermediate(host)
+        if not bundle:
+            raise
+        resp = session().request(method, url, **{**kwargs, "verify": bundle})
     resp.raise_for_status()
     if binary:
         chunks, size = [], 0

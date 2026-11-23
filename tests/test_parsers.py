@@ -113,3 +113,34 @@ def test_extract_address():
     assert e("Byt na ul. Kounicova 39") == "Kounicova 39"
     assert e("Pronájem bytu č. 3 v domě Štefánikova 25a") == "Štefánikova 25a"
     assert e("Nabídka bytů k pronájmu – listopad 2026") is None
+
+
+def test_aia_issuer_url():
+    import datetime as dt
+    from cryptography import x509
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import ec
+    from cryptography.x509.oid import AuthorityInformationAccessOID, NameOID
+
+    key = ec.generate_private_key(ec.SECP256R1())
+    name = x509.Name([x509.NameAttribute(NameOID.COMMON_NAME, "edeska.example")])
+    now = dt.datetime.now(dt.timezone.utc)
+    cert = (x509.CertificateBuilder().subject_name(name).issuer_name(name).public_key(key.public_key())
+            .serial_number(1).not_valid_before(now).not_valid_after(now + dt.timedelta(days=1))
+            .add_extension(x509.AuthorityInformationAccess([x509.AccessDescription(
+                AuthorityInformationAccessOID.CA_ISSUERS, x509.UniformResourceIdentifier("http://ca.example/int.crt"))]),
+                critical=False)
+            .sign(key, hashes.SHA256()))
+    pem = cert.public_bytes(serialization.Encoding.PEM).decode()
+    assert util.aia_issuer_url(pem) == "http://ca.example/int.crt"
+
+
+def test_brnostred_no_boilerplate_typ_and_iframe_tour():
+    from scraper.sources.brnostred import parse_detail
+    html = (FX / "stred_detail.html").read_text("utf-8").replace(
+        "</main>", '<aside><a href="/x">Elektronické aukce</a> <a href="/y">byty k opravě vlastním nákladem</a></aside>'
+        '<iframe src="https://kuula.co/share/collection/ABC"></iframe></main>').replace(
+        '<a href="https://kuula.co/share/collection/7dP7L">Virtuální prohlídka</a>', "")
+    d = parse_detail(html, "https://www.brno-stred.cz/potrebuji-si-vyridit/byty/nabidka-bytu/x~f1")
+    assert "typ" not in d
+    assert d["virtual_tour"] == "https://kuula.co/share/collection/ABC"

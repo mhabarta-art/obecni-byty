@@ -48,9 +48,16 @@ def parse_detail(html: str, url: str) -> dict:
                     seen.add(full)
                     photos.append({"full": full, "thumb": full})
 
+    tour = None
+    for fr in s.find_all("iframe"):
+        src = fr.get("src") or fr.get("data-src") or ""
+        if "kuula.co" in src or "matterport" in src:
+            tour = util.absolute(url, src)
+            break
     node = main_content(s)
     text = node.get_text(" ")
     out = util.extract_fields(text)
+    out.pop("typ", None)  # page boilerplate mentions auctions, own-cost repairs etc. on every detail
     kv = key_values(node)
     tech = {
         "plocha_m2": first_match(kv, ("vymer", "plocha")),
@@ -84,7 +91,7 @@ def parse_detail(html: str, url: str) -> dict:
         else:
             out["prohlidka_text"] = tech["prohlidka"]
 
-    atts, tour = [], None
+    atts = []
     for link, label in links(s, url):
         if "/download/" in link or link.lower().endswith(".pdf"):
             atts.append({"name": label or "PDF", "url": link})
