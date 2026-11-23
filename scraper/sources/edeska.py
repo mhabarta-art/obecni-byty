@@ -107,6 +107,35 @@ def parse_rows(html: str, base: str, filtered: bool) -> tuple[list[dict], int]:
     return rows, seen
 
 
+FLAT_IN_TITLE = re.compile(r"([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][^,]*?\s\d+[a-zA-Z]?(?:/\d+)?)\s*,\s*byt\s*(?:č\.?\s*)?(\d+)", re.I)
+
+
+def split_multi(row: dict, ctx: Context) -> list[dict]:
+    """One board document can offer several flats ("Herčíkova 1, byt č. 57, Rybníček 1, byt č. 18")
+    with one PDF per flat. Split it into one row per flat, pairing PDFs by the flat number."""
+    flats = FLAT_IN_TITLE.findall(row["title"])
+    if len(flats) < 2:
+        return [row]
+    pdfs = [a for a in row["attachments"] if is_pdf(a["url"], a["name"])]
+    detail = next((a["url"] for a in row["attachments"] if not is_pdf(a["url"], a["name"])), None)
+    if len(pdfs) < len(flats) and detail:
+        try:
+            h, f = ctx.fetch(detail)
+            pdfs = [{"name": util.clean(a.get_text(" ")) or "PDF", "url": u}
+                    for a in soup(h).find_all("a") if (u := link_url(a, f)) and is_pdf(u, a.get_text(" "))]
+        except Exception as e:  # noqa: BLE001
+            util.log.warning("detail %s failed: %s", detail, e)
+    out = []
+    for addr, unit in flats:
+        pat = re.compile(rf"byt[\W_]*(?:c[\W_]*)?{unit}(?!\d)")  # "byt č. 71", "byt_c._71"
+        mine = [a for a in pdfs if pat.search(util.fold(a["name"] + " " + a["url"]))]
+        disp = next((f"{m.group(1)}+{m.group(2)}" for a in mine
+                     if (m := re.search(r"[\W_]([1-6])[\W_]+(kk|1)[\W_]", util.fold(a["name"])))), None)
+        out.append({**row, "title": f"{addr.strip()}, byt č. {unit}", "address": addr.strip(), "unit": unit, "dispozice": disp,
+                    "attachments": ([{"name": "detail", "url": detail}] if detail else []) + mine})
+    return out
+
+
 def scrape(source: str, cfg: dict, ctx: Context) -> list[dict]:
     start = cfg["url"]
     html, final = ctx.fetch(start)
@@ -154,10 +183,14 @@ def scrape(source: str, cfg: dict, ctx: Context) -> list[dict]:
     for base, h in pages:
         rows, n = parse_rows(h, base, filtered)
         rows_seen += n
-        for r in rows:
-            key = r["cj"] or r["title"]
+        for r in [x for row in rows for x in split_multi(row, ctx)]:
+            key = (r["cj"] or r["title"]) + "|" + r["title"]
             o = new_offer(source, cfg["name"], (r["attachments"][0]["url"] if r["attachments"] else base),
-                          r["title"], key=key + "|" + r["title"])
+                          r["title"], key=key)
+            if r.get("unit"):
+                o["address"], o["unit"] = r["address"], r["unit"]
+            if r.get("dispozice"):
+                o["dispozice"] = r["dispozice"]  # from the PDF file name; PDF text may refine it
             o.update(cj=r["cj"], category=r["category"], published_from=r["published_from"],
                      published_to=r["published_to"], attachments=r["attachments"])
             merge_fields(o, util.extract_fields(r["title"]))

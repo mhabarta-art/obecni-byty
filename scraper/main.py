@@ -102,6 +102,10 @@ def run(only: set[str] | None, snapshots: bool, email: bool) -> int:
             o["active"] = True
             o.pop("gone_since", None)
             offers[o["id"]] = o
+        # A document previously stored as one offer may now be split per flat: drop the old one.
+        found_cj = {o.get("cj") for o in found if o.get("cj")}
+        for oid in [i for i, o in offers.items() if o["source"] == key and o.get("cj") in found_cj and i not in seen_ids]:
+            del offers[oid]
         # Offers no longer on the board -> archive (only when the source worked).
         if st["status"] == "ok":
             for o in offers.values():

@@ -182,5 +182,9 @@ def test_edeska_kralovopole_category_form():
     offers = edeska.scrape("kralovopole", {"name": "Brno-Královo Pole", "url": "https://edeska.brno.cz/eDeska03/eDeskaAktualni.jsp"}, c)
     assert c.diagnostics["category_filter"] == "form"
     assert posted["kategorie"].startswith("Pronájmy a prodeje obecních bytů") and posted["count"] == "100"
-    assert [o["title"] for o in offers] == ["Herčíkova 1, byt č. 57, Herčíkova 1, byt č. 71, Rybníček 1, byt č. 18"]
-    assert offers[0]["published_to"] == "2026-12-04"
+    assert [o["title"] for o in offers] == ["Herčíkova 1, byt č. 57", "Herčíkova 1, byt č. 71", "Rybníček 1, byt č. 18"]
+    by_unit = {o["unit"]: o for o in offers}
+    assert by_unit["71"]["address"] == "Herčíkova 1"
+    assert [a["name"] for a in by_unit["71"]["attachments"] if "pdf" in a["name"]] == ["Brno_Hercikova_1_byt_c._71_3_1_.pdf"]
+    assert (by_unit["57"]["dispozice"], by_unit["71"]["dispozice"], by_unit["18"]["dispozice"]) == ("1+kk", "3+1", "2+kk")
+    assert len({o["id"] for o in offers}) == 3 and offers[0]["published_to"] == "2026-12-04"
