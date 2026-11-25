@@ -18,7 +18,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "8eff591bf85a",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_celkem": 5045.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -58,7 +58,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "bc758a623e19",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_celkem": 12188.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -98,7 +98,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "c3278543f247",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_celkem": 7632.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -122,356 +122,6 @@
  },
  {
   "active": true,
-  "address": "Přadlácká 11",
-  "attachments": [
-   {
-    "name": "Přadlácká 11, byt 10, 2+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899"
-   },
-   {
-    "name": "Pradlacka_11_byt_10_2_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37900"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052140/26/OB/Fuk",
-  "dispozice": "2+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "2c18f3319e2f",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 8428.0,
-  "najem_m2": 144.07,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 61.0,
-  "podlazi": "3. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: PŘDLÁCKÁ 11 (podlaží 3, byt č. 10), Brno – Zábrdovice Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 61 m2, balkon: ne, výtah: ne (kuchyně: 10 m2, pokoj: 22 m², 19 m²) Čisté nájemné: 8 428 Kč/měsíc Způsob vytápění: lokální plynové - WAW Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 070 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a ",
-  "source": "sever",
-  "title": "Přadlácká 11, byt 10, 2+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899",
-  "vytah": false
- },
- {
-  "active": true,
-  "address": "Nováčkova 6",
-  "attachments": [
-   {
-    "name": "Nováčkova 6, byt 15, 2+kk",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37902"
-   },
-   {
-    "name": "Novackova_6_byt_15_2_kk.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37903"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052138/26/OB/Fuk",
-  "dispozice": "2+kk",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "d27c87e2e9ea",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 8197.0,
-  "najem_m2": 168.48,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 51.2,
-  "podlazi": "4. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: NOVÁČKOVA 6 (podlaží 4, byt č. 15), Brno – Husovice Popis bytu: 2+kk, bez snížené kvality Celková plocha bytu: 51,20 m2, balkon: ano, výtah: ne (pokoj s kuchyňským koutem: 19,80m2, pokoj: 17,40 m²) Čisté nájemné: 8 197 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 20 491 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčn",
-  "source": "sever",
-  "title": "Nováčkova 6, byt 15, 2+kk",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37902",
-  "vytah": false
- },
- {
-  "active": true,
-  "address": "Přadlácká 11",
-  "attachments": [
-   {
-    "name": "Přadlácká 11, byt 9, 2+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37905"
-   },
-   {
-    "name": "Pradlacka_11_byt_9_2_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37906"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052139/26/OB/Fuk",
-  "dispozice": "2+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "184f4b4ebdd0",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 8651.0,
-  "najem_m2": 144.07,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 61.4,
-  "podlazi": "3. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: PŘDLÁCKÁ 11 (podlaží 3, byt č. 9), Brno – Zábrdovice Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 61,40 m2, balkon: ne, výtah: ne (kuchyně: 13,80 m2, pokoj: 22,50 m², 12,50 m²) Čisté nájemné: 8 651 Kč/měsíc Způsob vytápění: lokální plynové - WAW Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 629 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčníh",
-  "source": "sever",
-  "title": "Přadlácká 11, byt 9, 2+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37905",
-  "vytah": false
- },
- {
-  "active": true,
-  "address": "Nováčkova 4",
-  "attachments": [
-   {
-    "name": "Nováčkova 4, byt 14, 2+kk",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37908"
-   },
-   {
-    "name": "Novackova_4_byt_14_2_kk.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37909"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052137/26/OB/Fuk",
-  "dispozice": "2+kk",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "b9aec34a6e7e",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 8419.0,
-  "najem_m2": 168.48,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 53.3,
-  "podlazi": "4. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: NOVÁČKOVA 4 (podlaží 4, byt č. 14), Brno – Husovice Popis bytu: 2+kk, bez snížené kvality Celková plocha bytu: 53,30 m2, balkon: ano, výtah: ne (pokoj s kuchyňským koutem: 20,30m2, pokoj: 16,80 m²) Čisté nájemné: 8 419 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 047 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčn",
-  "source": "sever",
-  "title": "Nováčkova 4, byt 14, 2+kk",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37908",
-  "vytah": false
- },
- {
-  "active": true,
-  "address": "Francouzská 51",
-  "attachments": [
-   {
-    "name": "Francouzská 51, byt 4, 3+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37911"
-   },
-   {
-    "name": "Francouzska_51_byt_4_3_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37912"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052136/26/OB/Fuk",
-  "dispozice": "3+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "747edf973c7c",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 8679.0,
-  "najem_m2": 144.07,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 80.3,
-  "podlazi": "1. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: FRANCOUZSKÁ 51 (podlaží 1, byt č. 4), Brno – Zábrdovice Popis bytu: 3+1, bez snížené kvality Celková plocha bytu: 80,30 m2, balkon: ne, výtah: ne (kuchyně: 6 m2, pokoj: 20 m², 16,80 m², 14 m²) Čisté nájemné: 8 679 Kč/měsíc Způsob vytápění: lokální plynové - WAW Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 27 121 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenč",
-  "source": "sever",
-  "title": "Francouzská 51, byt 4, 3+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37911",
-  "vytah": false
- },
- {
-  "active": true,
-  "address": "Brechtova 17",
-  "attachments": [
-   {
-    "name": "Brechtova 17, byt 18, 3+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37914"
-   },
-   {
-    "name": "Brechtova_17_byt_18_3_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37915"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052135/26/OB/Fuk",
-  "dispozice": "3+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "5599b56b17c7",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 13948.0,
-  "najem_m2": 185.9,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 78.1,
-  "podlazi": "7. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 17 (podlaží 7, byt č. 18), Brno – Lesná Popis bytu: 3+1, bez snížené kvality Celková plocha bytu: 78,10 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,20 m², 12,60 m², 12,60 m²) Čisté nájemné: 13 948 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 3 000 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 34 870 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního do",
-  "source": "sever",
-  "title": "Brechtova 17, byt 18, 3+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37914",
-  "vytah": true
- },
- {
-  "active": true,
-  "address": "Brechtova 17",
-  "attachments": [
-   {
-    "name": "Brechtova 17, byt 7, 3+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37917"
-   },
-   {
-    "name": "Brechtova_17_byt_7_3_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37918"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052134/26/OB/Fuk",
-  "dispozice": "3+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "abdf9170fbc8",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 13943.0,
-  "najem_m2": 185.9,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 78.1,
-  "podlazi": "4. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 17 (podlaží 4, byt č. 7), Brno – Lesná Popis bytu: 3+1, bez snížené kvality Celková plocha bytu: 78,10 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,20 m², 21,60 m², 12,60 m²) Čisté nájemné: 13 943 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 3 000 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 34 856 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dop",
-  "source": "sever",
-  "title": "Brechtova 17, byt 7, 3+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37917",
-  "vytah": true
- },
- {
-  "active": true,
-  "address": "Brechtova 14",
-  "attachments": [
-   {
-    "name": "Brechtova 14, byt 12, 2+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37920"
-   },
-   {
-    "name": "Brechtova_14_byt_12_2_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37921"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052133/26/OB/Fuk",
-  "dispozice": "2+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "8af0975a1a9b",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 10550.0,
-  "najem_m2": 185.9,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 59.8,
-  "podlazi": "5. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 14 (podlaží 5, byt č. 12), Brno – Lesná Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 59,80 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 21,40 m², 12,60 m²) Čisté nájemné: 10 550 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 26 375 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to ",
-  "source": "sever",
-  "title": "Brechtova 14, byt 12, 2+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37920",
-  "vytah": true
- },
- {
-  "active": true,
-  "address": "Brechtova 12",
-  "attachments": [
-   {
-    "name": "Brechtova 12, byt 23, 2+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37923"
-   },
-   {
-    "name": "Brechtova_12_byt_23_2_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37924"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052130/26/OB/Fuk",
-  "dispozice": "2+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "924cbca9e3ac",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 10541.0,
-  "najem_m2": 185.9,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 59.8,
-  "podlazi": "9. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 12 (podlaží 9, byt č. 23), Brno – Lesná Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 59,80 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,20 m², 18,20 m²) Čisté nájemné: 10 541 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 26 351 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to ",
-  "source": "sever",
-  "title": "Brechtova 12, byt 23, 2+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37923",
-  "vytah": true
- },
- {
-  "active": true,
-  "address": "Brechtova 13",
-  "attachments": [
-   {
-    "name": "Brechtova 13, byt 24, 2+1",
-    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37926"
-   },
-   {
-    "name": "Brechtova_13_byt_24_2_1.pdf",
-    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37927"
-   }
-  ],
-  "category": "Nabídky bytů k pronájmu",
-  "cj": "MCBSev/052131/26/OB/Fuk",
-  "dispozice": "2+1",
-  "district": "Brno-sever",
-  "first_seen": "2026-11-23T12:10:44+00:00",
-  "id": "58b499b90770",
-  "last_seen": "2026-11-24T15:51:18+00:00",
-  "najem_celkem": 10550.0,
-  "najem_m2": 185.9,
-  "pdf_checked": 2,
-  "photos": [],
-  "plocha_m2": 59.8,
-  "podlazi": "9. NP",
-  "published_from": "2026-11-09",
-  "published_to": "2026-11-24",
-  "reminded": false,
-  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 13 (podlaží 9, byt č. 24), Brno – Lesná Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 59,80 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 21,40 m², 12,60 m²) Čisté nájemné: 10 550 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 26 375 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to ",
-  "source": "sever",
-  "title": "Brechtova 13, byt 24, 2+1",
-  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37926",
-  "vytah": true
- },
- {
-  "active": true,
   "address": "Botanická 68",
   "attachments": [
    {
@@ -484,7 +134,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6bf8d9967a7e",
   "kategorie": "II",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -573,7 +223,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "18c9edcbdcec",
   "kategorie": "II",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -654,7 +304,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "25ac1cefc63d",
   "kategorie": "III",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -759,7 +409,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "2ebdd9fe17b8",
   "kategorie": "I",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -832,7 +482,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "0b3213a4a102",
   "kategorie": "II",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -921,7 +571,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "047ddd56c978",
   "kategorie": "III",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -1003,7 +653,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6e41ab8b1061",
   "kategorie": "I",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -1104,7 +754,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "76f0e04d61ef",
   "kategorie": "III",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -1205,7 +855,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "30db781ac5f0",
   "kategorie": "II",
-  "last_seen": "2026-11-24T15:51:18+00:00",
+  "last_seen": "2026-11-25T15:33:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -1351,5 +1001,365 @@
   "source": "kralovopole",
   "title": "VŘ - vedoucí bytového odboru - Brno - Černnovice",
   "url": "https://edeska.brno.cz/eDeska03/eDeskaDetail.jsp?detailId=19385"
+ },
+ {
+  "active": false,
+  "address": "Přadlácká 11",
+  "attachments": [
+   {
+    "name": "Přadlácká 11, byt 10, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899"
+   },
+   {
+    "name": "Pradlacka_11_byt_10_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37900"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052140/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "2c18f3319e2f",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 8428.0,
+  "najem_m2": 144.07,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 61.0,
+  "podlazi": "3. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: PŘDLÁCKÁ 11 (podlaží 3, byt č. 10), Brno – Zábrdovice Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 61 m2, balkon: ne, výtah: ne (kuchyně: 10 m2, pokoj: 22 m², 19 m²) Čisté nájemné: 8 428 Kč/měsíc Způsob vytápění: lokální plynové - WAW Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 070 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a ",
+  "source": "sever",
+  "title": "Přadlácká 11, byt 10, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37899",
+  "vytah": false
+ },
+ {
+  "active": false,
+  "address": "Nováčkova 6",
+  "attachments": [
+   {
+    "name": "Nováčkova 6, byt 15, 2+kk",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37902"
+   },
+   {
+    "name": "Novackova_6_byt_15_2_kk.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37903"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052138/26/OB/Fuk",
+  "dispozice": "2+kk",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "d27c87e2e9ea",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 8197.0,
+  "najem_m2": 168.48,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 51.2,
+  "podlazi": "4. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: NOVÁČKOVA 6 (podlaží 4, byt č. 15), Brno – Husovice Popis bytu: 2+kk, bez snížené kvality Celková plocha bytu: 51,20 m2, balkon: ano, výtah: ne (pokoj s kuchyňským koutem: 19,80m2, pokoj: 17,40 m²) Čisté nájemné: 8 197 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 20 491 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčn",
+  "source": "sever",
+  "title": "Nováčkova 6, byt 15, 2+kk",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37902",
+  "vytah": false
+ },
+ {
+  "active": false,
+  "address": "Přadlácká 11",
+  "attachments": [
+   {
+    "name": "Přadlácká 11, byt 9, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37905"
+   },
+   {
+    "name": "Pradlacka_11_byt_9_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37906"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052139/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "184f4b4ebdd0",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 8651.0,
+  "najem_m2": 144.07,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 61.4,
+  "podlazi": "3. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: PŘDLÁCKÁ 11 (podlaží 3, byt č. 9), Brno – Zábrdovice Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 61,40 m2, balkon: ne, výtah: ne (kuchyně: 13,80 m2, pokoj: 22,50 m², 12,50 m²) Čisté nájemné: 8 651 Kč/měsíc Způsob vytápění: lokální plynové - WAW Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 629 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčníh",
+  "source": "sever",
+  "title": "Přadlácká 11, byt 9, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37905",
+  "vytah": false
+ },
+ {
+  "active": false,
+  "address": "Nováčkova 4",
+  "attachments": [
+   {
+    "name": "Nováčkova 4, byt 14, 2+kk",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37908"
+   },
+   {
+    "name": "Novackova_4_byt_14_2_kk.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37909"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052137/26/OB/Fuk",
+  "dispozice": "2+kk",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "b9aec34a6e7e",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 8419.0,
+  "najem_m2": 168.48,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 53.3,
+  "podlazi": "4. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: NOVÁČKOVA 4 (podlaží 4, byt č. 14), Brno – Husovice Popis bytu: 2+kk, bez snížené kvality Celková plocha bytu: 53,30 m2, balkon: ano, výtah: ne (pokoj s kuchyňským koutem: 20,30m2, pokoj: 16,80 m²) Čisté nájemné: 8 419 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 047 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčn",
+  "source": "sever",
+  "title": "Nováčkova 4, byt 14, 2+kk",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37908",
+  "vytah": false
+ },
+ {
+  "active": false,
+  "address": "Francouzská 51",
+  "attachments": [
+   {
+    "name": "Francouzská 51, byt 4, 3+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37911"
+   },
+   {
+    "name": "Francouzska_51_byt_4_3_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37912"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052136/26/OB/Fuk",
+  "dispozice": "3+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "747edf973c7c",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 8679.0,
+  "najem_m2": 144.07,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 80.3,
+  "podlazi": "1. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: FRANCOUZSKÁ 51 (podlaží 1, byt č. 4), Brno – Zábrdovice Popis bytu: 3+1, bez snížené kvality Celková plocha bytu: 80,30 m2, balkon: ne, výtah: ne (kuchyně: 6 m2, pokoj: 20 m², 16,80 m², 14 m²) Čisté nájemné: 8 679 Kč/měsíc Způsob vytápění: lokální plynové - WAW Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 27 121 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenč",
+  "source": "sever",
+  "title": "Francouzská 51, byt 4, 3+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37911",
+  "vytah": false
+ },
+ {
+  "active": false,
+  "address": "Brechtova 17",
+  "attachments": [
+   {
+    "name": "Brechtova 17, byt 18, 3+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37914"
+   },
+   {
+    "name": "Brechtova_17_byt_18_3_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37915"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052135/26/OB/Fuk",
+  "dispozice": "3+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "5599b56b17c7",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 13948.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 78.1,
+  "podlazi": "7. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 17 (podlaží 7, byt č. 18), Brno – Lesná Popis bytu: 3+1, bez snížené kvality Celková plocha bytu: 78,10 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,20 m², 12,60 m², 12,60 m²) Čisté nájemné: 13 948 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 3 000 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 34 870 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního do",
+  "source": "sever",
+  "title": "Brechtova 17, byt 18, 3+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37914",
+  "vytah": true
+ },
+ {
+  "active": false,
+  "address": "Brechtova 17",
+  "attachments": [
+   {
+    "name": "Brechtova 17, byt 7, 3+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37917"
+   },
+   {
+    "name": "Brechtova_17_byt_7_3_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37918"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052134/26/OB/Fuk",
+  "dispozice": "3+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "abdf9170fbc8",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 13943.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 78.1,
+  "podlazi": "4. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 17 (podlaží 4, byt č. 7), Brno – Lesná Popis bytu: 3+1, bez snížené kvality Celková plocha bytu: 78,10 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,20 m², 21,60 m², 12,60 m²) Čisté nájemné: 13 943 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 3 000 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 34 856 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dop",
+  "source": "sever",
+  "title": "Brechtova 17, byt 7, 3+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37917",
+  "vytah": true
+ },
+ {
+  "active": false,
+  "address": "Brechtova 14",
+  "attachments": [
+   {
+    "name": "Brechtova 14, byt 12, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37920"
+   },
+   {
+    "name": "Brechtova_14_byt_12_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37921"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052133/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "8af0975a1a9b",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 10550.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 59.8,
+  "podlazi": "5. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 14 (podlaží 5, byt č. 12), Brno – Lesná Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 59,80 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 21,40 m², 12,60 m²) Čisté nájemné: 10 550 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 26 375 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to ",
+  "source": "sever",
+  "title": "Brechtova 14, byt 12, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37920",
+  "vytah": true
+ },
+ {
+  "active": false,
+  "address": "Brechtova 12",
+  "attachments": [
+   {
+    "name": "Brechtova 12, byt 23, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37923"
+   },
+   {
+    "name": "Brechtova_12_byt_23_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37924"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052130/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "924cbca9e3ac",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 10541.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 59.8,
+  "podlazi": "9. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 12 (podlaží 9, byt č. 23), Brno – Lesná Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 59,80 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,20 m², 18,20 m²) Čisté nájemné: 10 541 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 26 351 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to ",
+  "source": "sever",
+  "title": "Brechtova 12, byt 23, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37923",
+  "vytah": true
+ },
+ {
+  "active": false,
+  "address": "Brechtova 13",
+  "attachments": [
+   {
+    "name": "Brechtova 13, byt 24, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37926"
+   },
+   {
+    "name": "Brechtova_13_byt_24_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=37927"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/052131/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-23T12:10:44+00:00",
+  "gone_since": "2026-11-25T15:33:46+00:00",
+  "id": "58b499b90770",
+  "last_seen": "2026-11-24T15:51:18+00:00",
+  "najem_celkem": 10550.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 59.8,
+  "podlazi": "9. NP",
+  "published_from": "2026-11-09",
+  "published_to": "2026-11-24",
+  "reminded": false,
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BRECHTOVA 13 (podlaží 9, byt č. 24), Brno – Lesná Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 59,80 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 21,40 m², 12,60 m²) Čisté nájemné: 10 550 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 26 375 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to ",
+  "source": "sever",
+  "title": "Brechtova 13, byt 24, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=37926",
+  "vytah": true
  }
 ]
