@@ -42,7 +42,8 @@ h1{font-size:26px;font-weight:600;margin:0;letter-spacing:-.02em}
 .mc{border:0;background:none;padding:0 0 10px;margin-bottom:-1px;font-size:15px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent}
 .mc:hover{color:var(--ink)}
 .mc[aria-selected=true]{color:var(--ink);border-color:var(--ink);font-weight:500}
-.mc .n{font-size:13px;color:var(--muted);margin-left:4px;font-weight:400}
+.mc .n{display:inline-block;min-width:20px;margin-left:7px;padding:1px 6px;border-radius:999px;background:var(--soft);font-size:11.5px;line-height:16px;font-weight:500;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums;vertical-align:1px;box-sizing:border-box}
+.mc[aria-selected=true] .n{background:var(--ink);color:var(--bg)}
 .bar .upd{padding-bottom:10px}
 .mctabs{display:flex;gap:24px;overflow-x:auto;scrollbar-width:none;max-width:100%}
 .mctabs::-webkit-scrollbar{display:none}
