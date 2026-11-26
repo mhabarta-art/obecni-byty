@@ -18,7 +18,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "8eff591bf85a",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_celkem": 5045.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -58,7 +58,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "bc758a623e19",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_celkem": 12188.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -98,7 +98,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "c3278543f247",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_celkem": 7632.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -134,7 +134,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6bf8d9967a7e",
   "kategorie": "II",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -223,7 +223,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "18c9edcbdcec",
   "kategorie": "II",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -304,7 +304,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "25ac1cefc63d",
   "kategorie": "III",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -409,7 +409,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "2ebdd9fe17b8",
   "kategorie": "I",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -482,7 +482,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "0b3213a4a102",
   "kategorie": "II",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -571,7 +571,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "047ddd56c978",
   "kategorie": "III",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -653,7 +653,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6e41ab8b1061",
   "kategorie": "I",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -754,7 +754,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "76f0e04d61ef",
   "kategorie": "III",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -855,7 +855,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "30db781ac5f0",
   "kategorie": "II",
-  "last_seen": "2026-11-25T15:33:46+00:00",
+  "last_seen": "2026-11-26T15:08:52+00:00",
   "najem_m2": 180.0,
   "photos": [
    {

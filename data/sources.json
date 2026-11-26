@@ -8,8 +8,8 @@
    "rows_seen": 6
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-25T15:33:46+00:00",
-  "last_run": "2026-11-25T15:33:46+00:00",
+  "last_ok": "2026-11-26T15:08:52+00:00",
+  "last_run": "2026-11-26T15:08:52+00:00",
   "message": "",
   "name": "Brno-Královo Pole",
   "status": "ok"
@@ -18,13 +18,13 @@
   "board": "https://edeska.brno.cz/eDeska04/eDeskaAktualni.jsp",
   "count": 0,
   "diagnostics": {
-   "category_filter": "none",
+   "category_filter": "form",
    "pages": 1,
-   "rows_seen": 27
+   "rows_seen": 2
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-25T15:33:46+00:00",
-  "last_run": "2026-11-25T15:33:46+00:00",
+  "last_ok": "2026-11-26T15:08:52+00:00",
+  "last_run": "2026-11-26T15:08:52+00:00",
   "message": "",
   "name": "Brno-sever",
   "status": "ok"
@@ -37,8 +37,8 @@
    "rows_seen": 9
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-25T15:33:46+00:00",
-  "last_run": "2026-11-25T15:33:46+00:00",
+  "last_ok": "2026-11-26T15:08:52+00:00",
+  "last_run": "2026-11-26T15:08:52+00:00",
   "message": "",
   "name": "Brno-střed",
   "status": "ok"
@@ -52,8 +52,8 @@
    "rss_items": 50
   },
   "fail_streak": 0,
-  "last_ok": "2026-11-25T15:33:46+00:00",
-  "last_run": "2026-11-25T15:33:46+00:00",
+  "last_ok": "2026-11-26T15:08:52+00:00",
+  "last_run": "2026-11-26T15:08:52+00:00",
   "message": "",
   "name": "Brno-Žabovřesky",
   "status": "ok"
