@@ -1,6 +1,306 @@
 [
  {
   "active": true,
+  "address": "Janouškova 15",
+  "attachments": [
+   {
+    "name": "Janouškova 15, byt 15, 1+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38129"
+   },
+   {
+    "name": "Janouskova_15_byt_15_1_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38130"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055318/26/OB/Fuk",
+  "dispozice": "1+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "ee8e874de92e",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 5713.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 35.1,
+  "podlazi": "3. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: JANOUŠKOVA 15 (podlaží 3, byt č. 15), Brno – Černá Pole Popis bytu: 1+1, bez snížené kvality Celková plocha bytu: 35,10 m2, balkon: ano, výtah: ano (kuchyně: 8 m2, pokoj: 17,30 m²) Čisté nájemné: 5 713 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 14 283 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to po",
+  "source": "sever",
+  "title": "Janouškova 15, byt 15, 1+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38129",
+  "vytah": true
+ },
+ {
+  "active": true,
+  "address": "Bieblova 13",
+  "attachments": [
+   {
+    "name": "Bieblova 13, byt 10, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38132"
+   },
+   {
+    "name": "Bieblova_13_byt_10_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38133"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055319/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "6fc67da02af3",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 10254.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 57.0,
+  "podlazi": "5. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: BIEBLOVA 13 (podlaží 5, byt č. 10), Brno – Černá Pole Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 57 m2, balkon: ano, výtah: ano (kuchyně: 8,75 m2, pokoj: 18,30 m², 12,30) Čisté nájemné: 10 254 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: zálohy na teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 25 636 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopi",
+  "source": "sever",
+  "title": "Bieblova 13, byt 10, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38132",
+  "vytah": true
+ },
+ {
+  "active": true,
+  "address": "Merhautova 117",
+  "attachments": [
+   {
+    "name": "Merhautova 117, byt 8, 1+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38135"
+   },
+   {
+    "name": "Merhautova_117_byt_8_1_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38136"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055320/26/OB/Fuk",
+  "dispozice": "1+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "2f0e5690dd4f",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 6906.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 38.2,
+  "podlazi": "2. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: MERHAUTOVA 117 (podlaží 2, byt č. 8), Brno – Černá Pole Popis bytu: 1+1, bez snížené kvality Celková plocha bytu: 38,20 m2, balkon: ano, výtah: ano (kuchyně: 8,20 m2, pokoj: 16,80 m²) Čisté nájemné: 6 906 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: zálohy na teplo 2 500 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 17 265 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu ",
+  "source": "sever",
+  "title": "Merhautova 117, byt 8, 1+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38135",
+  "vytah": true
+ },
+ {
+  "active": true,
+  "address": "Merhautova 154",
+  "attachments": [
+   {
+    "name": "Merhautova 154, byt 16, 2+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38138"
+   },
+   {
+    "name": "Merhautova_154_byt_16_2_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38139"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055321/26/OB/Fuk",
+  "dispozice": "2+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "e3a2e643c6a5",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 11823.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 10.7,
+  "podlazi": "3. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: MERHAUTOVA 154 (podlaží 3, byt č. 16), Brno – Černá Pole Popis bytu: 2+1, bez snížené kvality Celková plocha bytu: 66,20, balkon: ne, výtah: ne (kuchyně: 10,70 m2, pokoj: 17 m², 17 m²) Čisté nájemné: 11 823 Kč/měsíc Způsob vytápění: ústřední topení Měsíční záloha na služby: zálohy na teplo 2 800 Kč + ostatní 1 670 Kč / 1 osoba Požadovaný příjem: 29 558 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopis",
+  "source": "sever",
+  "title": "Merhautova 154, byt 16, 2+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38138",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Merhautova 75",
+  "attachments": [
+   {
+    "name": "Merhautova 75, byt 14, 4+1 půdní vestavba",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38141"
+   },
+   {
+    "name": "Merhautova_75_byt_14_4_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38142"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055325/26/OB/Fuk",
+  "dispozice": "4+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "0fa85117cc49",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 26853.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 160.5,
+  "podlazi": "6. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: MERHAUTOVA 75 – půdní vestavba (podlaží 6, byt č. 14), Brno – Černá Pole Popis bytu: 4+1, bez snížené kvality Celková plocha bytu: 160,50 m2, balkon: ne, výtah: ne (kuchyně: 18,80 m2, pokoj: 46,70 m², 22 m², 16 m², 30 m²) Čisté nájemné: 26 853 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 74 592 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brn",
+  "source": "sever",
+  "title": "Merhautova 75, byt 14, 4+1 půdní vestavba",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38141",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Tišnovská 117",
+  "attachments": [
+   {
+    "name": "Tišnovská 117, byt 5, 1+1",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38144"
+   },
+   {
+    "name": "Tisnovska_117_byt_5_1_1.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38145"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055327/26/OB/Fuk",
+  "dispozice": "1+1",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "e0d1f057bc4f",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 8700.0,
+  "najem_m2": 185.9,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 49.8,
+  "podlazi": "3. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: TIŠNOVSKÁ 117 (podlaží 3, byt č. 5), Brno – Černá Pole Popis bytu: 1+1, bez snížené kvality Celková plocha bytu: 49,80 m2, balkon: ano, výtah: ne (kuchyně: 11,60 m2, pokoj: 21 m²) Čisté nájemné: 8 700 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby: zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 21 750 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčního dopisu a to po",
+  "source": "sever",
+  "title": "Tišnovská 117, byt 5, 1+1",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38144",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Nováčkova 4",
+  "attachments": [
+   {
+    "name": "Nováčkova 4, byt 8, 2+kk",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38147"
+   },
+   {
+    "name": "Novackova_4_byt_8_2_kk.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38148"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055328/26/OB/Fuk",
+  "dispozice": "2+kk",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "797f5f91dfe6",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 8234.0,
+  "najem_m2": 168.48,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 51.8,
+  "podlazi": "2. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: Nováčkova 4 (podlaží 2, byt č. 8), Brno – Husovice Popis bytu: 2+kk, bez snížené kvality Celková plocha bytu: 51,80 m2, balkon: ano, výtah: ne (pokoj s kuchyňským koutem: 19,70m2, pokoj: 16,80 m²) Čisté nájemné: 8 234 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 20 584 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenčníh",
+  "source": "sever",
+  "title": "Nováčkova 4, byt 8, 2+kk",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38147",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "address": "Nováčkova 4",
+  "attachments": [
+   {
+    "name": "Nováčkova 4, byt 13, 2+kk",
+    "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38150"
+   },
+   {
+    "name": "Novackova_4_byt_13_2_kk.pdf",
+    "url": "https://edeska.brno.cz/eDeska04/download.jsp?idPriloha=38151"
+   }
+  ],
+  "category": "Nabídky bytů k pronájmu",
+  "cj": "MCBSev/055329/26/OB/Fuk",
+  "dispozice": "2+kk",
+  "district": "Brno-sever",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "7e3730ec25dc",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "najem_celkem": 8306.0,
+  "najem_m2": 168.48,
+  "pdf_checked": 2,
+  "photos": [],
+  "plocha_m2": 52.9,
+  "podlazi": "4. NP",
+  "published_from": "2026-11-27",
+  "published_to": "2026-12-10",
+  "snippet": "ÚŘAD MĚSTSKÉ ČÁSTI, ODBOR BYDLENÍ, BRATISLAVSKÁ 70, 601 47, BRNO NABÍZÍ K PRONÁJMU BYT Adresa: Nováčkova 4 (podlaží 4, byt č. 13), Brno – Husovice Popis bytu: 2+kk, bez snížené kvality Celková plocha bytu: 52,90 m2, balkon: ano, výtah: ne (pokoj s kuchyňským koutem: 19,46m2, pokoj: 16,80 m²) Čisté nájemné: 8 306 Kč/měsíc Způsob vytápění: etážové plynové Měsíční záloha na služby zálohy na teplo NE + ostatní 700 Kč/měsíc/ 1 osoba Požadovaný příjem: 20 765 Kč (2,5 násobek nájemného bez slev) Prohlídka bytu umožní Oddělení správy budov ÚMČ Brno-sever, Bratislavská 71, Brno, po předložení Evidenční",
+  "source": "sever",
+  "title": "Nováčkova 4, byt 13, 2+kk",
+  "url": "https://edeska.brno.cz/eDeska04/eDeskaDetail.jsp?detailId=38150",
+  "vytah": false
+ },
+ {
+  "active": true,
+  "attachments": [],
+  "district": "Brno-Žabovřesky",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "73a4221026c4",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "photos": [],
+  "published_from": "2026-11-26",
+  "source": "zabovresky",
+  "sticky_days": 30,
+  "title": "Pronájem obecního bytu",
+  "url": "https://www.zabovresky.cz/vismo/dokumenty2.asp?id_org=80902&id=1125"
+ },
+ {
+  "active": true,
+  "attachments": [],
+  "district": "Brno-Žabovřesky",
+  "first_seen": "2026-11-27T15:00:46+00:00",
+  "id": "daf52d047e35",
+  "last_seen": "2026-11-27T15:00:46+00:00",
+  "photos": [],
+  "published_from": "2026-11-26",
+  "source": "zabovresky",
+  "sticky_days": 30,
+  "title": "Pravidla postupu při pronájmu bytů v majetku statutárního města Brna, městské části Brno-Žabovřesky",
+  "url": "https://www.zabovresky.cz/vismo/dokumenty2.asp?id_org=80902&id=29829"
+ },
+ {
+  "active": true,
   "address": "Herčíkova 1",
   "attachments": [
    {
@@ -18,7 +318,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "8eff591bf85a",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_celkem": 5045.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -58,7 +358,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "bc758a623e19",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_celkem": 12188.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -98,7 +398,7 @@
   "district": "Brno-Královo Pole",
   "first_seen": "2026-11-23T12:55:00+00:00",
   "id": "c3278543f247",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_celkem": 7632.0,
   "najem_m2": 174.29,
   "pdf_checked": 2,
@@ -134,7 +434,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6bf8d9967a7e",
   "kategorie": "II",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -192,7 +492,7 @@
   ],
   "plocha_m2": 52.0,
   "podlazi": "1. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Botanická 68",
@@ -223,7 +523,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "18c9edcbdcec",
   "kategorie": "II",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -273,7 +573,7 @@
   ],
   "plocha_m2": 83.8,
   "podlazi": "4. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Bratislavská 62",
@@ -304,7 +604,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "25ac1cefc63d",
   "kategorie": "III",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -378,7 +678,7 @@
   ],
   "plocha_m2": 107.0,
   "podlazi": "2. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Dvořákova 8",
@@ -409,7 +709,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "2ebdd9fe17b8",
   "kategorie": "I",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -451,7 +751,7 @@
   ],
   "plocha_m2": 40.5,
   "podlazi": "3. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Francouzská 20",
@@ -482,7 +782,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "0b3213a4a102",
   "kategorie": "II",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -540,7 +840,7 @@
   ],
   "plocha_m2": 55.1,
   "podlazi": "5. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Kapucínské náměstí 10",
@@ -571,7 +871,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "047ddd56c978",
   "kategorie": "III",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -621,7 +921,7 @@
   ],
   "plocha_m2": 90.63,
   "podlazi": "3. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Kopečná 9",
@@ -653,7 +953,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "6e41ab8b1061",
   "kategorie": "I",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 132.0,
   "photos": [
    {
@@ -723,7 +1023,7 @@
   ],
   "plocha_m2": 56.5,
   "podlazi": "3. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Stavební 9",
@@ -754,7 +1054,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "76f0e04d61ef",
   "kategorie": "III",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 240.0,
   "photos": [
    {
@@ -824,7 +1124,7 @@
   ],
   "plocha_m2": 79.6,
   "podlazi": "2. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Zelný trh 21",
@@ -855,7 +1155,7 @@
   "first_seen": "2026-11-23T12:04:43+00:00",
   "id": "30db781ac5f0",
   "kategorie": "II",
-  "last_seen": "2026-11-26T15:08:52+00:00",
+  "last_seen": "2026-11-27T15:00:46+00:00",
   "najem_m2": 180.0,
   "photos": [
    {
@@ -957,7 +1257,7 @@
   ],
   "plocha_m2": 93.1,
   "podlazi": "2. nadzemní",
-  "reminded": false,
+  "reminded": true,
   "source": "stred",
   "tech": {
    "adresa": "Žižkova 2",
